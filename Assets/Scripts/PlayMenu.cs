@@ -7,6 +7,6 @@ public class PlayMenu : MonoBehaviour
     // Start is called before the first frame update
     public void play()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Scene w Background");
     }
 }
