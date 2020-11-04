@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    public float lifetime = 0.5F;  // time visible of bullet
+    public float lifetime = 1;  // time visible of bullet
 
 
     void Start()
