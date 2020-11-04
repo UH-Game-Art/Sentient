@@ -1,0 +1,772 @@
+fileFormatVersion: 2
+guid: 59865aaad629fd547a09c0468f26b1d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2010420459487280130
+    second: HIn Bot Sprite sheet 1_0
+  - first:
+      213: 143653740529738122
+    second: HIn Bot Sprite sheet 1_1
+  - first:
+      213: -7547596709229202042
+    second: HIn Bot Sprite sheet 1_2
+  - first:
+      213: 5973783192345109680
+    second: HIn Bot Sprite sheet 1_3
+  - first:
+      213: 9214398085785835576
+    second: Walking 1 L to R
+  - first:
+      213: 7857471125102168751
+    second: Walking 2 L to R
+  - first:
+      213: 6444706509273822663
+    second: Walking 3 L to R
+  - first:
+      213: -6458370288056012925
+    second: HIn Bot Sprite sheet 1_7
+  - first:
+      213: 25622844012541754
+    second: Walking 4 L to R
+  - first:
+      213: -5357651261276657200
+    second: Walking 5 L to R
+  - first:
+      213: -2706822558329604445
+    second: Walking 6 L to R
+  - first:
+      213: 6781938511707418539
+    second: HIn Bot Sprite sheet 1_11
+  - first:
+      213: 482838925241819135
+    second: Ready to shoot L to R
+  - first:
+      213: 8248428009421060661
+    second: Attacking L to R
+  - first:
+      213: 283492747695610282
+    second: Bullet 1 L to R
+  - first:
+      213: 6226813950177791270
+    second: Bullet 2 L to R
+  - first:
+      213: -1743969003279756077
+    second: Bullet 3 L to R
+  - first:
+      213: 636648052169363245
+    second: Walking 6 R to L
+  - first:
+      213: -3836910108214293309
+    second: Walking 5 R to L
+  - first:
+      213: 3210218977241190284
+    second: Walking 4 R to L
+  - first:
+      213: -3166803233557515911
+    second: Walking 3 R to L
+  - first:
+      213: 1833379615733998111
+    second: Walking 2 R to L
+  - first:
+      213: 3643779679592984778
+    second: Walking 1 R to L
+  - first:
+      213: -7753846199885670213
+    second: Bullet 1 R to L
+  - first:
+      213: 7008873843179766719
+    second: Bullet 2 R to L
+  - first:
+      213: -2610956202032308837
+    second: Bullet 3 R to L
+  - first:
+      213: -4377296409316128661
+    second: Being Hit L to R
+  - first:
+      213: -441938279322108449
+    second: HIn Bot Sprite sheet 1_27
+  - first:
+      213: 1337644378663870881
+    second: HIn Bot Sprite sheet 1_28
+  - first:
+      213: -9081398076736303558
+    second: Being hit R to L
+  - first:
+      213: -4615506993287942558
+    second: HIn Bot Sprite sheet 1_30
+  - first:
+      213: 5914719078712065055
+    second: Attacking R to L
+  - first:
+      213: 5633359526011477213
+    second: Ready to shoot R to L
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walking 1 L to R
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 757
+        width: 125
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838dd423d3e10ef70800000000000000
+      internalID: 9214398085785835576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 2 L to R
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 757
+        width: 118
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa8a9c8b585b0d60800000000000000
+      internalID: 7857471125102168751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 3 L to R
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 757
+        width: 110
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5f9e6bc62307950800000000000000
+      internalID: 6444706509273822663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 4 L to R
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 757
+        width: 112
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37b08347d70b5000800000000000000
+      internalID: 25622844012541754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 5 L to R
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 757
+        width: 126
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d96e2d509cc5a5b0800000000000000
+      internalID: -5357651261276657200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 6 L to R
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 757
+        width: 136
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6ffbc793f6f6ad0800000000000000
+      internalID: -2706822558329604445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ready to shoot L to R
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 411
+        width: 136
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff15ceb17363b600800000000000000
+      internalID: 482838925241819135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attacking L to R
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 412
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53abce0929d487270800000000000000
+      internalID: 8248428009421060661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet 1 L to R
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 480
+        width: 102
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9dbcae62b2fe300800000000000000
+      internalID: 283492747695610282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet 2 L to R
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 490
+        width: 68
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d4bceeb461a6650800000000000000
+      internalID: 6226813950177791270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet 3 L to R
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 487
+        width: 67
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4d7347e6d2cc7e0800000000000000
+      internalID: -1743969003279756077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 6 R to L
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 410
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fcf74c704d5d800800000000000000
+      internalID: 636648052169363245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 5 R to L
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 414
+        width: 126
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc08ccd59e80cac0800000000000000
+      internalID: -3836910108214293309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 4 R to L
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 412
+        width: 112
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fcdadb62dfc8c20800000000000000
+      internalID: 3210218977241190284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 3 R to L
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 415
+        width: 110
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971fe3ecc314d04d0800000000000000
+      internalID: -3166803233557515911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 2 R to L
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 405
+        width: 109
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12644efb09717910800000000000000
+      internalID: 1833379615733998111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking 1 R to L
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 410
+        width: 123
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac03de1205e419230800000000000000
+      internalID: 3643779679592984778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet 1 R to L
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 375
+        width: 102
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb85dcc76fdc46490800000000000000
+      internalID: -7753846199885670213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet 2 R to L
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 411
+        width: 67
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3c14230a5844160800000000000000
+      internalID: 7008873843179766719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet 3 R to L
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 412
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dd2cdea2504cbd0800000000000000
+      internalID: -2610956202032308837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Being Hit L to R
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 68
+        width: 121
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b688e1e8b18b043c0800000000000000
+      internalID: -4377296409316128661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HIn Bot Sprite sheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 71
+        width: 119
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddbb58f97bedd9f0800000000000000
+      internalID: -441938279322108449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HIn Bot Sprite sheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 74
+        width: 119
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1ee0aa974409210800000000000000
+      internalID: 1337644378663870881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Being hit R to L
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 74
+        width: 119
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e8734809468f180800000000000000
+      internalID: -9081398076736303558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HIn Bot Sprite sheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 68
+        width: 119
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eadb6f7dc62ffb0800000000000000
+      internalID: -4615506993287942558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attacking R to L
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 63
+        width: 135
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cbbd02aad451250800000000000000
+      internalID: 5914719078712065055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ready to shoot R to L
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 75
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc1aff54a6bd2e40800000000000000
+      internalID: 5633359526011477213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
