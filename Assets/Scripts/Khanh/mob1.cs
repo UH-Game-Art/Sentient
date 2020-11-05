@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class mob1 : MonoBehaviour
@@ -14,7 +15,7 @@ public class mob1 : MonoBehaviour
     public float bullettimer;
 
       public bool awake = false;
-      public bool lookingRight = true;
+    public bool lookingRight = true;
 
     public GameObject bullet;
     public Transform target;
@@ -51,9 +52,10 @@ public class mob1 : MonoBehaviour
             lookingRight = false;
         }
 
-        if (curHealth < 0)
+        if (curHealth <= 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("Die", true);
+            Destroy(gameObject, 2.0f); // destroy after 2s
         }
     }
 
@@ -101,6 +103,6 @@ public class mob1 : MonoBehaviour
     public void Damage(int dmg) // taking damage
     {
         curHealth -= dmg;
-        gameObject.GetComponent<Animation>().Play("redflash");
+      //  gameObject.GetComponent<Animation>().Play("redflash");
     }
 }

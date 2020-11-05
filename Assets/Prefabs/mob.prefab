@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 4638211895551032443}
   - component: {fileID: 4638211895551032437}
   - component: {fileID: 4638211895551032436}
+  - component: {fileID: 1760907357}
+  - component: {fileID: 1760907358}
   m_Layer: 0
   m_Name: mob
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4638211895551032438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.82, y: -2.145, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4012616, y: 2.2460232, z: 1}
   m_Children:
   - {fileID: 4638211896616811455}
   - {fileID: 4638211896511279855}
@@ -76,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 17
   m_Sprite: {fileID: -4433804686340742375, guid: 3b6bfd9befc11fc42a32f8b6ba16ff77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -121,9 +123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curHealth: 100
   distance: 0
-  wakerange: 9
-  shootinterval: 0.2
-  bulletspeed: 2
+  wakerange: 25
+  shootinterval: 0.5
+  bulletspeed: 16
   bullettimer: 2
   awake: 0
   lookingRight: 1
@@ -132,6 +134,53 @@ MonoBehaviour:
   anim: {fileID: 0}
   shootpointL: {fileID: 4638211895808711149}
   shootpointR: {fileID: 4638211896751345347}
+--- !u!50 &1760907357
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4638211895551032438}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1760907358
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4638211895551032438}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.7001707, y: 1.4099997}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 1.4003419, y: 2.82}
+    newSize: {x: 1.4003419, y: 2.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4003419, y: 2.82}
+  m_EdgeRadius: 0
 --- !u!1 &4638211895808711150
 GameObject:
   m_ObjectHideFlags: 0
