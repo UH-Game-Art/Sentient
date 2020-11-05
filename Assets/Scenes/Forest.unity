@@ -284,83 +284,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &124187032
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 964248770}
-    m_Modifications:
-    - target: {fileID: 4638211895551032436, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1123893530}
-    - target: {fileID: 4638211895551032436, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: bullettimer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032436, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: bulletspeed
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032436, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: shootinterval
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032436, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: wakerange
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032438, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_Name
-      value: mob
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.785088
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.5358043
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 120.33376
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
 --- !u!1 &171914969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1149,6 @@ Transform:
   - {fileID: 6521078}
   - {fileID: 1893853638}
   - {fileID: 487410655}
-  - {fileID: 1760907356}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1749,11 +1671,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxFactor: 0.3
---- !u!4 &1123893530 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4438550802779749867, guid: 34bb5fc75b8675f48b5ff9fafdca256b, type: 3}
-  m_PrefabInstance: {fileID: 1261647332}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1192718992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,11 +2479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxFactor: 0.2
---- !u!4 &1760907356 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4638211895551032442, guid: 1a866ddf8728a254c9313ddae4417e93, type: 3}
-  m_PrefabInstance: {fileID: 124187032}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1860216524
 GameObject:
   m_ObjectHideFlags: 0
