@@ -1,0 +1,1678 @@
+fileFormatVersion: 2
+guid: d1601d0cf1b83404db286f7c2131f0e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6627097907103613927
+    second: Idle1
+  - first:
+      213: 4164053754146754084
+    second: Idle2
+  - first:
+      213: -7120025343474295721
+    second: Idle3
+  - first:
+      213: -8232443301198546423
+    second: Idle4
+  - first:
+      213: -2796383762798088514
+    second: Idle5
+  - first:
+      213: -5938740124182694285
+    second: Idle6
+  - first:
+      213: -3906218510453948470
+    second: Idle7
+  - first:
+      213: 3712272434154680908
+    second: RoboBall_7
+  - first:
+      213: 4365792139747313632
+    second: RoboBall_8
+  - first:
+      213: 4087725079839481047
+    second: RoboBall_9
+  - first:
+      213: 7294436254503170406
+    second: RoboBall_10
+  - first:
+      213: -4229980159093675610
+    second: RoboBall_11
+  - first:
+      213: 667427322298330146
+    second: RoboBall_12
+  - first:
+      213: 5362662738099634353
+    second: RoboBall_13
+  - first:
+      213: -5169665185338207748
+    second: RoboBall_14
+  - first:
+      213: -6666654446480505117
+    second: RoboBall_15
+  - first:
+      213: -3060855961140816449
+    second: RoboBall_16
+  - first:
+      213: -4741959333427984456
+    second: RoboBall_17
+  - first:
+      213: 6179539771492244224
+    second: RoboBall_18
+  - first:
+      213: -497871578643734547
+    second: RoboBall_19
+  - first:
+      213: -7688987439579963119
+    second: RoboBall_20
+  - first:
+      213: -71895918385388030
+    second: RoboBall_21
+  - first:
+      213: 7298319308569280841
+    second: RoboBall_22
+  - first:
+      213: -5143720036144998782
+    second: RoboBall_23
+  - first:
+      213: -569733467256179931
+    second: RoboBall_24
+  - first:
+      213: 4048830899519539077
+    second: RoboBall_25
+  - first:
+      213: -3308601376188453710
+    second: RoboBall_26
+  - first:
+      213: 9041823556417676591
+    second: RoboBall_27
+  - first:
+      213: -2308460763717947013
+    second: RoboBall_28
+  - first:
+      213: 4301664381723051907
+    second: RoboBall_29
+  - first:
+      213: 1076012215247059792
+    second: RoboBall_30
+  - first:
+      213: -8901730319963966535
+    second: RoboBall_31
+  - first:
+      213: 1867108122291270110
+    second: RoboBall_32
+  - first:
+      213: 595871662175212494
+    second: RoboBall_33
+  - first:
+      213: -8762371491461229614
+    second: RoboBall_34
+  - first:
+      213: -1004148370844063191
+    second: RoboBall_35
+  - first:
+      213: -1513627961665262930
+    second: RoboBall_36
+  - first:
+      213: 5580559655785509282
+    second: RoboBall_37
+  - first:
+      213: 8011663783623185699
+    second: RoboBall_38
+  - first:
+      213: 5568484183088556230
+    second: RoboBall_39
+  - first:
+      213: -7242578237717995284
+    second: RoboBall_40
+  - first:
+      213: 1184076378950261531
+    second: RoboBall_41
+  - first:
+      213: 666111104230207308
+    second: RoboBall_42
+  - first:
+      213: 6205889227032824321
+    second: RoboBall_43
+  - first:
+      213: -1167194676130758489
+    second: RoboBall_44
+  - first:
+      213: 5458306889241453879
+    second: RoboBall_45
+  - first:
+      213: 4436391486199630506
+    second: RoboBall_46
+  - first:
+      213: 1677920312482265511
+    second: RoboBall_47
+  - first:
+      213: -7090611816916847845
+    second: RoboBall_48
+  - first:
+      213: -2902799664699207357
+    second: RoboBall_49
+  - first:
+      213: -2333139630455022579
+    second: RoboBall_50
+  - first:
+      213: 1554206092788181292
+    second: RoboBall_51
+  - first:
+      213: -5219768223648824579
+    second: RoboBall_52
+  - first:
+      213: -3744873402656144466
+    second: RoboBall_53
+  - first:
+      213: -1383488554522793817
+    second: RoboBall_54
+  - first:
+      213: 6523054217322588019
+    second: RoboBall_55
+  - first:
+      213: -785501284820322023
+    second: RoboBall_56
+  - first:
+      213: 9005997816774572072
+    second: RoboBall_57
+  - first:
+      213: 2628782034906801136
+    second: RoboBall_58
+  - first:
+      213: 6649343106386801387
+    second: Projectile0
+  - first:
+      213: 4298906915068304175
+    second: Projectile3
+  - first:
+      213: -2272068507466832987
+    second: Projectile5
+  - first:
+      213: -599049509803811678
+    second: Projectile1
+  - first:
+      213: 9071470389289547312
+    second: Projectile4
+  - first:
+      213: -5604189055914585472
+    second: Projectile6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1246
+        width: 294
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cba5bb091d704a0800000000000000
+      internalID: -6627097907103613927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1280
+        width: 311
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e8c89c3d0b9c930800000000000000
+      internalID: 4164053754146754084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle3
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1231
+        width: 353
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c9f627ca6903d90800000000000000
+      internalID: -7120025343474295721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle4
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1246
+        width: 479
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a34865f6c70cd80800000000000000
+      internalID: -8232443301198546423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 838
+        width: 419
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebeefba98cf3139d0800000000000000
+      internalID: -2796383762798088514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 915
+        width: 544
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3763bb4625b559da0800000000000000
+      internalID: -5938740124182694285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle7
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 987
+        width: 635
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf3655f5f25ac9c0800000000000000
+      internalID: -3906218510453948470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 653
+        width: 91
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42b3434c14a48330800000000000000
+      internalID: 3712272434154680908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 644
+        width: 105
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7c4d4f1d8669c30800000000000000
+      internalID: 4365792139747313632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 689
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc994b6d448ab830800000000000000
+      internalID: 4087725079839481047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 639
+        width: 30
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661746a302b0b3560800000000000000
+      internalID: 7294436254503170406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_11
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 648
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9654ae4771c45c0800000000000000
+      internalID: -4229980159093675610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_12
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 631
+        width: 19
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c6bfa0d9d234900800000000000000
+      internalID: 667427322298330146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_13
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 634
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b007a209510c6a40800000000000000
+      internalID: 5362662738099634353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_14
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 637
+        width: 65
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1563c67e8a148b0800000000000000
+      internalID: -5169665185338207748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_15
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 643
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e640453a194b73a0800000000000000
+      internalID: -6666654446480505117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_16
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 644
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5909f68b7a585d0800000000000000
+      internalID: -3060855961140816449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_17
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 638
+        width: 38
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b74da73c1d213eb0800000000000000
+      internalID: -4741959333427984456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_18
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 648
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b913b7ea222c550800000000000000
+      internalID: 6179539771492244224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_19
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 661
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def5d23ef643719f0800000000000000
+      internalID: -497871578643734547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_20
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 655
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111656569aa3b4590800000000000000
+      internalID: -7688987439579963119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_21
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 666
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206a6db0b03900ff0800000000000000
+      internalID: -71895918385388030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_22
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 627
+        width: 72
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94185a43eb6d84560800000000000000
+      internalID: 7298319308569280841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_23
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 674
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286948531e5dd98b0800000000000000
+      internalID: -5143720036144998782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_24
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 655
+        width: 69
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5233b8b1e66e718f0800000000000000
+      internalID: -569733467256179931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_25
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 691
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587cc716046503830800000000000000
+      internalID: 4048830899519539077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_26
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 646
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc2becf39c7512d0800000000000000
+      internalID: -3308601376188453710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_27
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 679
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25e8027e920b7d70800000000000000
+      internalID: 9041823556417676591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_28
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 649
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b713aa88a23b6ffd0800000000000000
+      internalID: -2308460763717947013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_29
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 677
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3878d87c6f492bb30800000000000000
+      internalID: 4301664381723051907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_30
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 662
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b38c7a863ceee00800000000000000
+      internalID: 1076012215247059792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_31
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 668
+        width: 41
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b33938ff63b67480800000000000000
+      internalID: -8901730319963966535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_32
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 647
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1fa62e1fc49e910800000000000000
+      internalID: 1867108122291270110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_33
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 602
+        width: 19
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3dca3ae16f44800800000000000000
+      internalID: 595871662175212494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_34
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 615
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d39175bd8dc56680800000000000000
+      internalID: -8762371491461229614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_35
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 613
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a6d0e706c8012f0800000000000000
+      internalID: -1004148370844063191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_36
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 615
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaae7de63638efae0800000000000000
+      internalID: -1513627961665262930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_37
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 625
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1b8fa9071227d40800000000000000
+      internalID: 5580559655785509282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_38
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 627
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325d8ba73c52f2f60800000000000000
+      internalID: 8011663783623185699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_39
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 615
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8ef568cda374d40800000000000000
+      internalID: 5568484183088556230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_40
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 656
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce028d237713d7b90800000000000000
+      internalID: -7242578237717995284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_41
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 630
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bd242713fae6010800000000000000
+      internalID: 1184076378950261531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_42
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 609
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fa59425808e3900800000000000000
+      internalID: 666111104230207308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_43
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 523
+        width: 51
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a07bc2f5fbf1650800000000000000
+      internalID: 6205889227032824321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_44
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 555
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0cf7940aa4dcfe0800000000000000
+      internalID: -1167194676130758489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_45
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 553
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735ed48423dcfbb40800000000000000
+      internalID: 5458306889241453879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_46
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 511
+        width: 79
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa0f7b3d8a319d30800000000000000
+      internalID: 4436391486199630506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_47
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 527
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9faea52ab294710800000000000000
+      internalID: 1677920312482265511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_48
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 527
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13fb74ce16199d90800000000000000
+      internalID: -7090611816916847845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_49
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 550
+        width: 69
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3411b7ba51f27b7d0800000000000000
+      internalID: -2902799664699207357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_50
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 548
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c975b1ed50f9fd0800000000000000
+      internalID: -2333139630455022579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_51
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 589
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c292364f436a19510800000000000000
+      internalID: 1554206092788181292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_52
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 535
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df24a83c478af87b0800000000000000
+      internalID: -5219768223648824579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_53
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 537
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea34fd14b79870cc0800000000000000
+      internalID: -3744873402656144466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_54
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 518
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8a9dc5d7cdccce0800000000000000
+      internalID: -1383488554522793817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_55
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 503
+        width: 18
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3776022004b868a50800000000000000
+      internalID: 6523054217322588019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_56
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 543
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919fba34eb65915f0800000000000000
+      internalID: -785501284820322023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_57
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 539
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828bacc6c4bbbfc70800000000000000
+      internalID: 9005997816774572072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoboBall_58
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 492
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f36c86355f4b7420800000000000000
+      internalID: 2628782034906801136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 231
+        width: 235
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2b0e55356374c50800000000000000
+      internalID: 6649343106386801387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile3
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 231
+        width: 235
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bdd1b0019c8ab30800000000000000
+      internalID: 4298906915068304175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile5
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 231
+        width: 235
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3661bfabdf770e0800000000000000
+      internalID: -2272068507466832987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 82
+        width: 235
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac954d05afbfa7f0800000000000000
+      internalID: -599049509803811678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile4
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 82
+        width: 235
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036f310a14654ed70800000000000000
+      internalID: 9071470389289547312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile6
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 82
+        width: 235
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0825414febbe932b0800000000000000
+      internalID: -5604189055914585472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
