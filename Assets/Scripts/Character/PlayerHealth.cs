@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 10;
+    public int damageTaken;
     public Image[] hearts;
     public Image fullHeart;
     public Image emptyHeart;
@@ -139,15 +140,16 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Enemy1"))
         {
-            damage(1);
+            Debug.Log("Damage Taken");
+            damage(damageTaken);
         }
     }
-    public void damage(int n)
+    public void damage(int damageTaken)
     {
-        health -= n;
+        health -= damageTaken;
     }
 }

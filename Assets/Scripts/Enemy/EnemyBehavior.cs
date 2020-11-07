@@ -17,7 +17,7 @@ public class EnemyBehavior : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("bullet"))
+        if (collision.gameObject.tag.Equals("Bullet"))
         {
             health.damage(bullet_.damage);
             Destroy(collision.gameObject);

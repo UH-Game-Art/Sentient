@@ -47,6 +47,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -71,8 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 19
-  m_Sprite: {fileID: 5972140380756631857, guid: 407831f35caf35c449d11c84e06faedb,
-    type: 3}
+  m_Sprite: {fileID: 5972140380756631857, guid: 407831f35caf35c449d11c84e06faedb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,10 +106,8 @@ MonoBehaviour:
   - {fileID: -2676684610480362318, guid: 407831f35caf35c449d11c84e06faedb, type: 3}
   - {fileID: 7649017190666806504, guid: 407831f35caf35c449d11c84e06faedb, type: 3}
   - {fileID: -6964380513422094521, guid: 407831f35caf35c449d11c84e06faedb, type: 3}
-  fullHeart: {fileID: 5972140380756631857, guid: 407831f35caf35c449d11c84e06faedb,
-    type: 3}
-  emptyHeart: {fileID: -6905963577513531043, guid: 407831f35caf35c449d11c84e06faedb,
-    type: 3}
+  fullHeart: {fileID: 5972140380756631857, guid: 407831f35caf35c449d11c84e06faedb, type: 3}
+  emptyHeart: {fileID: -6905963577513531043, guid: 407831f35caf35c449d11c84e06faedb, type: 3}
   enemyBeh: {fileID: 390829308}
 --- !u!1 &4763390652644795353
 GameObject:
@@ -161,6 +159,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -185,8 +184,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: -3364296175059816650, guid: 3b6bfd9befc11fc42a32f8b6ba16ff77,
-    type: 3}
+  m_Sprite: {fileID: -3364296175059816650, guid: 3b6bfd9befc11fc42a32f8b6ba16ff77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -258,4 +256,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 969163954}
   bullet_: {fileID: 7500033359954768346, guid: 8d67e1576ca33344fbca7ce6c9f07d65, type: 3}
-  newHealth: 0
+  newHealth: 10
