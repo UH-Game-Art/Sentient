@@ -5,40 +5,51 @@ using UnityEngine;
 
 public class BarrelsScript : MonoBehaviour
 {
+    public Bullet bullet_;
     [SerializeField]
     int health = 3;
 
     [SerializeField]
     UnityEngine.Object destructableRef;
 
+    //materials
+    private Material matwhite;
+    private Material matDefault;
+    SpriteRenderer sr;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        sr = GetComponent<SpriteRenderer>();
+        matwhite = Resources.Load("whiteflash", typeof(Material)) as Material;
+        matDefault = sr.material;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+    
+        private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Bullet"))
         {
+            Destroy(collision.gameObject);
             health--;
+            sr.material = matwhite;
 
             if (health <= 0)
             {
                 ExplodeThisGameObject();
             }
+            else
+            {
+                Invoke("ResetMaterial", .05f);
+            }
 
         }
 
+    }
 
-
+    void ResetMaterial()
+    {
+        sr.material = matDefault;
     }
 
     private void ExplodeThisGameObject()
