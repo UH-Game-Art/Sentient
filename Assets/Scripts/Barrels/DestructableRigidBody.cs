@@ -18,8 +18,13 @@ public class DestructableRigidBody : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         rb2d.AddForce(forceDirection);
         rb2d.AddTorque(torque);
-      
+
+        Invoke("DestroySelf", UnityEngine.Random.Range(1.5f, 3f));
     }
 
+    void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
    
 }
