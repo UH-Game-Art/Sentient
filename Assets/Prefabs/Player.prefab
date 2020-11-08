@@ -1280,6 +1280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  maxHealth: 10
   damageTaken: 1
   hearts:
   - {fileID: 839771241}
@@ -1293,6 +1294,8 @@ MonoBehaviour:
   - {fileID: 1981182632}
   fullHeart: {fileID: 560777719}
   emptyHeart: {fileID: 371631411}
+  startingLives: 5
+  lifeText: {fileID: 4466708433414012945}
 --- !u!1 &4438550803166598330
 GameObject:
   m_ObjectHideFlags: 0
