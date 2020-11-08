@@ -146,4 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_: {fileID: 0}
   health: 3
-  destructableRef: {fileID: 102900000, guid: c602e7cc148881f4ab3013b2124152b3, type: 3}
+  destructableRef: {fileID: 1375329694126164443, guid: de41ac423b730c545bfb9259bde50210, type: 3}
