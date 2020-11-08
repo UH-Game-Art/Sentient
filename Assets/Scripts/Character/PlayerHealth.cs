@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 10;
+    public int maxHealth = 10;
     public int damageTaken;
     public Image[] hearts;
     public Image fullHeart;
@@ -151,5 +152,13 @@ public class PlayerHealth : MonoBehaviour
     public void damage(int damageTaken)
     {
         health -= damageTaken;
+    }
+    public void gain_hp(int value)
+    {
+        health += value;
+        if (health > maxHealth)
+        {
+            health = 10;
+        }
     }
 }
