@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2985021963306782372}
   m_Layer: 0
   m_Name: Barrels
-  m_TagString: Untagged
+  m_TagString: Barrels
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 17
+  m_SortingOrder: 18
   m_Sprite: {fileID: -5695393356172618264, guid: 1e58cb5428175764796cb8d1d0d6a51a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,7 +97,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 20
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 30
@@ -128,7 +128,7 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
   m_Size: {x: 2.9151382, y: 2.9706779}
   m_EdgeRadius: 0
@@ -144,3 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc984522e505fbd4d9f3480fe96e3381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet_: {fileID: 0}
+  health: 3
+  destructableRef: {fileID: 8409556853400240420, guid: ee5bbc17ca5cf024b82786f74aa95ad2, type: 3}

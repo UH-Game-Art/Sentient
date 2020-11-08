@@ -3038,15 +3038,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4763390652644795356, guid: 10d850a31d0e4534c98471b0205a4a97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.398516
+      value: -27.59
       objectReference: {fileID: 0}
     - target: {fileID: 4763390652644795356, guid: 10d850a31d0e4534c98471b0205a4a97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.304061
+      value: -7.41
       objectReference: {fileID: 0}
     - target: {fileID: 4763390652644795356, guid: 10d850a31d0e4534c98471b0205a4a97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.158
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4763390652644795356, guid: 10d850a31d0e4534c98471b0205a4a97, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7968,7 +7968,7 @@ GameObject:
   - component: {fileID: 1835908455}
   - component: {fileID: 1835908456}
   - component: {fileID: 1835908457}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Health-Bottle
   m_TagString: Collectable
   m_Icon: {fileID: 0}
@@ -9260,33 +9260,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2985021963306782372, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985021963306782372, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
-      propertyPath: destructableRef
-      value: 
-      objectReference: {fileID: 8409556853400240420, guid: ee5bbc17ca5cf024b82786f74aa95ad2, type: 3}
-    - target: {fileID: 6639053763306437968, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
-      propertyPath: m_AutoTiling
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6639053763306437969, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6639053763306437970, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
-      propertyPath: m_SortingOrder
-      value: 18
-      objectReference: {fileID: 0}
     - target: {fileID: 6639053763306437971, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.75
+      value: -35.14
       objectReference: {fileID: 0}
     - target: {fileID: 6639053763306437971, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.49
+      value: -5.63
       objectReference: {fileID: 0}
     - target: {fileID: 6639053763306437971, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9326,10 +9306,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6639053763306437981, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
       propertyPath: m_Name
-      value: Barrels
-      objectReference: {fileID: 0}
-    - target: {fileID: 6639053763306437981, guid: 9a5e357ef9610ce47b4692d7fe046e16, type: 3}
-      propertyPath: m_TagString
       value: Barrels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
