@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrels
       objectReference: {fileID: 0}
+    - target: {fileID: 1083295339626734777, guid: a335e5bf8de620c438515cb5b96ac985, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1083295339626734782, guid: a335e5bf8de620c438515cb5b96ac985, type: 3}
       propertyPath: destructableRef
       value: 
