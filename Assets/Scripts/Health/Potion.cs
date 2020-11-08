@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Potion : MonoBehaviour
 {
+    [SerializeField]
+    int item_hp = 2;
 
-    public int item_hp = 2;
     private void OnTriggerEnter2D(Collider2D collision)
     {
 

@@ -144,8 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c1154cb4f1a95479afc9a3af10aa13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_hp: 3
   forceDirection: {x: -2000, y: 0}
-  torque: 2000
+  torque: 4000
 --- !u!1 &1375329692483398129
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,8 +291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c1154cb4f1a95479afc9a3af10aa13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_hp: 3
   forceDirection: {x: 0, y: 2000}
-  torque: 2000
+  torque: 3000
 --- !u!1 &1375329694126164443
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,5 +471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c1154cb4f1a95479afc9a3af10aa13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_hp: 3
   forceDirection: {x: 2000, y: 0}
-  torque: 2000
+  torque: 3000
