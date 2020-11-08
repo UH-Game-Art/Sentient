@@ -1,0 +1,30 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ExplodedRigidBody : MonoBehaviour
+{
+    [SerializeField]
+    Vector2 forceDirection;
+
+    [SerializeField]
+    float torque;
+
+    Rigidbody2D rb2d;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb2d = GetComponent<Rigidbody2D>();
+        rb2d.AddForce(forceDirection);
+        rb2d.AddTorque(torque);
+
+        Invoke("DestroySelf", UnityEngine.Random.Range(3f, 5f));
+    }
+
+    void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
+
+}
