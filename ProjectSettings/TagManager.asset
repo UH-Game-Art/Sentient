@@ -8,7 +8,6 @@ TagManager:
   - Enemy1
   - Bullet
   - Barrels
-  - Item
   layers:
   - Default
   - TransparentFX
