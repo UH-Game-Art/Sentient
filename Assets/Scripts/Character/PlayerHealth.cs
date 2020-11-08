@@ -12,7 +12,6 @@ public class PlayerHealth : MonoBehaviour
     public Image emptyHeart;
     private void Start()
     {
-        AudioManager.instance.PlaySound(AudioManager.instance.theme, 1, true);
         fullHeart.enabled = true;
         for(int i = 0; i < health-1; i++)
         {
