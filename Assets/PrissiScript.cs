@@ -51,7 +51,7 @@ public class PrissiScript : MonoBehaviour
             {
                 //enemy is to the left side of the player, so move right
                 rb2d.velocity = new Vector2(moveSpeed, 0);
-                transform.localScale = new Vector2(-1, 1);
+                transform.localScale = new Vector2(1, 1);
                 
 
             }
@@ -59,7 +59,7 @@ public class PrissiScript : MonoBehaviour
             {
                 //enemy is to the right side of the player, so move left
                 rb2d.velocity = new Vector2(-moveSpeed, 0);
-                transform.localScale = new Vector2(1, 1);
+                transform.localScale = new Vector2(-1, 1);
                 
                 
             }
