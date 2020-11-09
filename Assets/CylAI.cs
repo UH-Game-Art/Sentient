@@ -26,6 +26,7 @@ public class CylAI : MonoBehaviour
     void Update()
     {
         float distToPlayer = Vector2.Distance(transform.position, player.position);
+
         //print("distance to player" + distToPlayer);
         if (distToPlayer < agroRange)
         {
@@ -54,7 +55,11 @@ public class CylAI : MonoBehaviour
         }
         //animator.Play("Cylwalk");
         if(distToPlayer >10 )
-        ChangeAnimationState("Cylwalk");
+        {
+            ChangeAnimationState("Cylwalk");
+            Shoot();
+            //Invoke("Shoot", 1f);
+        }
         else if (distToPlayer < 10)
             ChangeAnimationState("Cylatk");
         //Shoot();
