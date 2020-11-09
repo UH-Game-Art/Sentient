@@ -15,6 +15,20 @@ public class AudioManager : MonoBehaviour
     public AudioClip jump;
     private AudioSource jumpsource;
 
+    public AudioClip hp;
+    private AudioSource hpsource;
+
+    public AudioClip player_bullet;
+    private AudioSource player_bullet_source;
+
+    public AudioClip barrel_destroy;
+    private AudioSource barrel_destroy_source;
+
+    public AudioClip ready;
+    private AudioSource readysource;
+
+
+
     public AudioClip theme;
     private AudioSource themesource;
 
@@ -34,6 +48,8 @@ public class AudioManager : MonoBehaviour
 
         }
 
+
+
         if (clip == this.theme2)
         {
             Play(clip, ref themesource2, volume, isLoopback);
@@ -45,9 +61,27 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySound(AudioClip clip, float volume)
     {
+        if (clip == this.player_bullet)
+        {
+            Play(clip, ref player_bullet_source, volume);
+            return;
+        }
+
+        if (clip == this.barrel_destroy)
+        {
+            Play(clip, ref barrel_destroy_source, volume);
+            return;
+        }
+
         if (clip == this.coin)
         {
             Play(clip, ref coinsource, volume);
+            return;
+        }
+
+        if (clip == this.hp)
+        {
+            Play(clip, ref hpsource, volume);
             return;
         }
 
@@ -87,6 +121,13 @@ public class AudioManager : MonoBehaviour
             coinsource?.Stop();  // if not null stop
             return;
         }
+
+        if (clip == this.player_bullet)
+        {
+            player_bullet_source?.Stop();  // if not null stop
+            return;
+        }
+
     }
     void Start()
     {

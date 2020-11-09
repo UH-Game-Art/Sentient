@@ -14,6 +14,8 @@ public class Weapon : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
+            //music for shooting
+            AudioManager.instance.PlaySound(AudioManager.instance.player_bullet, 0.5f);
             Shoot();
         }
     }
