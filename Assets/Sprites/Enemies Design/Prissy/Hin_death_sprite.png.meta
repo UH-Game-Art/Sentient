@@ -1,67 +1,49 @@
 fileFormatVersion: 2
-guid: 2e0601f0bd34d49458147b0989c8c362
+guid: 10361ac8021ef554f9a4d297a79d25cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5344310113927631409
-    second: HIn Bot Sprite sheet_0
+      213: -7931497176076804634
+    second: Hin_death_sprite_0
   - first:
-      213: -9140193548320474768
-    second: HIn Bot Sprite sheet_1
+      213: 4510577926265630803
+    second: Hin_death_sprite_1
   - first:
-      213: 8533721410538459729
-    second: HIn Bot Sprite sheet_2
+      213: -5399228980623486699
+    second: Hin_death_sprite_2
   - first:
-      213: -3210250788561986386
-    second: HIn Bot Sprite sheet_3
+      213: 4950775899281318399
+    second: Hin_death_sprite_3
   - first:
-      213: 7124096219927308845
-    second: Hin Walking L to R 1
+      213: -8374343395933194715
+    second: Hin_death_sprite_4
   - first:
-      213: 2217492175870764374
-    second: Hin Walking L to R 2
+      213: 5345424385888003313
+    second: Hin_death_sprite_5
   - first:
-      213: 8644457362911995092
-    second: Hin Walking L to R 3
+      213: -947178257572650934
+    second: Hin_death_sprite_6
   - first:
-      213: 6257859400993086259
-    second: HIn Bot Sprite sheet_7
+      213: -4757305806376375218
+    second: Hin_death_sprite_7
   - first:
-      213: 2524675610246710010
-    second: Hin Walking L to R 4
+      213: -1453917629156686002
+    second: Hin_death_sprite_8
   - first:
-      213: 8934676440255049037
-    second: Hin Walking L to R 5
+      213: -54778773344916375
+    second: Hin_death_sprite_9
   - first:
-      213: 1651429280581501344
-    second: Hin Walking L to R 6
+      213: -5404038891769207267
+    second: Hin_death_sprite_10
   - first:
-      213: 2844233170963605168
-    second: HIn Bot Sprite sheet_11
+      213: 1495461726317676449
+    second: Hin_death_sprite_11
   - first:
-      213: 4855368677601605388
-    second: Hin Attack 1
+      213: -7381826851034924647
+    second: Hin_death_sprite_12
   - first:
-      213: 4411474608649708650
-    second: Hin Attack 2
-  - first:
-      213: -139171724934241985
-    second: Hin Bullet initial
-  - first:
-      213: 5934727854071817469
-    second: Hin Bullet further 1
-  - first:
-      213: 157929917690427252
-    second: Hin Bulleet further 2
-  - first:
-      213: 5955460664190588900
-    second: Hin Being hit
-  - first:
-      213: -130142565339739952
-    second: Hin fade -Death A
-  - first:
-      213: 1513601808454705374
-    second: Hin Dark - Death B
+      213: 3238551016238672520
+    second: Hin_death_sprite_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -149,295 +131,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hin Walking L to R 1
+      name: Hin_death_sprite_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 757
-        width: 125
-        height: 259
+        x: 184
+        y: 743
+        width: 135
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2a687654cfddd260800000000000000
-      internalID: 7124096219927308845
+      spriteID: 6ed9dea5759ade190800000000000000
+      internalID: -7931497176076804634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hin Walking L to R 2
+      name: Hin_death_sprite_1
       rect:
         serializedVersion: 2
-        x: 265
-        y: 757
-        width: 118
+        x: 411
+        y: 740
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350f7c2d9bac89e30800000000000000
+      internalID: 4510577926265630803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 742
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51151f439d51215b0800000000000000
+      internalID: -5399228980623486699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 739
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff16a373370b4b440800000000000000
+      internalID: 4950775899281318399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 743
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5267342fc0b58cb80800000000000000
+      internalID: -8374343395933194715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 742
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4a09e5823ce2a40800000000000000
+      internalID: 5345424385888003313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 735
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40a862a462fad2f0800000000000000
+      internalID: -947178257572650934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 741
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c680b0397aafdb0800000000000000
+      internalID: -4757305806376375218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 351
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4700759e95a2dbe0800000000000000
+      internalID: -1453917629156686002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 349
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c6b81fef26d3ff0800000000000000
+      internalID: -54778773344916375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 344
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1663bf724ff005b0800000000000000
+      internalID: -5404038891769207267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 348
+        width: 135
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a78b5c4482f0c410800000000000000
+      internalID: 1495461726317676449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hin_death_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 346
+        width: 135
         height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6552cfa926d16ce10800000000000000
-      internalID: 2217492175870764374
+      spriteID: 9997f9ee69b7e8990800000000000000
+      internalID: -7381826851034924647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hin Walking L to R 3
+      name: Hin_death_sprite_13
       rect:
         serializedVersion: 2
-        x: 445
-        y: 757
-        width: 110
-        height: 260
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d42168db2847f770800000000000000
-      internalID: 8644457362911995092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Walking L to R 4
-      rect:
-        serializedVersion: 2
-        x: 627
-        y: 757
-        width: 112
+        x: 1602
+        y: 349
+        width: 135
         height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af209d95713790320800000000000000
-      internalID: 2524675610246710010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Walking L to R 5
-      rect:
-        serializedVersion: 2
-        x: 808
-        y: 757
-        width: 126
-        height: 263
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4d247c62e85efb70800000000000000
-      internalID: 8934676440255049037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Walking L to R 6
-      rect:
-        serializedVersion: 2
-        x: 996
-        y: 757
-        width: 136
-        height: 265
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a14db85e2e0be610800000000000000
-      internalID: 1651429280581501344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Attack 1
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 411
-        width: 136
-        height: 258
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c077002661cb16340800000000000000
-      internalID: 4855368677601605388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Attack 2
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 412
-        width: 136
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a64a83898c4b83d30800000000000000
-      internalID: 4411474608649708650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Bullet initial
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 480
-        width: 102
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f312484bd00911ef0800000000000000
-      internalID: -139171724934241985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Bullet further 1
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 490
-        width: 68
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df4219c2a836c5250800000000000000
-      internalID: 5934727854071817469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Bulleet further 2
-      rect:
-        serializedVersion: 2
-        x: 691
-        y: 487
-        width: 67
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47738536c64113200800000000000000
-      internalID: 157929917690427252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Being hit
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 68
-        width: 121
-        height: 263
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e754e2bbeb06a250800000000000000
-      internalID: 5955460664190588900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin fade -Death A
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 71
-        width: 119
-        height: 257
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d844ceb604a13ef0800000000000000
-      internalID: -130142565339739952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hin Dark - Death B
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 74
-        width: 119
-        height: 257
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed0e45c43d4610510800000000000000
-      internalID: 1513601808454705374
+      spriteID: 88ae2ed9df4a1fc20800000000000000
+      internalID: 3238551016238672520
       vertices: []
       indices: 
       edges: []
