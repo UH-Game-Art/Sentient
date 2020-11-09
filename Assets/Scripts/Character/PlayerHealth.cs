@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         //music script for background theme
-       
+        AudioManager.instance.PlaySound(AudioManager.instance.coin, 1 );
         AudioManager.instance.PlaySound(AudioManager.instance.theme, 1, true);
         fullHeart.enabled = true;
         for(int i = 0; i < health-1; i++)
