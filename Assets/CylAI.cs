@@ -57,7 +57,7 @@ public class CylAI : MonoBehaviour
         if(distToPlayer >10 )
         {
             ChangeAnimationState("Cylwalk");
-            Shoot();
+            //Shoot();
             //Invoke("Shoot", 1f);
         }
         else if (distToPlayer < 10)
