@@ -1016,7 +1016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4438550801580918488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.487, z: 0}
+  m_LocalPosition: {x: 0.057, y: 0.598, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4438550802779749867}
@@ -1205,7 +1205,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0774619, y: 0.20062172}
+  m_Offset: {x: -0.030387685, y: 0.20062172}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1216,7 +1216,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5581603, y: 0.83379877}
+  m_Size: {x: 0.77213144, y: 0.83379877}
   m_EdgeRadius: 0
 --- !u!58 &4438550802779749871
 CircleCollider2D:
@@ -1231,9 +1231,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.071262464, y: -0.40927482}
+  m_Offset: {x: 0, y: -0.28}
   serializedVersion: 2
-  m_Radius: 0.18777983
+  m_Radius: 0.35
 --- !u!95 &942704161
 Animator:
   serializedVersion: 3
@@ -1294,8 +1294,6 @@ MonoBehaviour:
   - {fileID: 1981182632}
   fullHeart: {fileID: 560777719}
   emptyHeart: {fileID: 371631411}
-  startingLives: 5
-  lifeText: {fileID: 4466708433414012945}
 --- !u!1 &4438550803166598330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4438550803166598330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.501, z: 0}
+  m_LocalPosition: {x: 0.028, y: -0.612, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4438550802779749867}
@@ -1458,6 +1456,7 @@ GameObject:
   - component: {fileID: 816163995159337858}
   - component: {fileID: 2646709891770504964}
   - component: {fileID: 4466708433414012945}
+  - component: {fileID: 1018355550}
   m_Layer: 5
   m_Name: LifeCount
   m_TagString: Untagged
@@ -1526,3 +1525,16 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: X 3
+--- !u!114 &1018355550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8656393543487563908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548a26245d1d9454b80f38c350bc6d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLives: 3
