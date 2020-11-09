@@ -10,8 +10,15 @@ public class PlayerHealth : MonoBehaviour
     public Image[] hearts;
     public Image fullHeart;
     public Image emptyHeart;
+
+    private LifeSystem lifeSystem;
+    private LevelManager levelManager;
+
     private void Start()
     {
+        lifeSystem = FindObjectOfType<LifeSystem>();
+        levelManager = FindObjectOfType<LevelManager>();
+
         fullHeart.enabled = true;
         for(int i = 0; i < health-1; i++)
         {
@@ -138,7 +145,15 @@ public class PlayerHealth : MonoBehaviour
                     hearts[i].enabled = false;
                     fullHeart.enabled = false;
             }
-            Destroy(gameObject);
+            Debug.Log("You died");
+            lifeSystem.LifeDOWN();
+            health = 10;
+            emptyHeart.enabled = false;
+            Debug.Log("Player MAX HEALTH");
+            levelManager.RespawnPlayer();
+            
+            
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

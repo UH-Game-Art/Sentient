@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour
 {
-    [SerializeField]Transform spawnPoint;
+    
+    private PlayerHealth playerHealth;
 
-    void OnCollisionEnter2D(Collision2D col)
+    void Start() 
     {
-        if(col.transform.CompareTag("Player"))
-            col.transform.position = spawnPoint.position;
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
+
+    
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Player")
+        {
+            Debug.Log("Player fell to their death");
+            playerHealth.health = 0;
+        }
+    }
+
+   
 }
