@@ -36,6 +36,7 @@ public class BarrelsScript : MonoBehaviour
 
             if (health <= 0)
             {
+                AudioManager.instance.PlaySound(AudioManager.instance.barrel_destroy, 0.5f);
                 ExplodeThisGameObject();
             }
             else
