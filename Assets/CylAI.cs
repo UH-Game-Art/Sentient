@@ -5,6 +5,8 @@ using UnityEngine;
 public class CylAI : MonoBehaviour
 {
     Animator animator;
+    bool far = false;
+
     private string currentState;
     [SerializeField] Transform player;
     [SerializeField] float agroRange;
@@ -26,7 +28,6 @@ public class CylAI : MonoBehaviour
     void Update()
     {
         float distToPlayer = Vector2.Distance(transform.position, player.position);
-
         //print("distance to player" + distToPlayer);
         if (distToPlayer < agroRange)
         {
@@ -38,6 +39,8 @@ public class CylAI : MonoBehaviour
             StopChasingPlayer();
         }
     }
+
+
 
     void ChasePlayer()
     {
@@ -57,12 +60,10 @@ public class CylAI : MonoBehaviour
         if(distToPlayer >10 )
         {
             ChangeAnimationState("Cylwalk");
-            //Shoot();
-            //Invoke("Shoot", 1f);
+            far = true;
         }
         else if (distToPlayer < 10)
             ChangeAnimationState("Cylatk");
-        //Shoot();
     }
 
     void StopChasingPlayer()
@@ -82,4 +83,5 @@ public class CylAI : MonoBehaviour
         animator.Play(newAnimation);
         currentState = newAnimation;
     }
+
 }
