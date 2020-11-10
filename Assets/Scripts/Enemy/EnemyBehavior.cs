@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    public Animator animator;
     public EnemyHealth health;
     public Bullet bullet_;
     public int newHealth;
@@ -14,8 +15,8 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (health.health <= 0)
         {
-            AudioManager.instance.PlaySound(AudioManager.instance.kill, 0.5f);
-            Destroy(gameObject);
+            animator.SetBool("Dead", true);
+            Destroy(gameObject, .4f);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
