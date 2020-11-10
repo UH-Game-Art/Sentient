@@ -24,9 +24,13 @@ public class Camerafollow : MonoBehaviour
 
     void FixedUpdate() // will update each 0.2s
     {
+
         float posX = Mathf.SmoothDamp(this.transform.position.x, player.transform.position.x, ref velocity.x, smoothtimeX);
         float posY = Mathf.SmoothDamp(this.transform.position.y, player.transform.position.y, ref velocity.y, smoothtimeY);
         transform.position = new Vector3(posX, posY, transform.position.z);
+
+        
+
 
         if (bound)
         {

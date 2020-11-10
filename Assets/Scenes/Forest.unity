@@ -4260,11 +4260,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4438550802779749867, guid: 34bb5fc75b8675f48b5ff9fafdca256b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.5923
+      value: -46.91
       objectReference: {fileID: 0}
     - target: {fileID: 4438550802779749867, guid: 34bb5fc75b8675f48b5ff9fafdca256b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0828311
+      value: 8.98
       objectReference: {fileID: 0}
     - target: {fileID: 4438550802779749867, guid: 34bb5fc75b8675f48b5ff9fafdca256b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6890,6 +6890,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5074402641430140194, guid: 397fb488cefc4424aa84edd1ebabb915, type: 3}
+      propertyPath: item_hp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5074402641430140205, guid: 397fb488cefc4424aa84edd1ebabb915, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.246567
@@ -7119,15 +7123,19 @@ PrefabInstance:
     - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: hp
       value: 
-      objectReference: {fileID: 8300000, guid: 7d85fa4b0b580184885612048eeeddaa, type: 3}
+      objectReference: {fileID: 8300000, guid: 073c9b1a76fc7de4bae35d33e53ef8e5, type: 3}
     - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: theme
       value: 
-      objectReference: {fileID: 8300000, guid: edc3804cf2bf9b44d9453480262bbfdf, type: 3}
+      objectReference: {fileID: 8300000, guid: f9081fc926c091647bf0af25dcae236e, type: 3}
     - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: player_bullet
       value: 
       objectReference: {fileID: 8300000, guid: 6bf66b770ba080440bf51ab2351f1497, type: 3}
+    - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ae3b64bb65e8cc4e89c3551b3e63ec0, type: 3}
     - target: {fileID: 813246636339422815, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.19081
@@ -7928,6 +7936,7 @@ MonoBehaviour:
   minpos: {x: -32.39, y: 0}
   maxpos: {x: 741.5, y: 0}
   bound: 1
+  timeRemaining: 10
 --- !u!114 &1550814606
 MonoBehaviour:
   m_ObjectHideFlags: 0

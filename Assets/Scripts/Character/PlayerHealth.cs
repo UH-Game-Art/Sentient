@@ -151,6 +151,10 @@ public class PlayerHealth : MonoBehaviour
             health = 10;
             emptyHeart.enabled = false;
             Debug.Log("Player MAX HEALTH");
+
+            AudioManager.instance.PlaySound(AudioManager.instance.death, 1.0f);
+            Delay();
+
             levelManager.RespawnPlayer();
             
             
@@ -171,10 +175,18 @@ public class PlayerHealth : MonoBehaviour
     }
     public void gain_hp(int value)
     {
-        health += value;
+        health =health+ value;
         if (health > maxHealth)
         {
             health = 10;
         }
+    }
+
+
+
+    IEnumerable Delay()
+    {
+        yield return new WaitForSeconds(3);
+        Debug.Log("Delay 3s");
     }
 }

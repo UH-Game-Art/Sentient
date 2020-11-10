@@ -15,6 +15,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip jump;
     private AudioSource jumpsource;
 
+    public AudioClip death;
+    private AudioSource deathsource;
+
     public AudioClip menu;
     private AudioSource menusource;
     public AudioClip menu_background;
@@ -79,6 +82,12 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
+        if (clip == this.death)
+        {
+            Play(clip, ref deathsource, volume);
+            return;
+
+        }
         if (clip == this.menu)
         {
             Play(clip, ref menusource, volume);
