@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.instance.PlaySound(AudioManager.instance.theme, 1,true);
+     
         lifeSystem = FindObjectOfType<LifeSystem>();
         levelManager = FindObjectOfType<LevelManager>();
 
