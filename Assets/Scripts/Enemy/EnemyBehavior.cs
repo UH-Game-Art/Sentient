@@ -16,7 +16,7 @@ public class EnemyBehavior : MonoBehaviour
         if (health.health <= 0)
         {
             animator.SetBool("Dead", true);
-            Destroy(gameObject, .4f);
+            Destroy(gameObject, 1f);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,6 +26,7 @@ public class EnemyBehavior : MonoBehaviour
             health.damage(bullet_.damage);
             Destroy(collision.gameObject);
             Debug.Log("Bullet touched Enemy1");
+            animator.SetBool("dmg", true);
         }
     }
 }
