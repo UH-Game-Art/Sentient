@@ -1729,6 +1729,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 548a26245d1d9454b80f38c350bc6d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingLives: 1
+  startingLives: 3
   GameOver: {fileID: 2049820381}
   WaitGameOver: 0.5

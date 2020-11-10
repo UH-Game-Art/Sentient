@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    public Animator animator;
     public EnemyHealth health;
     public Bullet bullet_;
     public int newHealth;
@@ -13,7 +14,10 @@ public class EnemyBehavior : MonoBehaviour
     void Update()
     {
         if (health.health <= 0)
-            Destroy(gameObject);
+        {
+            animator.SetBool("Dead", true);
+            Destroy(gameObject, 1f);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +26,7 @@ public class EnemyBehavior : MonoBehaviour
             health.damage(bullet_.damage);
             Destroy(collision.gameObject);
             Debug.Log("Bullet touched Enemy1");
+            animator.SetBool("dmg", true);
         }
     }
 }
