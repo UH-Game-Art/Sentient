@@ -1,37 +1,19 @@
 fileFormatVersion: 2
-guid: 5b77a12fd5e412445a9863c50773c572
+guid: fcef60b1850a5ef42b1677a2bdc0ba84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5968625106511319443
-    second: Barrels_0
+      213: 7877840947907775127
+    second: Barricade_0
   - first:
-      213: 2436181878919067489
-    second: Barrels_1
+      213: 4890213120060851332
+    second: Barricade_1
   - first:
-      213: 4078638312841307091
-    second: Barrels
+      213: 8533849991168237106
+    second: Barricade_2
   - first:
-      213: 6784977365559321830
-    second: Barrels_3
-  - first:
-      213: -4158499236130532895
-    second: Barrels_4
-  - first:
-      213: -6980039326278758116
-    second: Barrels_5
-  - first:
-      213: 2025311308854547800
-    second: Barrels_6
-  - first:
-      213: 8423987265578573319
-    second: Barrels_7
-  - first:
-      213: -7766586254259668526
-    second: Barrels_2
-  - first:
-      213: 8589315216784998227
-    second: Barrels_3
+      213: 7188689858358236566
+    second: Barricade_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -119,85 +101,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barrels_1
+      name: Barricade_0
       rect:
         serializedVersion: 2
-        x: 380
-        y: 223
-        width: 280
-        height: 161
+        x: 27
+        y: 65
+        width: 311
+        height: 237
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 1}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 167f63de28e0fc120800000000000000
-      internalID: 2436181878919067489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Barrels
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 42
-        width: 298
-        height: 297
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 0, z: 1, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d3643c9feb3a9830800000000000000
-      internalID: 4078638312841307091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Barrels_2
-      rect:
-        serializedVersion: 2
-        x: 317
-        y: 5
-        width: 173
-        height: 198
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d9bb6d63fa873490800000000000000
-      internalID: -7766586254259668526
+      spriteID: 79ac1118a96b35d60800000000000000
+      internalID: 7877840947907775127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_3
+      name: Barricade_1
       rect:
         serializedVersion: 2
-        x: 510
+        x: 346
+        y: 210
+        width: 140
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4848e295ce68dd340800000000000000
+      internalID: 4890213120060851332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barricade_2
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 196
+        width: 142
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e9d0a4a535e6670800000000000000
+      internalID: 8533849991168237106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barricade_3
+      rect:
+        serializedVersion: 2
+        x: 507
         y: 6
-        width: 185
-        height: 198
+        width: 137
+        height: 169
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35fb3587ea0633770800000000000000
-      internalID: 8589315216784998227
+      spriteID: 69555efb65b53c360800000000000000
+      internalID: 7188689858358236566
       vertices: []
       indices: 
       edges: []
