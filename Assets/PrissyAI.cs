@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CylAI : MonoBehaviour
+public class PrissyAI : MonoBehaviour
 {
     Animator animator;
     bool far = false;
@@ -13,8 +13,8 @@ public class CylAI : MonoBehaviour
     [SerializeField] float moveSpeed;
     Rigidbody2D rb2d;
 
-    public Transform firePoint;
-    public GameObject bulletPrefab;
+    //public Transform firePoint;
+    //public GameObject bulletPrefab;
 
 
     // Start is called before the first frame update
@@ -57,13 +57,13 @@ public class CylAI : MonoBehaviour
             transform.localScale = new Vector2(1, 1);
         }
         //animator.Play("Cylwalk");
-        if(distToPlayer >10 )
+        if (distToPlayer > 10)
         {
-            ChangeAnimationState("Cylwalk");
+            ChangeAnimationState("Prissywalker");
             far = true;
         }
-        else if (distToPlayer < 10)
-            ChangeAnimationState("Cylatk");
+        else if (distToPlayer < 5)
+            ChangeAnimationState("Pirssyatk");
     }
 
     void StopChasingPlayer()
@@ -73,7 +73,7 @@ public class CylAI : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        //Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 
     void ChangeAnimationState(string newAnimation)
