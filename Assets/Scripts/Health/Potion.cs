@@ -15,6 +15,7 @@ public class Potion : MonoBehaviour
         {
             AudioManager.instance.PlaySound(AudioManager.instance.hp, 1.0f);
             collision.SendMessageUpwards("gain_hp", item_hp);
+
             Destroy(gameObject);
         }
         
