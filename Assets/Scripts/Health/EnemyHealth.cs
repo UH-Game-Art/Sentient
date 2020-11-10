@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
     public Sprite[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-    public EnemyBehavior enemyBeh;
+    //public EnemyBehavior enemyBeh;
     private SpriteRenderer changeSprite;
 
     void Start()

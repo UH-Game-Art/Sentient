@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Barrels
   - Collectable
+  - enemy2
   layers:
   - Default
   - TransparentFX

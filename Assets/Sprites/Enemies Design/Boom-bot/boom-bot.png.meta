@@ -1,0 +1,544 @@
+fileFormatVersion: 2
+guid: 145cc38ceadb0ca40a8ea587f6b289ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7496307159314664681
+    second: boom-bot_0
+  - first:
+      213: 5176082730678740058
+    second: boom-bot_1
+  - first:
+      213: 8696363441797153597
+    second: boom-bot_2
+  - first:
+      213: -220363135469811481
+    second: boom-bot_3
+  - first:
+      213: -3863158183273628217
+    second: boom-bot_4
+  - first:
+      213: -4862091990400441994
+    second: boom-bot_5
+  - first:
+      213: 8703931360621746582
+    second: boom-bot_6
+  - first:
+      213: 3419000904746864789
+    second: boom-bot_7
+  - first:
+      213: 4701029931270723328
+    second: boom-bot_8
+  - first:
+      213: 4957926289424507402
+    second: boom-bot_9
+  - first:
+      213: 4624521222737242254
+    second: boom-bot_10
+  - first:
+      213: 1971737632247159970
+    second: boom-bot_11
+  - first:
+      213: 8301929691057145586
+    second: boom-bot_12
+  - first:
+      213: -5989970352004269330
+    second: boom-bot_13
+  - first:
+      213: 3732078870062777803
+    second: boom-bot_14
+  - first:
+      213: 6583409466992095172
+    second: boom-bot_15
+  - first:
+      213: -4772254093923567574
+    second: boom-bot_16
+  - first:
+      213: -6102778879706734370
+    second: boom-bot_17
+  - first:
+      213: -126627462500251309
+    second: boom-bot_18
+  - first:
+      213: 8804594201005796625
+    second: boom-bot_19
+  - first:
+      213: 1966546812891820216
+    second: boom-bot_20
+  - first:
+      213: -1368737159082678194
+    second: boom-bot_21
+  - first:
+      213: -5344352056723557796
+    second: boom-bot_22
+  - first:
+      213: 8420729568123136007
+    second: boom-bot_23
+  - first:
+      213: 1654971163995741625
+    second: boom-bot_24
+  - first:
+      213: -5550125363196586108
+    second: boom-bot_25
+  - first:
+      213: -5935038466385010322
+    second: boom-bot_26
+  - first:
+      213: 264079782288357067
+    second: boom-bot_27
+  - first:
+      213: -8762646245496081814
+    second: boom-bot_28
+  - first:
+      213: -6808346846363798342
+    second: boom-bot_29
+  - first:
+      213: 667307568989989828
+    second: boom-bot_30
+  - first:
+      213: 628867447524199308
+    second: boom-bot_31
+  - first:
+      213: 2886412048846410535
+    second: boom-bot_32
+  - first:
+      213: 9166010640576821263
+    second: boom-bot_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boom-bot_0
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 767
+        width: 129
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713f4d11b54c7f790800000000000000
+      internalID: -7496307159314664681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_1
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 766
+        width: 118
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54e32ac1d325d740800000000000000
+      internalID: 5176082730678740058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_2
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 767
+        width: 135
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33430a9970bfa870800000000000000
+      internalID: 8696363441797153597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_3
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 770
+        width: 134
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e80bb455ec11fcf0800000000000000
+      internalID: -220363135469811481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_4
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 770
+        width: 134
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdf4d6a91e436ac0800000000000000
+      internalID: -3863158183273628217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_5
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 555
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671e8ee5811668cb0800000000000000
+      internalID: -4862091990400441994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 540
+        width: 127
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699dd3305739ac870800000000000000
+      internalID: 8703931360621746582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_7
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 523
+        width: 164
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5901d2e453bb27f20800000000000000
+      internalID: 3419000904746864789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_8
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 491
+        width: 220
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007dedbb0d96d3140800000000000000
+      internalID: 4701029931270723328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_25
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 102
+        width: 130
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48718c3536ef9f2b0800000000000000
+      internalID: -5550125363196586108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_26
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 103
+        width: 118
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61a7d2c5f182ada0800000000000000
+      internalID: -5935038466385010322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_27
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 104
+        width: 134
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6f8afa9233aa300800000000000000
+      internalID: 264079782288357067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_28
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 104
+        width: 134
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62bbcc8aa3d46680800000000000000
+      internalID: -8762646245496081814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_29
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 104
+        width: 134
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4b5da8d94e381a0800000000000000
+      internalID: -6808346846363798342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_9
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 471
+        width: 290
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02e7b721b71ec440800000000000000
+      internalID: 4957926289424507402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom-bot_10
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 449
+        width: 234
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e882281ec899d2040800000000000000
+      internalID: 4624521222737242254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
