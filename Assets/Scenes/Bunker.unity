@@ -357,7 +357,7 @@ MonoBehaviour:
   smoothtimeY: 0.5
   velocity: {x: 0, y: 0}
   player: {fileID: 0}
-  minpos: {x: -6.29, y: -1.04}
+  minpos: {x: -6, y: -1.04}
   maxpos: {x: 4.92, y: -1.04}
   bound: 1
   timeRemaining: 10
