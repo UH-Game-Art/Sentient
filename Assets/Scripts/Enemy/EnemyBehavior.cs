@@ -13,7 +13,10 @@ public class EnemyBehavior : MonoBehaviour
     void Update()
     {
         if (health.health <= 0)
+        {
+            AudioManager.instance.PlaySound(AudioManager.instance.kill, 0.5f);
             Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -18,6 +18,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip kill;
     private AudioSource killsource;
 
+    public AudioClip click;
+    private AudioSource clicksource;
+
     public AudioClip barrel;
     private AudioSource barrelsource;
 
@@ -40,13 +43,11 @@ public class AudioManager : MonoBehaviour
         if (clip == this.theme)
         {
             Play(clip, ref themesource, volume, isLoopback);
-
         }
 
         if (clip == this.theme2)
         {
             Play(clip, ref themesource2, volume, isLoopback);
-
         }
 
     }
@@ -63,6 +64,12 @@ public class AudioManager : MonoBehaviour
         if (clip == this.barrel)
         {
             Play(clip, ref barrelsource, volume);
+            return;
+        }
+
+        if (clip == this.click)
+        {
+            Play(clip, ref clicksource, volume);
             return;
         }
 

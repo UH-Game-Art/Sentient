@@ -3,7 +3,15 @@ guid: 9d95e977b73d01547807f3504643a9ea
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - prefab: {instanceID: 0}
+  - coin: {instanceID: 0}
+  - shoot: {instanceID: 0}
+  - kill: {instanceID: 0}
+  - barrel: {instanceID: 0}
+  - jump: {instanceID: 0}
+  - theme: {fileID: 8300000, guid: 8d54bbb3411345e43ad03d171b32bdc3, type: 3}
+  - theme2: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

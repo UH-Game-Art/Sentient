@@ -13,7 +13,7 @@ public class Potion : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-
+            AudioManager.instance.PlaySound(AudioManager.instance.coin, 0.5f);
             collision.SendMessageUpwards("gain_hp", item_hp);
             Destroy(gameObject);
         }
