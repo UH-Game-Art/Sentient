@@ -8,6 +8,6 @@ public class PlayMenu : MonoBehaviour
     public void play()
     {
         AudioManager.instance.PlaySound(AudioManager.instance.menu_clicking, 0.8f);
-        SceneManager.LoadScene("Forest");
+        SceneManager.LoadScene("Bunker");
     }
 }
