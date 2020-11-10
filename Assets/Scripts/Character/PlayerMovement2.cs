@@ -18,7 +18,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     void Update()
     {
-        AudioManager.instance.PlaySound(AudioManager.instance.theme2, 0.7f,true);
+     
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
