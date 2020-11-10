@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camerafollow : MonoBehaviour
+public class Camerabunker : MonoBehaviour
 {
+
     public float smoothtimeX, smoothtimeY;
     public Vector2 velocity;
 
@@ -17,7 +18,7 @@ public class Camerafollow : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-       
+       AudioManager.instance.PlaySound(AudioManager.instance.theme2, 0.5f, true);
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -29,7 +30,7 @@ public class Camerafollow : MonoBehaviour
         float posY = Mathf.SmoothDamp(this.transform.position.y, player.transform.position.y, ref velocity.y, smoothtimeY);
         transform.position = new Vector3(posX, posY, transform.position.z);
 
-        
+
 
 
         if (bound)
