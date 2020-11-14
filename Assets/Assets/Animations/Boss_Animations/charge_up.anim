@@ -84,8 +84,8 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    - time: 0.33333334
-      value: {fileID: 2100000, guid: 70a4aa5744e24a84aa181d10500f2621, type: 2}
+    - time: 0.25
+      value: {fileID: 2100000, guid: c5cc9919655bd474bb597ec18b29d170, type: 2}
     - time: 0.65
       value: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     attribute: m_Materials.Array.data[0]
@@ -129,7 +129,7 @@ AnimationClip:
       isPPtrCurve: 0
     pptrCurveMapping:
     - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    - {fileID: 2100000, guid: 70a4aa5744e24a84aa181d10500f2621, type: 2}
+    - {fileID: 2100000, guid: c5cc9919655bd474bb597ec18b29d170, type: 2}
     - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
