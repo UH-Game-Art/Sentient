@@ -305,18 +305,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 374339320729462871, guid: 3e623d0d8242ebb42ac20ed8f255b889, type: 3}
   m_PrefabInstance: {fileID: 404757408}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &110979619 stripped
+--- !u!1 &212538221 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8504992414445015770, guid: f1407a236bf692442aaae57711de751a, type: 3}
+  m_CorrespondingSourceObject: {fileID: -1755641609035578854, guid: f1407a236bf692442aaae57711de751a, type: 3}
   m_PrefabInstance: {fileID: 90481074}
   m_PrefabAsset: {fileID: 0}
---- !u!68 &110979621
-EdgeCollider2D:
+--- !u!60 &212538223
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110979619}
+  m_GameObject: {fileID: 212538221}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -324,42 +324,32 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 38.4, y: 20.85}
+    newSize: {x: 38.4, y: 20.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
-  - {x: 2.5939643, y: -10.782268}
-  - {x: 2.589653, y: -7.353559}
-  - {x: 8.801674, y: -7.333308}
-  - {x: 10.541353, y: -5.572282}
-  - {x: 19.243658, y: -5.554803}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!68 &110979622
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110979619}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -19.210455, y: -5.5408936}
-  - {x: -10.551707, y: -5.5344653}
-  - {x: -8.754678, y: -7.294769}
-  - {x: -2.604343, y: -7.324784}
-  - {x: -2.5800753, y: -10.783983}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+    m_Paths:
+    - - {x: -8.76583, y: -6.958002}
+      - {x: -10.5798235, y: -5.1649117}
+      - {x: -19.199999, y: -5.1649117}
+      - {x: -19.199999, y: -10.425}
+      - {x: -2.592273, y: -10.435379}
+      - {x: -2.5870836, y: -7.241326}
+      - {x: -2.585185, y: -6.9682345}
+    - - {x: 8.744612, y: -6.943257}
+      - {x: 2.603985, y: -6.9706593}
+      - {x: 2.58327, y: -6.98827}
+      - {x: 2.53, y: -10.425}
+      - {x: 19.199999, y: -10.425}
+      - {x: 19.193954, y: -5.1733603}
+      - {x: 15.398135, y: -5.167315}
+      - {x: 10.554179, y: -5.165225}
 --- !u!1001 &404757408
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -111,28 +111,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 3852, y: -538}
-  - name: Grounds
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2172
-      width: 3840
-      height: 2160
-    spriteID: ab35de73a35137e45b6dc07895041a32
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 2172}
   - name: Human capsule
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -309,7 +287,29 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-  - name: Celing
+  - name: Ground
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2172
+      width: 3840
+      height: 2085
+    spriteID: b0b125163d7703a41924f012664e8703
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2172}
+  - name: Ceilling
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -320,7 +320,7 @@ ScriptedImporter:
       y: 4
       width: 3840
       height: 589
-    spriteID: 7f447e9dbca9ef04cb03ac45bfd58747
+    spriteID: 1b36a69ebbfcb9e43bb344f2a5c01b01
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -389,20 +389,20 @@ ScriptedImporter:
     spriteID: 3b83baecb63c01f43a40bcb23f0f8d9f
     layerID: 100
     mosaicPosition: {x: 7671, y: 601}
-  - name: Celing
-    spriteName: Celing
+  - name: Ground
+    spriteName: Ground
     isGroup: 0
     parentIndex: -1
-    spriteID: 7f447e9dbca9ef04cb03ac45bfd58747
-    layerID: 107
-    mosaicPosition: {x: 3852, y: 4}
-  - name: Grounds
-    spriteName: Grounds
-    isGroup: 0
-    parentIndex: -1
-    spriteID: ab35de73a35137e45b6dc07895041a32
-    layerID: 94
+    spriteID: b0b125163d7703a41924f012664e8703
+    layerID: 122
     mosaicPosition: {x: 4, y: 2172}
+  - name: Ceilling
+    spriteName: Ceilling
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b36a69ebbfcb9e43bb344f2a5c01b01
+    layerID: 123
+    mosaicPosition: {x: 3852, y: 4}
   - name: Screens
     spriteName: Screens
     isGroup: 0
