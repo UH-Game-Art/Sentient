@@ -11,7 +11,7 @@ public class Camerafollow : MonoBehaviour
 
     public Vector2 minpos, maxpos;
     public bool bound;
-
+    
     public float timeRemaining = 10.0f;
 
     // Use this for initialization
