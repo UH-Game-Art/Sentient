@@ -6,7 +6,7 @@ public class FrameSwitch : MonoBehaviour
 {
     public GameObject frame1;
     public GameObject frame2;
-    
+        
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (frame1.active == true)
@@ -20,5 +20,5 @@ public class FrameSwitch : MonoBehaviour
             frame2.SetActive(false);
         }
     }
-    
+
 }
