@@ -12,7 +12,7 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Fire1") && PauseMenu.IsPaused == false)
         {
             AudioManager.instance.PlaySound(AudioManager.instance.player_bullet, 0.5f);
             Shoot();
