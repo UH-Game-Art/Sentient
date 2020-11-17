@@ -36,6 +36,7 @@ public class CylAI : MonoBehaviour
 
         else
         {
+            ChangeAnimationState("CylIdle");
             StopChasingPlayer();
         }
     }

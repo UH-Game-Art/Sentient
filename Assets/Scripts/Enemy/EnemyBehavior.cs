@@ -16,7 +16,7 @@ public class EnemyBehavior : MonoBehaviour
         if (health.health <= 0)
         {
             animator.SetBool("Dead", true);
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, 3f);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
