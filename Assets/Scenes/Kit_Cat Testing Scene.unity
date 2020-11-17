@@ -421,6 +421,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
+--- !u!1 &625349276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625349277}
+  m_Layer: 0
+  m_Name: Shoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &625349277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625349276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.01, y: -0.019, z: -95.81432}
+  m_LocalScale: {x: 0.58823526, y: 0.58823526, z: 1}
+  m_Children: []
+  m_Father: {fileID: 990090857}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770506878
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +715,36 @@ PolygonCollider2D:
       - {x: 1.3963269, y: -1.4133416}
       - {x: 1.4463269, y: -1.3033416}
       - {x: 1.5463269, y: -1.3233416}
+--- !u!1 &962850213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962850214}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962850214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962850213}
+  m_LocalRotation: {x: 0, y: -0, z: -0.33377028, w: 0.9426545}
+  m_LocalPosition: {x: 43.9, y: 4, z: -72.54446}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.996}
 --- !u!1 &990090856
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +756,7 @@ GameObject:
   - component: {fileID: 990090857}
   - component: {fileID: 990090858}
   - component: {fileID: 990090859}
+  - component: {fileID: 990090860}
   m_Layer: 8
   m_Name: Turrret
   m_TagString: Player
@@ -713,7 +774,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.6499996, y: 4.06, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 625349277}
   m_Father: {fileID: 999379243}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -817,6 +879,22 @@ PolygonCollider2D:
       - {x: 0.31613526, y: -0.56342405}
       - {x: 0.5161352, y: -0.40342405}
       - {x: 0.66613525, y: -0.12342407}
+--- !u!114 &990090860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990090856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d05484eb6f95a14280d489637caadb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 366980188841836817, guid: d50c805d827225e4eb1871e961e8b9b0, type: 3}
+  shootingRange: 40
+  speed: 2.7
+  fireRate: 0.5
 --- !u!1 &999379242
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,10 +947,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 999379242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d19ba9ec9c68a74491779dd138bb584, type: 3}
+  m_Script: {fileID: 11500000, guid: 175640988fa23124a82f385245f9d552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
+  agroRange: 40
+  attackRange: 20
 --- !u!95 &999379245
 Animator:
   serializedVersion: 3

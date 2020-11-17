@@ -25,7 +25,7 @@ TagManager:
   - Potion
   - Fog
   - Enemy
-  - 
+  - EnemyBullet
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3272614793
+    locked: 0
+  - name: Bullets
+    uniqueID: 3961251597
     locked: 0
