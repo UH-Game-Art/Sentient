@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
@@ -7,6 +9,9 @@ public class Turret : MonoBehaviour
     [SerializeField] private float aimSpeed = 2.7f;
     public float fireRate = 0.2f;
     public float nextFire = 0.0f;
+
+    private int coolDownShots = 5;
+    private bool inCoolDown = false;
     private Transform firePoint;
     private Transform player;
     private bool playerWithinRange = false;
@@ -29,7 +34,11 @@ public class Turret : MonoBehaviour
         if (playerFound && withinRange())
         {
             HandleAiming();
-            shoot();
+            if (!inCoolDown)
+            {
+                shoot();
+
+            }
         }
     }
 
@@ -58,11 +67,24 @@ public class Turret : MonoBehaviour
 
     private void shoot()
     {
-        if (Time.time > nextFire)
+        if (Time.time > nextFire && coolDownShots > 0)
         {
             nextFire = Time.time + fireRate;
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            coolDownShots--;
         }
+        else if (coolDownShots == 0)
+        {
+            StartCoroutine(wait());
+            coolDownShots = 5;
+        }
+    }
+
+    IEnumerator wait()
+    {
+        inCoolDown = true;
+        yield return new WaitForSeconds(3);
+        inCoolDown = false;
     }
 
     private bool withinRange()

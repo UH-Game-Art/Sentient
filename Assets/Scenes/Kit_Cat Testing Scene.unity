@@ -430,7 +430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625349277}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Shoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 947733045}
   - component: {fileID: 947733046}
   - component: {fileID: 947733047}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Right Thigh
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -757,7 +757,7 @@ GameObject:
   - component: {fileID: 990090858}
   - component: {fileID: 990090859}
   - component: {fileID: 990090860}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Turrret
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -893,8 +893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 366980188841836817, guid: d50c805d827225e4eb1871e961e8b9b0, type: 3}
   shootingRange: 40
-  speed: 2.7
-  fireRate: 0.5
+  aimSpeed: 2.7
+  fireRate: 0.2
+  nextFire: 0
 --- !u!1 &999379242
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,7 +909,7 @@ GameObject:
   - component: {fileID: 999379246}
   - component: {fileID: 999379245}
   - component: {fileID: 999379244}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Mecha2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,7 +1056,7 @@ GameObject:
   - component: {fileID: 1125462180}
   - component: {fileID: 1125462181}
   - component: {fileID: 1125462182}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Left Thigh
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1213,7 +1214,7 @@ GameObject:
   - component: {fileID: 1187491994}
   - component: {fileID: 1187491995}
   - component: {fileID: 1187491996}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Left Leg
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1366,7 +1367,7 @@ GameObject:
   - component: {fileID: 1517277704}
   - component: {fileID: 1517277705}
   - component: {fileID: 1517277706}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Arm
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1619,7 +1620,7 @@ GameObject:
   - component: {fileID: 1698643130}
   - component: {fileID: 1698643131}
   - component: {fileID: 1698643132}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Body
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1824,7 +1825,7 @@ GameObject:
   - component: {fileID: 2009425986}
   - component: {fileID: 2009425987}
   - component: {fileID: 2009425988}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Left Foot
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1977,7 +1978,7 @@ GameObject:
   - component: {fileID: 2034502983}
   - component: {fileID: 2034502984}
   - component: {fileID: 2034502985}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Right Foot
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2129,7 +2130,7 @@ GameObject:
   - component: {fileID: 2042542472}
   - component: {fileID: 2042542473}
   - component: {fileID: 2042542474}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Right Leg
   m_TagString: Player
   m_Icon: {fileID: 0}
