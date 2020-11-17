@@ -23,7 +23,6 @@ public class Turret : MonoBehaviour
         if (player = GameObject.FindGameObjectWithTag("Player").transform)
         {
             firePoint = this.gameObject.transform.GetChild(0).transform;
-            Debug.Log(this.gameObject.transform.GetChild(0).name);
             playerFound = true;
         }
     }
@@ -83,7 +82,7 @@ public class Turret : MonoBehaviour
     IEnumerator wait()
     {
         inCoolDown = true;
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         inCoolDown = false;
     }
 

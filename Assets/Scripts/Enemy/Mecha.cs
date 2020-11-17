@@ -6,66 +6,99 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Mecha : MonoBehaviour
 {
+    [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private float agroRange = 40f;
     [SerializeField] private float attackRange = 20f;
 
-    private Transform player;
-    private Rigidbody2D rb;
+
     private float horMovement;
-    private bool facingRight;
-    Animator animator;
+    private bool playerFound = false;
+    private bool cannonCanShoot = true;
+    private bool facingRight = false;
+
+    private Animator animator;
+    private Transform player;
+    private Transform canon;
+    private Rigidbody2D rb;
 
     private void Start()
     {
-        if (GameObject.FindGameObjectWithTag("Player"))
+        if (player = GameObject.FindGameObjectWithTag("Player").transform)
         {
             rb = this.GetComponent<Rigidbody2D>();
             animator = this.GetComponent<Animator>();
-            player = GameObject.FindGameObjectWithTag("Player").transform;
+            canon = this.gameObject.transform.GetChild(1).transform.GetChild(0).transform;
+            Debug.Log(this.gameObject.transform.GetChild(1).transform.GetChild(0).name);
+            playerFound = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            canon.Rotate(Vector3.forward * 180);
         }
     }
 
     private void FixedUpdate()
     {
-        //rb.velocity = new Vector2(horMovement * speed, rb.velocity.y);
-        animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-        float distToPlayer = Vector2.Distance(transform.position, player.position);
-        if (distToPlayer < agroRange && distToPlayer > attackRange)
+        if (playerFound)
         {
-            if (transform.position.x < player.position.x)
+            //rb.velocity = new Vector2(horMovement * speed, rb.velocity.y);
+            animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+            float distToPlayer = Vector2.Distance(transform.position, player.position);
+
+            // Check 2 different distances.
+            if (distToPlayer < agroRange && distToPlayer > attackRange)
             {
-                rb.velocity = new Vector2(speed, 0);
-                transform.localScale = new Vector2(1, 1);
+                if (transform.position.x < player.position.x)
+                {
+                    rb.velocity = new Vector2(speed, 0);
+                    transform.localScale = new Vector2(1, 1);
+                }
+                else if (transform.position.x >= player.position.x)
+                {
+                    rb.velocity = new Vector2(-speed, 0);
+                    transform.localScale = new Vector2(-1, 1);
+                }
             }
-            else if (transform.position.x >= player.position.x)
+            else if (distToPlayer < agroRange && distToPlayer > attackRange)
             {
-                rb.velocity = new Vector2(-speed, 0);
-                transform.localScale = new Vector2(-1, 1);
+                if (transform.position.x < player.position.x)
+                {
+                    transform.localScale = new Vector2(1, 1);
+                }
+                else if (transform.position.x >= player.position.x)
+                {
+                    transform.localScale = new Vector2(-1, 1);
+                }
             }
+
+            if (transform.position.x < player.position.x && facingRight)
+            {
+                switchCanonPositions();
+                facingRight = false;
+            }
+            else if (transform.position.x >= player.position.x && !facingRight)
+            {
+                switchCanonPositions();
+                facingRight = true;
+            }
+
+            // Shoot if close to player.
+            if (distToPlayer < agroRange && cannonCanShoot)
+            {
+                StartCoroutine(shoot());
+            }
+
         }
-
-
-        // Flip player left or right based on direction hes looking at.
-        if (facingRight == false && horMovement < 0)
-        {
-            flipPLayer();
-        }
-
-        else if (facingRight == true && horMovement > 0)
-        {
-            flipPLayer();
-        }
-
     }
 
-    // Funcion to flip the player if facing right/left.
-    private void flipPLayer()
+    private void switchCanonPositions()
     {
-        facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
+        canon.Rotate(Vector3.forward * 180);
     }
 
     private void OnDrawGizmos()
@@ -75,5 +108,15 @@ public class Mecha : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, agroRange);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
+    IEnumerator shoot()
+    {
+        //Instantiate your projectile
+        Instantiate(bulletPrefab, canon.position, canon.rotation);
+        cannonCanShoot = false;
+        //wait for some time
+        yield return new WaitForSeconds(1f);
+        cannonCanShoot = true;
     }
 }

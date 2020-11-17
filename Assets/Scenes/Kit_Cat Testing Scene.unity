@@ -951,9 +951,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175640988fa23124a82f385245f9d552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7073309736186919318, guid: 8d67e1576ca33344fbca7ce6c9f07d65, type: 3}
   speed: 5
   agroRange: 40
   attackRange: 20
+  fireRate: 0.2
+  nextFire: 0
 --- !u!95 &999379245
 Animator:
   serializedVersion: 3
@@ -1356,6 +1359,36 @@ PolygonCollider2D:
       - {x: -1.323728, y: -2.2160497}
       - {x: -1.043728, y: -2.0260496}
       - {x: -0.923728, y: -1.9160496}
+--- !u!1 &1448909977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448909978}
+  m_Layer: 0
+  m_Name: ShootArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1448909978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448909977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.558823, y: -0.064706236, z: -31.936853}
+  m_LocalScale: {x: 0.58823526, y: 0.58823526, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1517277704}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1517277703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1417,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.75, y: 1.0100002, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1448909978}
   m_Father: {fileID: 999379243}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
