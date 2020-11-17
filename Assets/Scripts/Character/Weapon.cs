@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.Mouse0) && Time.time > nextFire)
+        if (Input.GetKey(KeyCode.Mouse0) && Time.time > nextFire && PauseMenu.IsPaused == false)
         {
             nextFire = Time.time + fireRate;
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
