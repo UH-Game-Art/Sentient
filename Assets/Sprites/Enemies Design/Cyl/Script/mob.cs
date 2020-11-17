@@ -4,63 +4,94 @@ using UnityEngine;
 
 public class mob : MonoBehaviour
 {
+    public int curHealth = 100;
+    public float distance;
+    public float wakerange;
+    public float shootinterval;
+    public float bulletspeed = 5;
+    public float bullettimer;
 
-    public float speed = 50f, maxspeed = 3, jumpPow = 220f;
-    public bool grounded = true, faceright = true;
 
+    public GameObject bullet; // mob bullet
+    public Transform target; // target
+
+    public Transform shootpointL, shootpointR; // shoot left or right
+
+    float scale = 0.8f;// scale mob size
     public Rigidbody2D r2;
     public Animator anim;
+
+    private bool facingLeft = true;
+    public bool awake=true;
+
+
+
+    public float moveSpeed;
+    public float attackDistance = 3f;
+    public float engageDistance = 10f;
+    private float range; // to detect player range
+
 
     // Use this for initialization
     void Start()
     {
-        r2 = gameObject.GetComponent<Rigidbody2D>();
-        anim = gameObject.GetComponent<Animator>();
+
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        anim = GetComponent<Animator>();
+        transform.localScale = new Vector3(scale, scale, scale);
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        anim.SetBool("Grounded", grounded);
-        anim.SetFloat("Speed", Mathf.Abs(r2.velocity.x));
+        anim.SetBool("Awake", awake);
+        range = Vector2.Distance(transform.position, target.position); // calculate player range
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (grounded)
-            {
-                grounded = false;
-                r2.AddForce(Vector2.up * jumpPow);
-            }
-        }
     }
 
     void FixedUpdate()
     {
-        float h = Input.GetAxis("Horizontal");
-        r2.AddForce((Vector2.right) * speed * h);
 
-        if (r2.velocity.x > maxspeed)
-            r2.velocity = new Vector2(maxspeed, r2.velocity.y);
-        if (r2.velocity.x < -maxspeed)
-            r2.velocity = new Vector2(-maxspeed, r2.velocity.y);
-
-        if (h > 0 && !faceright)
+        if (Vector3.Distance(target.position, this.transform.position) < engageDistance) // if in range of detect player
         {
-            Flip();
+
+
+            if (range > distance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                anim.Play("Walk");
+            }
+
+
+            if (target.transform.position.x > transform.position.x)
+            {
+                transform.localScale = new Vector3(scale, scale, scale);
+            }
+
+            if (target.transform.position.x < transform.position.x)
+            {
+                transform.localScale = new Vector3(-scale, scale, scale);
+            }
+
+
+
+
         }
 
-        if (h < 0 && faceright)
+        else
         {
-            Flip();
+            anim.Play("Idle");
         }
     }
 
-    public void Flip()
+   
+
+
+    public void Damage(int dmg) // taking damage
     {
-        faceright = !faceright;
-        Vector3 Scale;
-        Scale = transform.localScale;
-        Scale.x *= -1;
-        transform.localScale = Scale;
+        curHealth -= dmg;
+      //  gameObject.GetComponent<Animation>().Play("redflash");
     }
 }
