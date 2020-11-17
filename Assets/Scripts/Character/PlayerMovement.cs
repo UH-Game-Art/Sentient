@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         AudioManager.instance.PlaySound(AudioManager.instance.theme, 0.7f, true);
         horizontalMove = Input.GetAxisRaw("Horizontal")* runSpeed;
-      animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
       if(Input.GetButtonDown("Jump"))
       {

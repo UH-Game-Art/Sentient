@@ -1232,7 +1232,6 @@ GameObject:
   - component: {fileID: 942704154}
   - component: {fileID: 1277453299}
   - component: {fileID: 1582807607}
-  - component: {fileID: 1582807608}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1249,7 +1248,7 @@ Transform:
   m_GameObject: {fileID: 4438550802779749864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1.7130339, y: 1.5481071, z: 0}
+  m_LocalScale: {x: -4, y: 4, z: 0}
   m_Children:
   - {fileID: 4438550801580918489}
   - {fileID: 4438550803166598331}
@@ -1334,7 +1333,7 @@ MonoBehaviour:
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4438550802779749870, guid: 34bb5fc75b8675f48b5ff9fafdca256b, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: OnLanding
         m_Mode: 1
@@ -1489,22 +1488,6 @@ MonoBehaviour:
   controller: {fileID: 4438550802779749865}
   animator: {fileID: 942704161}
   runSpeed: 25
---- !u!114 &1582807608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4438550802779749864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db16f40aefa2ad4fb7bc11932851697, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
-  damage: 10
-  bulletPrefab: {fileID: 0}
-  fireRate: 0.5
 --- !u!1 &4438550803166598330
 GameObject:
   m_ObjectHideFlags: 0
