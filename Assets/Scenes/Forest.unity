@@ -7467,7 +7467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1721883fb0c03ea4f9cb77edf621f330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHealth: 100
+  curHealth: 10
   distance: 3
   wakerange: 1
   shootinterval: 0
@@ -7480,6 +7480,8 @@ MonoBehaviour:
   r2: {fileID: 0}
   anim: {fileID: 0}
   awake: 1
+  die: 0
+  damaged: 0
   moveSpeed: 1
   attackDistance: 3
   engageDistance: 10

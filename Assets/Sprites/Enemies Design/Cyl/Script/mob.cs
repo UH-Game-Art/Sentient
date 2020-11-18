@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mob : MonoBehaviour
 {
-    public int curHealth = 100;
+    public int curHealth = 5;
     public float distance;
     public float wakerange;
     public float shootinterval;
@@ -21,8 +21,11 @@ public class mob : MonoBehaviour
     public Rigidbody2D r2;
     public Animator anim;
 
+
     private bool facingLeft = true;
-    public bool awake=true;
+    public bool awake = false; // Idle from begining
+    public bool die = false;
+    public bool damaged = false;
 
 
 
@@ -47,23 +50,29 @@ public class mob : MonoBehaviour
     void Update()
     {
         anim.SetBool("Awake", awake);
+        anim.SetBool("die", die);
+        anim.SetBool("damaged", damaged);
         range = Vector2.Distance(transform.position, target.position); // calculate player range
 
     }
 
     void FixedUpdate()
     {
-
+        
         if (Vector3.Distance(target.position, this.transform.position) < engageDistance) // if in range of detect player
         {
-
+            awake = true; // awake is true then start walking
 
             if (range > distance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-                anim.Play("Walk");
-            }
 
+            }
+            if (range < distance)
+            {
+                awake = false;
+
+            }
 
             if (target.transform.position.x > transform.position.x)
             {
@@ -80,18 +89,45 @@ public class mob : MonoBehaviour
 
         }
 
-        else
+        if (Vector3.Distance(target.position, this.transform.position) > engageDistance)
         {
-            anim.Play("Idle");
+
+            awake = false; // awake false -> idle state
+
         }
+
+        if (curHealth <= 0)  // if mob hp<=0
+        {
+            die = true;
+
+            Destroy(gameObject, 2.5f);
+
+
+        }
+
+
     }
 
-   
+
 
 
     public void Damage(int dmg) // taking damage
     {
+
         curHealth -= dmg;
-      //  gameObject.GetComponent<Animation>().Play("redflash");
+
+       damaged = true;
+       StartCoroutine(timer());
+        
     }
+
+
+    IEnumerator timer()
+    {
+       
+        Debug.Log("Your enter Coroutine at" + Time.time);
+        yield return new WaitForSeconds(0.5f);
+        damaged = false;
+    }
+
 }

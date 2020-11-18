@@ -7,24 +7,25 @@ public class Bullet : MonoBehaviour
     public float speed;
     public int damage;
     public Rigidbody2D rb;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity =  transform.right * speed;
+        rb.velocity = transform.right * speed;
     }
 
-    void OnTriggerEnter2D (Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        /* **When enemy code is done**
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if (enemy != null)
+
+        if (collision.CompareTag("Enemy"))
         {
-            enemy.TakeDamage(damage); 
-        } */
-        if (collision.gameObject.tag == "PlayerGround")
-        {
-            Destroy(gameObject);
-        } 
+            collision.SendMessageUpwards("Damage", damage);
+
+
+
+             Destroy(gameObject,0.1f); // destroy bullet if hit mob 
+        }
+
+
     }
 }
