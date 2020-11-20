@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class FrameSwitch : MonoBehaviour
 {
-    public GameObject frame1;
-    public GameObject frame2;
+    public GameObject activeFrame;
+    public GameObject[] otherFrames;
             
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (frame1.active == true)
+        if (collision.gameObject.tag == "Player")
         {
-            frame1.SetActive(false);
-            frame2.SetActive(true);
-            
-        }
-        else if (frame1.active == false)
-        {
-            frame1.SetActive(true);
-            frame2.SetActive(false);
+            activeFrame.SetActive(true);
+            for (int i = 0; i < otherFrames.Length; i++)
+            {
+                otherFrames[i].SetActive(false);
+            }
 
+            }
         }
+        
     }
 
-}
+
