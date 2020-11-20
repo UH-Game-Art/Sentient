@@ -1,46 +1,34 @@
 fileFormatVersion: 2
-guid: 6a2d644dce9073b4dba9eb1350222e34
+guid: 23aa49096ad677240822210c14ba0edd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8124015370752889674
-    second: Cyl_bullet_revise_0
+      213: -8719640587282451350
+    second: Cyl_bullet_0
   - first:
-      213: -2600091045426380541
-    second: Cyl_bullet_revise_1
+      213: 4262889170578958489
+    second: Cyl_bullet_1
   - first:
-      213: -9152165050992139613
-    second: Cyl_bullet_revise_2
+      213: 3654753007216972391
+    second: Cyl_bullet_2
   - first:
-      213: 5944573451184599172
-    second: Cyl_bullet_revise_3
+      213: 6085769523236350579
+    second: Cyl_bullet_3
   - first:
-      213: -6430448541186091385
-    second: Cyl_bullet_revise_4
+      213: -8538956405997879032
+    second: Cyl_bullet_4
   - first:
-      213: 2404619218274406136
-    second: Cyl_bullet_revise_5
+      213: 5620330804852511610
+    second: Cyl_bullet_5
   - first:
-      213: -7158850696884725391
-    second: Cyl_bullet_revise_6
+      213: 3642564415262047846
+    second: Cyl_bullet_6
   - first:
-      213: 4977604136144352103
-    second: 111
+      213: 3428514172646841539
+    second: Cyl_bullet_7
   - first:
-      213: -7811577715455242818
-    second: Cyl_bullet_revise_8
-  - first:
-      213: -390978916938579487
-    second: Cyl_bullet_revise_9
-  - first:
-      213: 3759574134023620921
-    second: Cyl_bullet_revise_10
-  - first:
-      213: -7949985885724897341
-    second: Cyl_bullet_revise_11
-  - first:
-      213: -3522587106737928351
-    second: Cyl_bullet_revise_12
+      213: 8688810363597049575
+    second: Cyl_bullet_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -128,274 +116,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cyl_bullet_revise_0
+      name: Cyl_bullet_0
       rect:
         serializedVersion: 2
-        x: 111
-        y: 703
-        width: 133
-        height: 281
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bce57c2013b14f80800000000000000
-      internalID: -8124015370752889674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyl_bullet_revise_1
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 703
-        width: 160
-        height: 329
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 301cfa558fe9aebd0800000000000000
-      internalID: -2600091045426380541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyl_bullet_revise_3
-      rect:
-        serializedVersion: 2
-        x: 751
-        y: 701
-        width: 171
-        height: 329
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4807313ee0e5f7250800000000000000
-      internalID: 5944573451184599172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyl_bullet_revise_5
-      rect:
-        serializedVersion: 2
-        x: 1100
-        y: 703
+        x: 54
+        y: 759
         width: 209
-        height: 281
-      alignment: 6
+        height: 209
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fec255507cee5120800000000000000
-      internalID: 2404619218274406136
+      spriteID: a6473f1a51d9df680800000000000000
+      internalID: -8719640587282451350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyl_bullet_revise_2
+      name: Cyl_bullet_1
       rect:
         serializedVersion: 2
-        x: 259
-        y: 293
-        width: 81
-        height: 99
+        x: 331
+        y: 739
+        width: 246
+        height: 245
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a26ed9506afcf080800000000000000
-      internalID: -9152165050992139613
+      spriteID: 998e7396d13d82b30800000000000000
+      internalID: 4262889170578958489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyl_bullet_revise_4
+      name: Cyl_bullet_2
       rect:
         serializedVersion: 2
-        x: 362
-        y: 264
-        width: 131
-        height: 153
+        x: 626
+        y: 727
+        width: 269
+        height: 269
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7869c2c2f1572c6a0800000000000000
-      internalID: -6430448541186091385
+      spriteID: 76255f01f7a48b230800000000000000
+      internalID: 3654753007216972391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyl_bullet_revise_6
+      name: Cyl_bullet_3
       rect:
         serializedVersion: 2
-        x: 509
-        y: 253
-        width: 154
-        height: 170
+        x: 1019
+        y: 712
+        width: 298
+        height: 298
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179d02c6837a6ac90800000000000000
-      internalID: -7158850696884725391
+      spriteID: 37aa669332ff47450800000000000000
+      internalID: 6085769523236350579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 111
+      name: Cyl_bullet_4
       rect:
         serializedVersion: 2
-        x: 673
-        y: 217
-        width: 233
-        height: 258
+        x: 1508
+        y: 713
+        width: 299
+        height: 299
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 763366fd690041540800000000000000
-      internalID: 4977604136144352103
+      spriteID: 80143fbd3688f7980800000000000000
+      internalID: -8538956405997879032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyl_bullet_revise_8
+      name: Cyl_bullet_5
       rect:
         serializedVersion: 2
-        x: 900
-        y: 236
-        width: 191
-        height: 225
+        x: 10
+        y: 343
+        width: 298
+        height: 298
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebdceee8473b79390800000000000000
-      internalID: -7811577715455242818
+      spriteID: a735b67d61d6ffd40800000000000000
+      internalID: 5620330804852511610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyl_bullet_revise_9
+      name: Cyl_bullet_6
       rect:
         serializedVersion: 2
-        x: 1094
-        y: 226
-        width: 203
-        height: 237
+        x: 432
+        y: 342
+        width: 299
+        height: 299
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e1853d1fb6f29af0800000000000000
-      internalID: -390978916938579487
+      spriteID: 66e3c2b590dfc8230800000000000000
+      internalID: 3642564415262047846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyl_bullet_revise_10
+      name: Cyl_bullet_7
       rect:
         serializedVersion: 2
-        x: 1314
-        y: 232
-        width: 175
-        height: 229
+        x: 929
+        y: 349
+        width: 289
+        height: 289
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 939893d71c0bc2430800000000000000
-      internalID: 3759574134023620921
+      spriteID: 3ccd1089977849f20800000000000000
+      internalID: 3428514172646841539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyl_bullet_revise_11
+      name: Cyl_bullet_8
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 238
-        width: 198
-        height: 221
+        x: 1318
+        y: 353
+        width: 276
+        height: 276
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf8fff25f9fba190800000000000000
-      internalID: -7949985885724897341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyl_bullet_revise_12
-      rect:
-        serializedVersion: 2
-        x: 1709
-        y: 233
-        width: 185
-        height: 235
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 167c38c90b14d1fc0800000000000000
-      internalID: -3522587106737928351
+      spriteID: 7ee4fea8dfad49870800000000000000
+      internalID: 8688810363597049575
       vertices: []
       indices: 
       edges: []

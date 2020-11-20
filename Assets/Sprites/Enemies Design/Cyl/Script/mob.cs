@@ -12,14 +12,15 @@ public class mob : MonoBehaviour
     public float bullettimer;
 
 
-    public GameObject bullet; // mob bullet
+    public GameObject Cyl_bullet; // mob bullet
     public Transform target; // target
 
-    public Transform shootpointL, shootpointR; // shoot left or right
+    public Transform shootpoint; // shoot left or right
 
-    float scale = 0.8f;// scale mob size
+    float scale = 2.0f;// scale mob size
     public Rigidbody2D r2;
     public Animator anim;
+  
 
 
     private bool facingLeft = true;
@@ -32,7 +33,11 @@ public class mob : MonoBehaviour
     public float moveSpeed;
     public float attackDistance = 3f;
     public float engageDistance = 10f;
-    private float range; // to detect player range
+    public float range; // to detect player range
+
+    public float timeBtwShots;
+    public float startTimeBtwShots; // set value for bullet spawn 
+
 
 
     // Use this for initialization
@@ -43,6 +48,7 @@ public class mob : MonoBehaviour
 
         anim = GetComponent<Animator>();
         transform.localScale = new Vector3(scale, scale, scale);
+        timeBtwShots = startTimeBtwShots;
     }
 
 
@@ -54,6 +60,7 @@ public class mob : MonoBehaviour
         anim.SetBool("damaged", damaged);
         range = Vector2.Distance(transform.position, target.position); // calculate player range
 
+     
     }
 
     void FixedUpdate()
@@ -62,10 +69,12 @@ public class mob : MonoBehaviour
         if (Vector3.Distance(target.position, this.transform.position) < engageDistance) // if in range of detect player
         {
             awake = true; // awake is true then start walking
+            Attack();
 
-            if (range > distance)
+            if (range > distance)// move
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                Attack();
 
             }
             if (range < distance)
@@ -74,12 +83,12 @@ public class mob : MonoBehaviour
 
             }
 
-            if (target.transform.position.x > transform.position.x)
+            if (target.transform.position.x > transform.position.x)  // flip side
             {
                 transform.localScale = new Vector3(scale, scale, scale);
             }
 
-            if (target.transform.position.x < transform.position.x)
+            if (target.transform.position.x < transform.position.x)// flip side
             {
                 transform.localScale = new Vector3(-scale, scale, scale);
             }
@@ -130,4 +139,23 @@ public class mob : MonoBehaviour
         damaged = false;
     }
 
+
+
+
+    public void Attack()
+    {
+        if (timeBtwShots <= 0)
+        {
+            Vector2 direction = target.transform.position - transform.position;
+            GameObject bulletclone;
+            bulletclone = Instantiate(Cyl_bullet, shootpoint.transform.position, shootpoint.transform.rotation) as GameObject;
+            bulletclone.GetComponent<Rigidbody2D>().velocity = direction * bulletspeed;
+
+            timeBtwShots = startTimeBtwShots;
+        }
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+        }
+    }
 }
