@@ -7,22 +7,22 @@ public class tv_AI : MonoBehaviour
     public int curHealth = 5;
     public float distance;
     public float wakerange;
-    public float shootinterval;
-    public float bulletspeed = 5;
-    public float bullettimer;
+    
 
   
     public Transform target; // target
 
 
-    float scale = 2.0f;// scale mob size
+    float scale = 3.0f;// scale mob size
     public Rigidbody2D r2;
     public Animator anim;
 
     private bool facingLeft = true;
     public bool awake = false; // Idle from begining
-    public bool die = false;
     public bool damaged = false;
+    public bool atk = false;
+    public bool laser = false;
+    public bool shock = false;
 
 
 
@@ -44,18 +44,29 @@ public class tv_AI : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
+        anim.SetBool("Awake", awake);
+        anim.SetBool("Shock", shock);
+        anim.SetBool("Laser", laser);
+        range = Vector2.Distance(transform.position, target.position); // calculate player range
+    }
+
+
+
+
+    void FixedUpdate()
+    {
+
         if (Vector3.Distance(target.position, this.transform.position) < engageDistance) // if in range of detect player
         {
             awake = true; // awake is true then start walking
-            Attack();
+           
 
             if (range > distance)// move
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-                Attack();
+              
 
             }
             if (range < distance)
@@ -88,7 +99,7 @@ public class tv_AI : MonoBehaviour
 
         if (curHealth <= 0)  // if mob hp<=0
         {
-            die = true;
+            
 
             Destroy(gameObject, 2.5f);
 
@@ -123,8 +134,5 @@ public class tv_AI : MonoBehaviour
 
 
 
-    public void Attack()
-    {
-       
-    }
+   
 }

@@ -7686,18 +7686,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 10
-  distance: 0
-  wakerange: 0
-  shootinterval: 0
-  bulletspeed: 5
-  bullettimer: 0
+  distance: 1
+  wakerange: 1
   target: {fileID: 898373004}
   r2: {fileID: 0}
   anim: {fileID: 0}
   awake: 0
-  die: 0
   damaged: 0
-  moveSpeed: 0
+  atk: 0
+  laser: 0
+  shock: 0
+  moveSpeed: 1
   attackDistance: 3
   engageDistance: 10
   range: 0
