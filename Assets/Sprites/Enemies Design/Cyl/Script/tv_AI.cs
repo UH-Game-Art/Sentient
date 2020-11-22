@@ -67,8 +67,8 @@ public class tv_AI : MonoBehaviour
             if (range >= distance)// move
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-                laser = false;
-                shock = false;
+               // laser = false;
+                //shock = false;
 
             }
             if (range <= distance)// set distance = 10 to trigger animation atk
@@ -76,15 +76,16 @@ public class tv_AI : MonoBehaviour
                 awake = false;
                 if (switchattack ==false)  // laser 1 time only == false)
                 {
-                    laser = true;
+                    
+                    
                     StartCoroutine(switchAtk());
                     
                 }
-                else
+                else if(switchattack==true)
                 {
-                    laser = false;
+                   
                     
-                    shock = true;
+                   
                     StartCoroutine(switchAtk2());
 
                 }
@@ -143,18 +144,20 @@ public class tv_AI : MonoBehaviour
 
     IEnumerator switchAtk( )
     {
-    
+        laser = true;
         Debug.Log("Your enter Coroutine at" + Time.time);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
+        laser = false;
         switchattack = true;  // laser 1 time only
-
+        
     }
 
     IEnumerator switchAtk2()
     {
-
+        shock = true;
         Debug.Log("Your enter Coroutine at" + Time.time);
         yield return new WaitForSeconds(1.5f);
+        shock = false;
         switchattack = false;  // laser 1 time only
 
     }
@@ -175,8 +178,8 @@ public class tv_AI : MonoBehaviour
 
         if (col.CompareTag("Player"))
         {
-            col.SendMessageUpwards("damage", 0.5);
-            player.Knockback(200f, player.transform.position);  // the power to knock player back
+            col.SendMessageUpwards("damage", 1);
+            player.Knockback(100f, player.transform.position);  // the power to knock player back
             //  Destroy(gameObject, 0.1f);
         }
 
