@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 10
-  distance: 10
+  distance: 11
   target: {fileID: 0}
   r2: {fileID: 0}
   anim: {fileID: 0}
