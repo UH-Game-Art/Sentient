@@ -11,6 +11,7 @@ TagManager:
   - Collectable
   - enemy2
   - Light
+  - Platform
   layers:
   - Default
   - TransparentFX

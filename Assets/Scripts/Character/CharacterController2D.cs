@@ -140,4 +140,5 @@ public class CharacterController2D : MonoBehaviour
 
 		transform.Rotate(0f, 180f, 0f);
 	}
+
 }
