@@ -119,7 +119,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 6108
+      y: 7349
       width: 3693
       height: 810
     spriteID: 5943cae94f3daef46ac86b59484ae113
@@ -132,29 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -17, y: 5715}
-  - name: Columns
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 6926
-      width: 3641
-      height: 749
-    spriteID: dca9c5a2c4f032c49874d001143e9713
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -38, y: 6926}
+    uvTransform: {x: -17, y: 6956}
   - name: Wires
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -177,94 +155,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4265}
-  - name: Tile 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 7893
-      y: 601
-      width: 102
-      height: 13
-    spriteID: 304e161f55a9d0244a2d5414206b7704
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 5838, y: 221}
-  - name: Tile 1_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 8003
-      y: 601
-      width: 102
-      height: 13
-    spriteID: c3e50af6877e5f54b8350df4b66bedf2
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 6399, y: 204}
-  - name: Tile 2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 7671
-      y: 623
-      width: 102
-      height: 13
-    spriteID: 90b0c6bc3d45c4a468495327bdab2ed0
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 5742, y: 213}
-  - name: Tile 1_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 7671
-      y: 601
-      width: 214
-      height: 14
-    spriteID: 3b83baecb63c01f43a40bcb23f0f8d9f
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 5965, y: 145}
   - name: Back bunker
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -331,6 +221,50 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 3852, y: -1567}
+  - name: Capsule Base
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6108
+      width: 3740
+      height: 1233
+    spriteID: d6284d1d146a2944283f89492801e2cf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 6108}
+  - name: Tile
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 1140
+      width: 537
+      height: 98
+    spriteID: 00ae602170041014893d023a4b6228f9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2219, y: 302}
   platformSettings:
   - name: Default
     overridden: 1
@@ -361,34 +295,13 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Tile 1
-    spriteName: Tile 1
+  - name: Tile
+    spriteName: Tile
     isGroup: 0
     parentIndex: -1
-    spriteID: 304e161f55a9d0244a2d5414206b7704
-    layerID: 104
-    mosaicPosition: {x: 7893, y: 601}
-  - name: Tile 1
-    spriteName: Tile 1_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: c3e50af6877e5f54b8350df4b66bedf2
-    layerID: 103
-    mosaicPosition: {x: 8003, y: 601}
-  - name: Tile 2
-    spriteName: Tile 2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 90b0c6bc3d45c4a468495327bdab2ed0
-    layerID: 101
-    mosaicPosition: {x: 7671, y: 623}
-  - name: Tile 1
-    spriteName: Tile 1_2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 3b83baecb63c01f43a40bcb23f0f8d9f
-    layerID: 100
-    mosaicPosition: {x: 7671, y: 601}
+    spriteID: 00ae602170041014893d023a4b6228f9
+    layerID: 156
+    mosaicPosition: {x: 3852, y: 1140}
   - name: Ground
     spriteName: Ground
     isGroup: 0
@@ -416,14 +329,14 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 5943cae94f3daef46ac86b59484ae113
     layerID: 77
-    mosaicPosition: {x: 4, y: 6108}
-  - name: Columns
-    spriteName: Columns
+    mosaicPosition: {x: 4, y: 7349}
+  - name: Capsule Base
+    spriteName: Capsule Base
     isGroup: 0
     parentIndex: -1
-    spriteID: dca9c5a2c4f032c49874d001143e9713
-    layerID: 58
-    mosaicPosition: {x: 4, y: 6926}
+    spriteID: d6284d1d146a2944283f89492801e2cf
+    layerID: 154
+    mosaicPosition: {x: 4, y: 6108}
   - name: Wires
     spriteName: Wires
     isGroup: 0
