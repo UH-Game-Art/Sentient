@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public virtual string Name
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        get
+        {
+            return
+        }
     }
 }
