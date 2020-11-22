@@ -2,13 +2,3 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interaction : MonoBehaviour
-{
-    public virtual string Name
-    {
-        get
-        {
-            return
-        }
-    }
-}
