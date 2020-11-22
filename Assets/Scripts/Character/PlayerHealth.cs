@@ -14,11 +14,17 @@ public class PlayerHealth : MonoBehaviour
     private LifeSystem lifeSystem;
     private LevelManager levelManager;
 
+
+   
+
     private void Start()
     {
      
         lifeSystem = FindObjectOfType<LifeSystem>();
+
         levelManager = FindObjectOfType<LevelManager>();
+
+     
 
         fullHeart.enabled = true;
         for(int i = 0; i < health-1; i++)
@@ -173,6 +179,9 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damageTaken;
     }
+
+  
+
     public void gain_hp(int value)
     {
         health =health+ value;

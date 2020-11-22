@@ -5,15 +5,14 @@ using UnityEngine;
 public class tv_AI : MonoBehaviour
 {
     public int curHealth = 5;
-    public float distance;
-    public float wakerange;
-    
+    public float distance;    // if player reach this distance, AI stop
+   
 
   
     public Transform target; // target
+   
 
-
-    float scale = 3.0f;// scale mob size
+    float scale = 2.0f;// scale mob size
     public Rigidbody2D r2;
     public Animator anim;
 
@@ -23,11 +22,11 @@ public class tv_AI : MonoBehaviour
     public bool atk = false;
     public bool laser = false;
     public bool shock = false;
+    public bool switchattack = false;
 
+    public PlayerMovement2 player;
 
-
-    public float moveSpeed;
-    public float attackDistance = 3f;
+    public float moveSpeed; // need to set a value so it can move
     public float engageDistance = 10f;
     public float range; // to detect player range
 
@@ -37,8 +36,8 @@ public class tv_AI : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
-
-        anim = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement2>();
+        anim = gameObject.GetComponent<Animator>();
         transform.localScale = new Vector3(scale, scale, scale);
         timeBtwShots = startTimeBtwShots;
 
@@ -49,6 +48,8 @@ public class tv_AI : MonoBehaviour
         anim.SetBool("Awake", awake);
         anim.SetBool("Shock", shock);
         anim.SetBool("Laser", laser);
+        anim.SetBool("Damged", damaged); // miss type damaged on animator tree
+        anim.SetBool("SwitchAttack", switchattack);
         range = Vector2.Distance(transform.position, target.position); // calculate player range
     }
 
@@ -63,15 +64,31 @@ public class tv_AI : MonoBehaviour
             awake = true; // awake is true then start walking
            
 
-            if (range > distance)// move
+            if (range >= distance)// move
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-              
+                laser = false;
+                shock = false;
 
             }
-            if (range < distance)
+            if (range <= distance)// set distance = 10 to trigger animation atk
             {
                 awake = false;
+                if (switchattack ==false)  // laser 1 time only == false)
+                {
+                    laser = true;
+                    StartCoroutine(switchAtk());
+                    
+                }
+                else
+                {
+                    laser = false;
+                    
+                    shock = true;
+                    StartCoroutine(switchAtk2());
+
+                }
+      
 
             }
 
@@ -118,21 +135,53 @@ public class tv_AI : MonoBehaviour
         curHealth -= dmg;
 
         damaged = true;
-        StartCoroutine(timer());
+        StartCoroutine(Damaged_timer());
+    }
+
+   
+
+
+    IEnumerator switchAtk( )
+    {
+    
+        Debug.Log("Your enter Coroutine at" + Time.time);
+        yield return new WaitForSeconds(1.5f);
+        switchattack = true;  // laser 1 time only
+
+    }
+
+    IEnumerator switchAtk2()
+    {
+
+        Debug.Log("Your enter Coroutine at" + Time.time);
+        yield return new WaitForSeconds(1.5f);
+        switchattack = false;  // laser 1 time only
 
     }
 
 
-    IEnumerator timer()
+    IEnumerator Damaged_timer()
     {
 
         Debug.Log("Your enter Coroutine at" + Time.time);
         yield return new WaitForSeconds(0.5f);
-        damaged = false;
+        damaged = false;  // laser 1 time only
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+
+
+        if (col.CompareTag("Player"))
+        {
+            col.SendMessageUpwards("damage", 0.5);
+            player.Knockback(200f, player.transform.position);  // the power to knock player back
+            //  Destroy(gameObject, 0.1f);
+        }
+
     }
 
 
 
-
-   
 }
