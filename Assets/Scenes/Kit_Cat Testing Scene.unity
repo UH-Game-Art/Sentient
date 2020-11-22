@@ -955,8 +955,6 @@ MonoBehaviour:
   speed: 5
   agroRange: 40
   attackRange: 20
-  fireRate: 0.2
-  nextFire: 0
 --- !u!95 &999379245
 Animator:
   serializedVersion: 3
