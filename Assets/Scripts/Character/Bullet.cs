@@ -7,24 +7,24 @@ public class Bullet : MonoBehaviour
     public float speed;
     public int damage;
     public Rigidbody2D rb;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity =  transform.right * speed;
+        rb.velocity = transform.right * speed;
     }
 
-    void OnTriggerEnter2D (Collider2D collision)
+    void Update()
     {
-        /* **When enemy code is done**
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if (enemy != null)
-        {
-            enemy.TakeDamage(damage); 
-        } */
+        Destroy(this.gameObject, 4);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         if (collision.gameObject.tag == "PlayerGround")
         {
             Destroy(gameObject);
-        } 
+        }
     }
+
 }
