@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 106fd08e8cdaa43449a73c80d2f3a10e
   - enabled: 1
-    path: Assets/Scenes/Bunker.unity
-    guid: 12b2d357a2464d046b66c1667d5b3219
-  - enabled: 1
-    path: Assets/Scenes/Forest.unity
-    guid: c7b3eea86744e144ca1eb80a723608ab
+    path: Assets/Scenes/Sentient Redo.unity
+    guid: 482683468feeef545b7dac99bee1a32b
   m_configObjects: {}
