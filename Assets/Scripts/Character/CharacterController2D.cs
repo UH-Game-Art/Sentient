@@ -148,4 +148,27 @@ public class CharacterController2D : MonoBehaviour
 
         transform.Rotate(0f, 180f, 0f);
     }
+
+    //Lets Player move with platform
+    //Make sure the BOX collider covers the entire player
+    public void OnTriggerStay2D(Collider2D other)
+    {
+
+             if(other.gameObject.tag == "Platform")
+            {
+                Debug.Log("On Platform");
+                transform.parent = other.transform;
+ 
+            }
+     }
+ 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+     if(other.gameObject.tag == "Platform")
+        {
+            Debug.Log("Off Platform");
+            transform.parent = null;
+
+         }
+     }
 }
