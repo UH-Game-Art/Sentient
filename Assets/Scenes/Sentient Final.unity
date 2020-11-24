@@ -5941,11 +5941,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5649639163359940368, guid: c3aa5ca12784e6f4e85051d320a09c1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.4
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 5649639163359940368, guid: c3aa5ca12784e6f4e85051d320a09c1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44.1
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 5649639163359940368, guid: c3aa5ca12784e6f4e85051d320a09c1b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7659,6 +7659,7 @@ GameObject:
   - component: {fileID: 313472017}
   - component: {fileID: 313472016}
   - component: {fileID: 313472015}
+  - component: {fileID: 313472020}
   m_Layer: 0
   m_Name: portal1c
   m_TagString: Untagged
@@ -7804,6 +7805,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &313472020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313472013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772de64aca60b6749801ce66373d7cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 451261492}
 --- !u!4 &319246774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8246210733606005873, guid: 9cea1a0229866f54bab82e3f7956a832, type: 3}
@@ -17151,7 +17165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043041196}
   m_LocalRotation: {x: -0, y: -0, z: 0.9999959, w: -0.0028690475}
-  m_LocalPosition: {x: -36.31, y: 21.87, z: 0}
+  m_LocalPosition: {x: -27.31, y: 17.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 677815906}
@@ -18172,6 +18186,7 @@ GameObject:
   - component: {fileID: 1267570501}
   - component: {fileID: 1267570500}
   - component: {fileID: 1267570503}
+  - component: {fileID: 1267570504}
   m_Layer: 0
   m_Name: portal2c
   m_TagString: Untagged
@@ -18303,6 +18318,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1267570504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267570498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772de64aca60b6749801ce66373d7cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 451261492}
 --- !u!4 &1269098735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8601310027907103449, guid: ed289bbec4c36764d9c494d9030641f7, type: 3}
@@ -18757,6 +18785,7 @@ GameObject:
   - component: {fileID: 1471133064}
   - component: {fileID: 1471133063}
   - component: {fileID: 1471133066}
+  - component: {fileID: 1471133067}
   m_Layer: 0
   m_Name: portal3c
   m_TagString: Untagged
@@ -18888,6 +18917,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1471133067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471133061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772de64aca60b6749801ce66373d7cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 451261492}
 --- !u!1 &1476288879
 GameObject:
   m_ObjectHideFlags: 0
@@ -25729,7 +25771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839952966}
   m_LocalRotation: {x: -0, y: -0, z: 0.9999959, w: -0.0028690475}
-  m_LocalPosition: {x: -3.77, y: 21.38, z: 0}
+  m_LocalPosition: {x: -0.15, y: 17.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 677815906}
@@ -37252,11 +37294,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5649639163359940368, guid: c3aa5ca12784e6f4e85051d320a09c1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.8
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5649639163359940368, guid: c3aa5ca12784e6f4e85051d320a09c1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 43.9
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5649639163359940368, guid: c3aa5ca12784e6f4e85051d320a09c1b, type: 3}
       propertyPath: m_LocalPosition.z
