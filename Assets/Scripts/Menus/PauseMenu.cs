@@ -28,6 +28,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+       Debug.Log("Resume");
        PlayMenuSound(); 
        PauseMenuUI.SetActive(false);
        Time.timeScale = 1f;
@@ -36,6 +37,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        Debug.Log("Pause");
         PlayMenuSound();
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;

@@ -14,17 +14,21 @@ public class Bullet : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(this.gameObject, 4);
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "PlayerGround")
+        if (collision.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            collision.SendMessageUpwards("Damage", damage);
+
+
+
+             Destroy(gameObject,0.1f); // destroy bullet if hit mob 
         }
+
+
     }
 
+
+   
 }

@@ -4,63 +4,158 @@ using UnityEngine;
 
 public class mob : MonoBehaviour
 {
+    public int curHealth = 5;
+    public float distance;
+    public float wakerange;
+    public float shootinterval;
+    public float bulletspeed = 5;
+    public float bullettimer;
 
-    public float speed = 50f, maxspeed = 3, jumpPow = 220f;
-    public bool grounded = true, faceright = true;
 
+    public GameObject Cyl_bullet; // mob bullet
+    public Transform target; // target
+
+    public Transform shootpoint; // shoot left or right
+
+    float scale = 2.0f;// scale mob size
     public Rigidbody2D r2;
     public Animator anim;
+  
+
+
+    private bool facingLeft = true;
+    public bool awake = false; // Idle from begining
+    public bool die = false;
+    public bool damaged = false;
+
+
+
+    public float moveSpeed;
+    public float attackDistance = 3f;
+    public float engageDistance = 10f;
+    public float range; // to detect player range
+
+    public float timeBtwShots;
+    public float startTimeBtwShots; // set value for bullet spawn 
+
+
 
     // Use this for initialization
     void Start()
     {
-        r2 = gameObject.GetComponent<Rigidbody2D>();
-        anim = gameObject.GetComponent<Animator>();
+
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        anim = GetComponent<Animator>();
+        transform.localScale = new Vector3(scale, scale, scale);
+        timeBtwShots = startTimeBtwShots;
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        anim.SetBool("Grounded", grounded);
-        anim.SetFloat("Speed", Mathf.Abs(r2.velocity.x));
+        anim.SetBool("Awake", awake);
+        anim.SetBool("die", die);
+        anim.SetBool("damaged", damaged);
+        range = Vector2.Distance(transform.position, target.position); // calculate player range
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (grounded)
-            {
-                grounded = false;
-                r2.AddForce(Vector2.up * jumpPow);
-            }
-        }
+     
     }
 
     void FixedUpdate()
     {
-        float h = Input.GetAxis("Horizontal");
-        r2.AddForce((Vector2.right) * speed * h);
-
-        if (r2.velocity.x > maxspeed)
-            r2.velocity = new Vector2(maxspeed, r2.velocity.y);
-        if (r2.velocity.x < -maxspeed)
-            r2.velocity = new Vector2(-maxspeed, r2.velocity.y);
-
-        if (h > 0 && !faceright)
+        
+        if (Vector3.Distance(target.position, this.transform.position) < engageDistance) // if in range of detect player
         {
-            Flip();
+            awake = true; // awake is true then start walking
+            Attack();
+
+            if (range > distance)// move
+            {
+                transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                Attack();
+
+            }
+            if (range < distance)
+            {
+                awake = false;
+
+            }
+
+            if (target.transform.position.x > transform.position.x)  // flip side
+            {
+                transform.localScale = new Vector3(scale, scale, scale);
+            }
+
+            if (target.transform.position.x < transform.position.x)// flip side
+            {
+                transform.localScale = new Vector3(-scale, scale, scale);
+            }
+
+
+
+
         }
 
-        if (h < 0 && faceright)
+        if (Vector3.Distance(target.position, this.transform.position) > engageDistance)
         {
-            Flip();
+
+            awake = false; // awake false -> idle state
+
         }
+
+        if (curHealth <= 0)  // if mob hp<=0
+        {
+            die = true;
+
+            Destroy(gameObject, 2.5f);
+
+
+        }
+
+
     }
 
-    public void Flip()
+
+
+
+    public void Damage(int dmg) // taking damage
     {
-        faceright = !faceright;
-        Vector3 Scale;
-        Scale = transform.localScale;
-        Scale.x *= -1;
-        transform.localScale = Scale;
+
+        curHealth -= dmg;
+
+       damaged = true;
+       StartCoroutine(timer());
+        
+    }
+
+
+    IEnumerator timer()
+    {
+       
+        Debug.Log("Your enter Coroutine at" + Time.time);
+        yield return new WaitForSeconds(0.5f);
+        damaged = false;
+    }
+
+
+
+
+    public void Attack()
+    {
+        if (timeBtwShots <= 0)
+        {
+            Vector2 direction = target.transform.position - transform.position;
+            GameObject bulletclone;
+            bulletclone = Instantiate(Cyl_bullet, shootpoint.transform.position, shootpoint.transform.rotation) as GameObject;
+            bulletclone.GetComponent<Rigidbody2D>().velocity = direction * bulletspeed;
+
+            timeBtwShots = startTimeBtwShots;
+        }
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+        }
     }
 }

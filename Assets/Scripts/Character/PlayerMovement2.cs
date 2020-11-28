@@ -6,8 +6,9 @@ public class PlayerMovement2 : MonoBehaviour
 {
 
     public CharacterController2D controller;
-    public Animator animator;
 
+    public Animator animator;
+    public Rigidbody2D r2;
 
     float horizontalMove = 0f;
     public float runSpeed = 40f;
@@ -16,6 +17,13 @@ public class PlayerMovement2 : MonoBehaviour
     bool crouch = false;
     // Update is called once per frame
 
+
+
+    void Start()
+    {
+
+        r2 = gameObject.GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
      
@@ -25,7 +33,7 @@ public class PlayerMovement2 : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
 
-            AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
+            //AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
             jump = true;
             animator.SetBool("IsJumping", true);
         }
@@ -51,5 +59,13 @@ public class PlayerMovement2 : MonoBehaviour
         jump = false;
 
     }
+
+    public void Knockback(float Knockpow, Vector2 Knockdir)
+    {
+        r2.velocity = new Vector2(0, 0);
+        r2.AddForce(new Vector2(Knockdir.x * Knockpow, Knockdir.y * Knockpow));
+    }
+
+
 
 }
