@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: 5272363e5a34f8b4d8d87b77028ce058
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3343124622466283385
+    second: tv_death_0
+  - first:
+      213: 500263290435934682
+    second: tv_death_1
+  - first:
+      213: 555584502484989130
+    second: tv_death_2
+  - first:
+      213: -6626987246189222700
+    second: tv_death_3
+  - first:
+      213: 1405313646466833634
+    second: tv_death_4
+  - first:
+      213: 1107110470503874104
+    second: tv_death_5
+  - first:
+      213: 714504338083156560
+    second: tv_death_6
+  - first:
+      213: 3971077856189320619
+    second: tv_death_7
+  - first:
+      213: -1810457097482275316
+    second: tv_death_8
+  - first:
+      213: -3619486505601656947
+    second: tv_death_9
+  - first:
+      213: -5769775611746860056
+    second: tv_death_10
+  - first:
+      213: 3642641097980682082
+    second: tv_death_11
+  - first:
+      213: -1125705510971743733
+    second: tv_death_12
+  - first:
+      213: 6530207391571805212
+    second: tv_death_13
+  - first:
+      213: -2683688936232589563
+    second: tv_death_14
+  - first:
+      213: -475695623634108882
+    second: tv_death_15
+  - first:
+      213: -7919635975237673611
+    second: tv_death_16
+  - first:
+      213: -4587118547991274207
+    second: tv_death_17
+  - first:
+      213: 970169721811963027
+    second: tv_death_18
+  - first:
+      213: 6572984810167517560
+    second: tv_death_19
+  - first:
+      213: -4975689626774285157
+    second: tv_death_20
+  - first:
+      213: 76137147816134461
+    second: tv_death_21
+  - first:
+      213: 4825329399426937711
+    second: tv_death_0
+  - first:
+      213: 4150724761713159376
+    second: tv_death_1
+  - first:
+      213: -4579319556799342068
+    second: tv_death_2
+  - first:
+      213: 9157062176120214144
+    second: tv_death_3
+  - first:
+      213: -1478658575143091176
+    second: tv_death_4
+  - first:
+      213: 3861217374318978549
+    second: tv_death_5
+  - first:
+      213: 9204072185745223812
+    second: tv_death_7
+  - first:
+      213: -4669143782986466541
+    second: tv_death_10
+  - first:
+      213: 6924211534607074909
+    second: tv_death_13
+  - first:
+      213: -4791008152806195690
+    second: tv_death_16
+  - first:
+      213: 1801059713713298757
+    second: tv_death_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tv_death_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 388
+        width: 203
+        height: 337
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f637719e58307f240800000000000000
+      internalID: 4825329399426937711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_1
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 722
+        width: 186
+        height: 332
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dca456ed265a9930800000000000000
+      internalID: 4150724761713159376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 718
+        width: 193
+        height: 335
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ad9f7102df270c0800000000000000
+      internalID: -4579319556799342068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_3
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 722
+        width: 198
+        height: 336
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0829fc1788b641f70800000000000000
+      internalID: 9157062176120214144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_4
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 381
+        width: 220
+        height: 329
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814c2843cdfba7be0800000000000000
+      internalID: -1478658575143091176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_5
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 380
+        width: 278
+        height: 256
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f569dc8ebcc59530800000000000000
+      internalID: 3861217374318978549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_7
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 383
+        width: 304
+        height: 194
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480b56e33ee6bbf70800000000000000
+      internalID: 9204072185745223812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 36
+        width: 333
+        height: 187
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b3ed1b77ed33fb0800000000000000
+      internalID: -4669143782986466541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_13
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 36
+        width: 332
+        height: 187
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56cae564bdb71060800000000000000
+      internalID: 6924211534607074909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_16
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 36
+        width: 333
+        height: 187
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e7cf7087be28db0800000000000000
+      internalID: -4791008152806195690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv_death_19
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 36
+        width: 334
+        height: 187
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dd5276446aef810800000000000000
+      internalID: 1801059713713298757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

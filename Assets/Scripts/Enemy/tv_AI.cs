@@ -23,6 +23,9 @@ public class tv_AI : MonoBehaviour
     public bool laser = false;
     public bool shock = false;
     public bool switchattack = false;
+    public int  attack_type=0;
+
+    public bool death = false;
 
     public PlayerMovement2 player;
 
@@ -48,8 +51,10 @@ public class tv_AI : MonoBehaviour
         anim.SetBool("Awake", awake);
         anim.SetBool("Shock", shock);
         anim.SetBool("Laser", laser);
+        anim.SetBool("death", death);
         anim.SetBool("Damged", damaged); // miss type damaged on animator tree
         anim.SetBool("SwitchAttack", switchattack);
+        anim.SetInteger("Attack_Type", attack_type);
         range = Vector2.Distance(transform.position, target.position); // calculate player range
     }
 
@@ -59,38 +64,29 @@ public class tv_AI : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Vector3.Distance(target.position, this.transform.position) < engageDistance) // if in range of detect player
+        if (Vector3.Distance(target.position, this.transform.position) <= engageDistance) // if in range of detect player
         {
             awake = true; // awake is true then start walking
-           
+            attack_type = 0;// stop attack state when it walking
 
-            if (range >= distance)// move
+            if (range > 16)// move
             {
+                awake = true;
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-               // laser = false;
-                //shock = false;
-
+                attack_type = 0;
+               
             }
-            if (range <= distance)// set distance = 10 to trigger animation atk
+            if (range<16 && range>9 )// if range is less than 15 and higher 9-> start shooting
             {
                 awake = false;
-                if (switchattack ==false)  // laser 1 time only == false)
-                {
-                    
-                    
-                    StartCoroutine(switchAtk());
-                    
-                }
-                else if(switchattack==true)
-                {
-                   
-                    
-                   
-                    StartCoroutine(switchAtk2());
+                attack_type = 1;
+               
+            }
 
-                }
-      
-
+            if (range < 9)   // start shocking player
+            {
+               // awake = false;
+                attack_type = 2;
             }
 
             if (target.transform.position.x > transform.position.x)  // flip side
@@ -117,8 +113,8 @@ public class tv_AI : MonoBehaviour
 
         if (curHealth <= 0)  // if mob hp<=0
         {
-            
 
+            death = true; // death animation
             Destroy(gameObject, 2.5f);
 
 
@@ -142,23 +138,23 @@ public class tv_AI : MonoBehaviour
    
 
 
-    IEnumerator switchAtk( )
+    IEnumerator switchAtk( ) // atk 2 to 1
     {
-        laser = true;
+        attack_type = 0;
         Debug.Log("Your enter Coroutine at" + Time.time);
-        yield return new WaitForSeconds(1.0f);
-        laser = false;
-        switchattack = true;  // laser 1 time only
-        
+        yield return new WaitForSeconds(0.5f);
+        attack_type = 1;
+
+        // laser 1 time only
+
     }
 
-    IEnumerator switchAtk2()
+    IEnumerator switchAtk2() // atk 1 to 2
     {
-        shock = true;
+        attack_type = 0;
         Debug.Log("Your enter Coroutine at" + Time.time);
-        yield return new WaitForSeconds(1.5f);
-        shock = false;
-        switchattack = false;  // laser 1 time only
+        yield return new WaitForSeconds(0.5f);
+        attack_type = 2;
 
     }
 
