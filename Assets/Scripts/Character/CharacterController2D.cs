@@ -18,6 +18,7 @@ public class CharacterController2D : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Vector3 m_Velocity = Vector3.zero;
+    public Animator animator;
 
     // Added by dont_call
     private Inventory inventory;
@@ -52,6 +53,7 @@ public class CharacterController2D : MonoBehaviour
     {
         bool wasGrounded = m_Grounded;
         m_Grounded = false;
+        animator.SetBool("IsJumping", true);
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -61,6 +63,7 @@ public class CharacterController2D : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
+                animator.SetBool("IsJumping", false);
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
