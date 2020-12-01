@@ -3764,33 +3764,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2122697977078666896, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.34
+    - target: {fileID: 735037231, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.68
       objectReference: {fileID: 0}
-    - target: {fileID: 2122697977078666896, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.88
+    - target: {fileID: 735037231, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2122697977078666899, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
       propertyPath: m_Name
       value: TV_enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 2122697977078666909, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
-      propertyPath: distance
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2122697977078666909, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
-      propertyPath: engageDistance
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 2122697977078666909, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
-      propertyPath: shock
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2122697977078666910, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.01
+      value: -27.22
       objectReference: {fileID: 0}
     - target: {fileID: 2122697977078666910, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
       propertyPath: m_LocalPosition.y
