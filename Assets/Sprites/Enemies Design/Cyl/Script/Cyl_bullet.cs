@@ -5,12 +5,14 @@ using UnityEngine;
 public class Cyl_bullet : MonoBehaviour
 {
     
-    public float speed;
+    public float speed=2;
     public int damage;
-    public Rigidbody2D rb;
+    //public Rigidbody2D rb;
 
     private Transform player;
     private Vector2 target;
+
+   
 
 
     void Start()
@@ -18,13 +20,13 @@ public class Cyl_bullet : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
 
-        rb.velocity = transform.right * speed;
+     //   rb.velocity = transform.right * speed;
     }
 
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
     }
     private void OnTriggerEnter2D(Collider2D col)

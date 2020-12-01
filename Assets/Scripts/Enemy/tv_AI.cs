@@ -6,11 +6,18 @@ public class tv_AI : MonoBehaviour
 {
     public int curHealth = 5;
     public float distance;    // if player reach this distance, AI stop
+
+
+
+    public Transform target; // target
+    public GameObject bullet;
+    public Transform firePoint;
+    //   public Transform firePointLeft;
+    //  public Transform firePointRight;
+    public float fireRate = 0.5f;
+    private float nextFire = 0.0f;
    
 
-  
-    public Transform target; // target
-   
 
     float scale = 2.0f;// scale mob size
     public Rigidbody2D r2;
@@ -23,7 +30,14 @@ public class tv_AI : MonoBehaviour
     public bool laser = false;
     public bool shock = false;
     public bool switchattack = false;
-    public int  attack_type=0;
+    public bool isRight = true;
+    public bool IsShooting = false;
+    public int attack_type = 0;
+
+
+    //bullet categorical
+    public float bulletspeed = 5;
+    public float bullettimer;
 
     public bool death = false;
 
@@ -33,7 +47,7 @@ public class tv_AI : MonoBehaviour
     public float engageDistance = 10f;
     public float range; // to detect player range
 
-    public float timeBtwShots;
+    public float timeBtwShots=2;
     public float startTimeBtwShots; // set value for bullet spawn 
 
     void Start()
@@ -68,35 +82,48 @@ public class tv_AI : MonoBehaviour
         {
             awake = true; // awake is true then start walking
             attack_type = 0;// stop attack state when it walking
+            IsShooting = false;
 
             if (range > 16)// move
             {
                 awake = true;
+              
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
                 attack_type = 0;
-               
+
             }
-            if (range<16 && range>9 )// if range is less than 15 and higher 9-> start shooting
+            if (range < 16 && range > 9)// if range is less than 15 and higher 9-> start shooting
             {
                 awake = false;
                 attack_type = 1;
-               
+                if (timeBtwShots <= 0)
+                {
+                    Instantiate(bullet, firePoint.transform.position, Quaternion.identity);
+                    timeBtwShots = startTimeBtwShots;
+                }
+                else
+                {
+                    timeBtwShots -= Time.deltaTime;
+                }
             }
 
             if (range < 9)   // start shocking player
             {
-               // awake = false;
+                // awake = false;
+              
                 attack_type = 2;
             }
 
             if (target.transform.position.x > transform.position.x)  // flip side
             {
-                transform.localScale = new Vector3(scale, scale, scale);
+               
+                transform.localScale = new Vector3(scale, scale, scale);// right
             }
 
             if (target.transform.position.x < transform.position.x)// flip side
             {
-                transform.localScale = new Vector3(-scale, scale, scale);
+               
+                transform.localScale = new Vector3(-scale, scale, scale); // left
             }
 
 
@@ -106,7 +133,7 @@ public class tv_AI : MonoBehaviour
 
         if (Vector3.Distance(target.position, this.transform.position) > engageDistance)
         {
-
+            
             awake = false; // awake false -> idle state
 
         }
@@ -115,10 +142,14 @@ public class tv_AI : MonoBehaviour
         {
 
             death = true; // death animation
-            Destroy(gameObject, 2.5f);
+            Destroy(gameObject, 3.0f);
 
 
         }
+
+
+      
+
 
 
     }
@@ -135,10 +166,10 @@ public class tv_AI : MonoBehaviour
         StartCoroutine(Damaged_timer());
     }
 
-   
 
 
-    IEnumerator switchAtk( ) // atk 2 to 1
+
+    IEnumerator switchAtk() // atk 2 to 1
     {
         attack_type = 0;
         Debug.Log("Your enter Coroutine at" + Time.time);
@@ -181,6 +212,11 @@ public class tv_AI : MonoBehaviour
 
     }
 
+    public void Attack()
+    {
+         
+
+    }
 
 
 }
