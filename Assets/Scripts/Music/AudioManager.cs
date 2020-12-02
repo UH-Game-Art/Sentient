@@ -46,6 +46,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip theme2;
     private AudioSource themesource2;
 
+    public AudioClip credit;
+    private AudioSource creditsource;
+
     private void Awake()
     {
         instance = this;
@@ -68,6 +71,12 @@ public class AudioManager : MonoBehaviour
         if (clip == this.theme2)
         {
             Play(clip, ref themesource2, volume, isLoopback);
+
+        }
+
+        if (clip == this.credit)
+        {
+            Play(clip, ref creditsource, volume, isLoopback);
 
         }
 
