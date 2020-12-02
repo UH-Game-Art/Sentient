@@ -207,7 +207,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -266,10 +266,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &41302546
 Transform:
   m_ObjectHideFlags: 0
@@ -300,9 +301,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -648,9 +649,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -8.888889, y: -0.075}
-  - {x: 8.025021, y: -0.075}
-  - {x: 8.662388, y: -0.075}
+  - {x: -8.888889, y: 0.7399999}
+  - {x: 8.662388, y: 0.74}
+  - {x: 8.888889, y: 0.7399999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -690,7 +691,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: 6c996cbc39c1dcb43a0176e09f556030, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -749,10 +750,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4198804642526930789, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: 0, y: -0.07499999, z: -0.00005}
+    m_Extent: {x: 8.888889, y: 0.815, z: 0.00005}
 --- !u!4 &177653208
 Transform:
   m_ObjectHideFlags: 0
@@ -1150,7 +1152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.19, y: 9.3, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1172,10 +1174,9 @@ MonoBehaviour:
   smoothtimeY: 0
   velocity: {x: 0, y: 0}
   player: {fileID: 1212485475}
-  minpos: {x: -0.05, y: -0.26}
-  maxpos: {x: 16.19, y: 9.3}
-  bound: 1
-  timeRemaining: 10
+  minpos: {x: 0, y: 3.1}
+  maxpos: {x: 0, y: 0}
+  bound: 0
 --- !u!1 &714396965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1390,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -1448,10 +1449,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &807964903
 Transform:
   m_ObjectHideFlags: 0
@@ -1482,9 +1484,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -1543,7 +1545,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -1602,10 +1604,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &822983267
 Transform:
   m_ObjectHideFlags: 0
@@ -1636,9 +1639,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -1829,7 +1832,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -1888,10 +1891,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &965497577
 Transform:
   m_ObjectHideFlags: 0
@@ -1922,9 +1926,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2145,7 +2149,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -2204,10 +2208,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &1245867894
 Transform:
   m_ObjectHideFlags: 0
@@ -2238,9 +2243,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2401,7 +2406,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -2460,10 +2465,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &1323371299
 Transform:
   m_ObjectHideFlags: 0
@@ -2494,9 +2500,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2759,7 +2765,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -2818,10 +2824,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &1589064973
 Transform:
   m_ObjectHideFlags: 0
@@ -2852,9 +2859,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2913,7 +2920,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -2972,10 +2979,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &1603864826
 Transform:
   m_ObjectHideFlags: 0
@@ -3006,9 +3014,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -3244,7 +3252,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: ea517089caf655b4ca271c48b102e094, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -3303,10 +3311,11 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 4802002278092224291, guid: 2023c950a75265d4a912bd213337c9f5, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.5, y: 0, z: -0.00005}
+    m_Extent: {x: 1.5, y: 0.12, z: 0.00005}
 --- !u!4 &1767713312
 Transform:
   m_ObjectHideFlags: 0
@@ -3337,9 +3346,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0}
-  - {x: 0.85422224, y: 0}
-  - {x: 0.9617778, y: 0}
+  - {x: -2, y: 0.12}
+  - {x: 0.9617778, y: 0.12}
+  - {x: 1, y: 0.11999999}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -4111,7 +4120,7 @@ SpriteRenderer:
   m_Size: {x: 0.73, y: 0.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &230850190414578438
@@ -4178,7 +4187,7 @@ SpriteRenderer:
   m_Size: {x: 0.94, y: 0.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &375570254919676417
@@ -4246,7 +4255,7 @@ SpriteRenderer:
   m_Size: {x: 0.45, y: 1.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &654618338039258305
@@ -4346,7 +4355,7 @@ SpriteRenderer:
   m_Size: {x: 0.95, y: 0.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1524631722119872291
@@ -4580,7 +4589,7 @@ SpriteRenderer:
   m_Size: {x: 0.96, y: 0.66}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2627748952995533189
@@ -4717,7 +4726,7 @@ SpriteRenderer:
   m_Size: {x: 0.95, y: 0.65}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &3105937999215989974
@@ -4768,7 +4777,7 @@ SpriteRenderer:
   m_Size: {x: 0.4, y: 1.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &3649944677703775990
@@ -5008,7 +5017,7 @@ SpriteRenderer:
   m_Size: {x: 0.66, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &4868599037109167212
@@ -5075,7 +5084,7 @@ SpriteRenderer:
   m_Size: {x: 0.65, y: 0.97}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4992410528789024804
@@ -5307,7 +5316,7 @@ SpriteRenderer:
   m_Size: {x: 1.03, y: 0.42}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5435358489661631869
@@ -5438,7 +5447,7 @@ SpriteRenderer:
   m_Size: {x: 0.71, y: 0.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5663007641055054945
@@ -5753,7 +5762,7 @@ SpriteRenderer:
   m_Size: {x: 0.99, y: 0.38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &7421568614498500098
