@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Credit_Scoller : MonoBehaviour
 {
@@ -30,9 +31,10 @@ public class Credit_Scoller : MonoBehaviour
     IEnumerator timer()
     {
         
-        Debug.Log("Your enter Coroutine at" + Time.time);
+        Debug.Log("Your enter Coroutine at " + Time.time);
         yield return new WaitForSeconds(endtime);
         end = true;
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

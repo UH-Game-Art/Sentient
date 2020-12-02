@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
    {
        Debug.Log("Play Game");
        PlayMenuSound();
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       SceneManager.LoadScene("Sentient Final");
    }
 
    public void QuitGame()
