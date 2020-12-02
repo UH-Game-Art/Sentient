@@ -98,13 +98,7 @@ public class tv_AI : MonoBehaviour
                 attack_type = 1;
                 if (timeBtwShots <= 0)
                 {
-                    Vector2 direction = target.transform.position - transform.position;
-                    direction.Normalize();
-
-                    GameObject bulletclone;
-
-                    bulletclone = Instantiate(bullet, firePoint.transform.position, Quaternion.identity) as GameObject;
-                    bulletclone.GetComponent<Rigidbody2D>().velocity = direction * bulletspeed;
+                    Instantiate(bullet, firePoint.transform.position, Quaternion.identity);
                     timeBtwShots = startTimeBtwShots;
                 }
                 else
