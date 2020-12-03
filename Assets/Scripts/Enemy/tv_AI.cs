@@ -96,7 +96,7 @@ public class tv_AI : MonoBehaviour
             {
                 awake = false;
                 attack_type = 1;
-                if (timeBtwShots <= 0)
+                if (timeBtwShots <= 0  && attack_type==1)
                 {
                     Instantiate(bullet, firePoint.transform.position, Quaternion.identity);
                     timeBtwShots = startTimeBtwShots;
