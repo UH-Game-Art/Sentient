@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 997cac0855f420a4a8bc554cf96b5ae7
+guid: 499d9b94bdbda3e42b3561b4cf3f8806
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 749308401798211196
-    second: NPC 1 Animation_0
+      213: 7499154508442906066
+    second: box_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,8 +47,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.6797914, y: 0.49999988}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -92,22 +92,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC 1 Animation_0
+      name: box_0
       rect:
         serializedVersion: 2
-        x: 842
-        y: 509
-        width: 188
-        height: 247
+        x: 458
+        y: 377
+        width: 852
+        height: 414
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c76e56c7504166a00800000000000000
-      internalID: 749308401798211196
+      spriteID: 2dd228f0b49521860800000000000000
+      internalID: 7499154508442906066
       vertices: []
       indices: 
       edges: []
