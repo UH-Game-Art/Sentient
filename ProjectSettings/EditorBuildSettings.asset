@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 106fd08e8cdaa43449a73c80d2f3a10e
   - enabled: 1
-    path: Assets/Scenes/Sentient Redo.unity
+    path: Assets/Scenes/Sentient Final.unity
     guid: 482683468feeef545b7dac99bee1a32b
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 290f60f1ee4174e49aae01f7df8594be
   m_configObjects: {}

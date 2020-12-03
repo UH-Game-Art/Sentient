@@ -12,6 +12,10 @@ TagManager:
   - enemy2
   - Light
   - Platform
+  - Enemy
+  - Arms
+  - Boss
+  - interactableObject
   layers:
   - Default
   - TransparentFX
