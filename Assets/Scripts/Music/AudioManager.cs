@@ -39,6 +39,8 @@ public class AudioManager : MonoBehaviour
     private AudioSource readysource;
 
 
+    public AudioClip Bunker_theme;
+    private AudioSource Bunker_themesource;
 
     public AudioClip theme;
     private AudioSource themesource;
@@ -56,6 +58,13 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySound(AudioClip clip, float volume, bool isLoopback)
     {
+
+        if (clip == this.Bunker_theme)
+        {
+            Play(clip, ref Bunker_themesource, volume, isLoopback);
+
+        }
+
         if (clip == this.theme)
         {
             Play(clip, ref themesource, volume, isLoopback);
@@ -166,6 +175,21 @@ public class AudioManager : MonoBehaviour
         if (clip == this.player_bullet)
         {
             player_bullet_source?.Stop();  // if not null stop
+            return;
+        }
+        if (clip == this.Bunker_theme)
+        {
+            Bunker_themesource?.Stop();  // if not null stop
+            return;
+        }
+        if (clip == this.theme)
+        {
+            themesource?.Stop();  // if not null stop
+            return;
+        }
+        if (clip == this.theme2)
+        {
+            themesource2?.Stop();  // if not null stop
             return;
         }
 
