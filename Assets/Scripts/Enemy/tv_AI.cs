@@ -19,7 +19,7 @@ public class tv_AI : MonoBehaviour
    
 
 
-    float scale = 2.0f;// scale mob size
+    public float scale = 0.8f;// scale mob size
     public Rigidbody2D r2;
     public Animator anim;
 
@@ -140,7 +140,7 @@ public class tv_AI : MonoBehaviour
 
         if (curHealth <= 0)  // if mob hp<=0
         {
-
+            attack_type = 0;
             death = true; // death animation
             Destroy(gameObject, 3.0f);
 
