@@ -8,7 +8,7 @@ public class tv_AI : MonoBehaviour
     public float distance;    // if player reach this distance, AI stop
 
 
-
+    public float TV_Death_Volume_Sound = 0.5f;
     public Transform target; // target
     public GameObject bullet;
     public Transform firePoint;
@@ -140,11 +140,11 @@ public class tv_AI : MonoBehaviour
 
         if (curHealth <= 0)  // if mob hp<=0
         {
-            AudioManager.instance.PlaySound(AudioManager.instance.ai_death, 1);
+            AudioManager.instance.PlaySound(AudioManager.instance.ai_death, TV_Death_Volume_Sound);
             attack_type = 0;
             death = true; // death animation
-            Destroy(gameObject, 3.0f);
-
+            Destroy(gameObject, 2.5f);
+         
 
         }
 
@@ -177,7 +177,7 @@ public class tv_AI : MonoBehaviour
     {
 
         Debug.Log("Your enter Coroutine at" + Time.time);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         damaged = false;  // laser 1 time only
 
     }

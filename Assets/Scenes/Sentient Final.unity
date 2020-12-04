@@ -305,6 +305,10 @@ PrefabInstance:
       propertyPath: engageDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2122697977078666909, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
+      propertyPath: TV_Death_Volume_Sound
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 2122697977078666910, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
       propertyPath: m_LocalPosition.x
       value: -103.62
@@ -24979,6 +24983,10 @@ PrefabInstance:
       propertyPath: player_bullet
       value: 
       objectReference: {fileID: 8300000, guid: 98432f0fb1e7a5a4989760fb7f8e8b07, type: 3}
+    - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
+      propertyPath: ai_death
+      value: 
+      objectReference: {fileID: 8300000, guid: aad4bb531785a7a44b25d5e897ddacf1, type: 3}
     - target: {fileID: 813246636339422815, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.19081
