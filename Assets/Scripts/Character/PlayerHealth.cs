@@ -161,7 +161,14 @@ public class PlayerHealth : MonoBehaviour
             
         }
     }
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Enemy1"))
+        {
+            Debug.Log("Damage Taken");
+            damage(damageTaken);
+        }
+    }
     public void damage(int damageTaken)
     {
         health -= damageTaken;

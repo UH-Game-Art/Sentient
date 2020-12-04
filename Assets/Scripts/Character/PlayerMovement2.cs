@@ -14,7 +14,6 @@ public class PlayerMovement2 : MonoBehaviour
     public float runSpeed = 40f;
 
     bool jump = false;
-    bool isGrounded = false;
     bool crouch = false;
     // Update is called once per frame
 
@@ -27,7 +26,6 @@ public class PlayerMovement2 : MonoBehaviour
     }
     void Update()
     {
-        
      
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
@@ -35,9 +33,9 @@ public class PlayerMovement2 : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
 
-            //AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
+            AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
             jump = true;
-            animator.SetTrigger("takeOff");
+            animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetButtonDown("Crouch"))
