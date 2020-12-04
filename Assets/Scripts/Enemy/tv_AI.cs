@@ -140,8 +140,9 @@ public class tv_AI : MonoBehaviour
 
         if (curHealth <= 0)  // if mob hp<=0
         {
-            AudioManager.instance.PlaySound(AudioManager.instance.ai_death, TV_Death_Volume_Sound);
             attack_type = 0;
+            AudioManager.instance.PlaySound(AudioManager.instance.ai_death, TV_Death_Volume_Sound);
+           
             death = true; // death animation
             Destroy(gameObject, 2.5f);
          
