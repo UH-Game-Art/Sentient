@@ -7,7 +7,8 @@ public class SentientBunkertheme : MonoBehaviour
 
 
     public Transform player; // target
-
+    public float bunker_volume=1.0f;
+    public float forest_volume = 1.0f;
 
     void Start()
     {
@@ -20,13 +21,13 @@ public class SentientBunkertheme : MonoBehaviour
     {
         if (player.transform.position.x >=-114 && player.transform.position.x<-54.27974) // if it is in bunker
         {
-            AudioManager.instance.PlaySound(AudioManager.instance.Bunker_theme, 0.7f, true);
+            AudioManager.instance.PlaySound(AudioManager.instance.Bunker_theme, bunker_volume, true);
         }
 
         if(player.transform.position.x >= -54.27974)// if it is in forest
         {
             AudioManager.instance.StopSound(AudioManager.instance.Bunker_theme); // stop bunker sound
-            AudioManager.instance.PlaySound(AudioManager.instance.theme, 0.7f, true);// start forest song
+            AudioManager.instance.PlaySound(AudioManager.instance.theme, forest_volume, true);// start forest song
         }
        
 

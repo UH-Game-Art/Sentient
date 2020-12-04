@@ -84,7 +84,7 @@ public class tv_AI : MonoBehaviour
             attack_type = 0;// stop attack state when it walking
             IsShooting = false;
 
-            if (range > 16)// move
+            if (range >8.5)// those range are base on final scene
             {
                 awake = true;
               
@@ -92,7 +92,7 @@ public class tv_AI : MonoBehaviour
                 attack_type = 0;
 
             }
-            if (range < 16 && range > 9)// if range is less than 15 and higher 9-> start shooting
+            if (range < 8.5f && range > 5.5f)// if range is less than 15 and higher 9-> start shooting
             {
                 awake = false;
                 attack_type = 1;
@@ -107,7 +107,7 @@ public class tv_AI : MonoBehaviour
                 }
             }
 
-            if (range < 9)   // start shocking player
+            if (range < 5)   // start shocking player
             {
                 // awake = false;
               
@@ -140,6 +140,7 @@ public class tv_AI : MonoBehaviour
 
         if (curHealth <= 0)  // if mob hp<=0
         {
+            AudioManager.instance.PlaySound(AudioManager.instance.ai_death, 1);
             attack_type = 0;
             death = true; // death animation
             Destroy(gameObject, 3.0f);
@@ -169,25 +170,7 @@ public class tv_AI : MonoBehaviour
 
 
 
-    IEnumerator switchAtk() // atk 2 to 1
-    {
-        attack_type = 0;
-        Debug.Log("Your enter Coroutine at" + Time.time);
-        yield return new WaitForSeconds(0.5f);
-        attack_type = 1;
 
-        // laser 1 time only
-
-    }
-
-    IEnumerator switchAtk2() // atk 1 to 2
-    {
-        attack_type = 0;
-        Debug.Log("Your enter Coroutine at" + Time.time);
-        yield return new WaitForSeconds(0.5f);
-        attack_type = 2;
-
-    }
 
 
     IEnumerator Damaged_timer()

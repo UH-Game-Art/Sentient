@@ -22,6 +22,7 @@ public class Weapon : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Mouse0) && Time.time > nextFire)
         {
+            AudioManager.instance.PlaySound(AudioManager.instance.player_bullet, 0.3f);
             nextFire = Time.time + fireRate;
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }

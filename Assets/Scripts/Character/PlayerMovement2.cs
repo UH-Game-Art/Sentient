@@ -33,7 +33,7 @@ public class PlayerMovement2 : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
 
-            //AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
+            AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
             jump = true;
             animator.SetBool("IsJumping", true);
         }
@@ -62,6 +62,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     public void Knockback(float Knockpow, Vector2 Knockdir)
     {
+
         r2.velocity = new Vector2(0, 0);
         r2.AddForce(new Vector2(Knockdir.x * Knockpow, Knockdir.y * Knockpow));
     }
