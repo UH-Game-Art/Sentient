@@ -307,7 +307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2122697977078666909, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
       propertyPath: TV_Death_Volume_Sound
-      value: 0.05
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2122697977078666909, guid: 7e55d48aeb7620544a493a0393bdeb44, type: 3}
       propertyPath: scale
@@ -24986,7 +24986,7 @@ PrefabInstance:
     - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: hp
       value: 
-      objectReference: {fileID: 8300000, guid: 7d85fa4b0b580184885612048eeeddaa, type: 3}
+      objectReference: {fileID: 8300000, guid: 073c9b1a76fc7de4bae35d33e53ef8e5, type: 3}
     - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: jump
       value: 
@@ -24999,6 +24999,10 @@ PrefabInstance:
       propertyPath: ai_death
       value: 
       objectReference: {fileID: 8300000, guid: aad4bb531785a7a44b25d5e897ddacf1, type: 3}
+    - target: {fileID: 813246636339422814, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
+      propertyPath: barrel_destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: f851776950c22fe44bea29a210f45a89, type: 3}
     - target: {fileID: 813246636339422815, guid: ad6fb8382c3e9a244921ecf8d3967df2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.19081
