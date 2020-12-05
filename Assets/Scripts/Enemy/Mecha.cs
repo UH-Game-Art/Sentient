@@ -28,11 +28,9 @@ public class Mecha : MonoBehaviour
     {
         if (player = GameObject.FindGameObjectWithTag("MechOnly").transform)
         {
-            Debug.Log("Found Player" + player.name);
             rb = this.GetComponent<Rigidbody2D>();
             animator = this.GetComponent<Animator>();
             canon = this.gameObject.transform.GetChild(1).transform.GetChild(0).transform;
-            Debug.Log(this.gameObject.transform.GetChild(1).transform.GetChild(0).name);
             playerFound = true;
         }
     }

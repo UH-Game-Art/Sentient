@@ -16,6 +16,7 @@ TagManager:
   - Arms
   - Boss
   - interactableObject
+  - MechOnly
   layers:
   - Default
   - TransparentFX
@@ -32,7 +33,7 @@ TagManager:
   - Fog
   - Enemy
   - EnemyBullet
-  - 
+  - MechaDead
   - 
   - 
   - 
