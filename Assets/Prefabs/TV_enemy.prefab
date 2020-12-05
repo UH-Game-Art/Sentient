@@ -113,7 +113,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -225,10 +225,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curHealth: 10
   distance: 14
+  TV_Death_Volume_Sound: 0.5
   target: {fileID: 0}
   bullet: {fileID: 457924268081843405, guid: 06a166432a7c7dc40b1824ea66d787b3, type: 3}
   firePoint: {fileID: 735037231}
   fireRate: 0.5
+  scale: 0.8
   r2: {fileID: 0}
   anim: {fileID: 0}
   awake: 0

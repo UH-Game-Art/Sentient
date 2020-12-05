@@ -122,7 +122,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 800
-  m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
@@ -175,7 +174,6 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 4438550803166598331}
   m_CeilingCheck: {fileID: 4438550801580918489}
-  m_CrouchDisableCollider: {fileID: 4438550802779749869}
   animator: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
