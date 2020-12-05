@@ -58,6 +58,10 @@ public class CharacterController2D : MonoBehaviour
         m_Grounded = false;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        
+>>>>>>> parent of 1e002c19... Update to old rico
 =======
         
 >>>>>>> parent of 1e002c19... Update to old rico
@@ -76,7 +80,10 @@ public class CharacterController2D : MonoBehaviour
                 m_Grounded = true;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1e002c19... Update to old rico
 =======
 >>>>>>> parent of 1e002c19... Update to old rico
                 animator.SetBool("IsJumping", false);
@@ -86,6 +93,7 @@ public class CharacterController2D : MonoBehaviour
             }
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -125,6 +133,8 @@ public class CharacterController2D : MonoBehaviour
    
 
 =======
+=======
+>>>>>>> parent of 1e002c19... Update to old rico
         if (landed == true)
         {
             animator.SetBool("IsJumping", false);
@@ -145,6 +155,9 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+>>>>>>> parent of 1e002c19... Update to old rico
+=======
 >>>>>>> parent of 1e002c19... Update to old rico
     
 
@@ -274,6 +287,7 @@ public class CharacterController2D : MonoBehaviour
          }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (other.gameObject.tag == "Ground")
         {
             landed = false;
@@ -283,11 +297,16 @@ public class CharacterController2D : MonoBehaviour
 =======
 =======
 >>>>>>> parent of 1e002c19... Update to old rico
+=======
+>>>>>>> parent of 1e002c19... Update to old rico
         if (other.gameObject.tag == "Ground only")
         {
             landed = true;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 1e002c19... Update to old rico
+=======
 >>>>>>> parent of 1e002c19... Update to old rico
 =======
 >>>>>>> parent of 1e002c19... Update to old rico
