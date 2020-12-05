@@ -10,6 +10,7 @@ public class Mecha : MonoBehaviour
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private float agroRange = 12f;
     [SerializeField] private float attackRange = 5f;
+    [SerializeField] private int curHealth = 5;
 
 
     private float horMovement;
@@ -24,13 +25,9 @@ public class Mecha : MonoBehaviour
 
     private void Start()
     {
-        if (player = GameObject.FindGameObjectWithTag("Player").transform)
+        if (player = GameObject.FindGameObjectWithTag("MechOnly").transform)
         {
-            Debug.Log(player.name);
-        }
-        if (player = GameObject.FindGameObjectWithTag("Player").transform)
-        {
-            Debug.Log("Found Player");
+            Debug.Log("Found Player" + player.name);
             rb = this.GetComponent<Rigidbody2D>();
             animator = this.GetComponent<Animator>();
             canon = this.gameObject.transform.GetChild(1).transform.GetChild(0).transform;
@@ -98,6 +95,10 @@ public class Mecha : MonoBehaviour
                 StartCoroutine(shoot());
             }
 
+            if (curHealth < 0)
+            {
+                Destroy(gameObject, 0.2f);
+            }
         }
     }
 
@@ -113,6 +114,20 @@ public class Mecha : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, agroRange);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
+    public void Damage(int dmg) // taking damage
+    {
+
+        curHealth -= dmg;
+        StartCoroutine(Damaged_timer());
+    }
+
+    IEnumerator Damaged_timer()
+    {
+
+        Debug.Log("Your enter Coroutine at" + Time.time);
+        yield return new WaitForSeconds(0.8f);
     }
 
     IEnumerator shoot()

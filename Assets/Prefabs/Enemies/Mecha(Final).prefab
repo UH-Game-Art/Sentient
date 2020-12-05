@@ -38,6 +38,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2266847926597899154}
     m_Modifications:
+    - target: {fileID: 3228787978934976571, guid: 64d895bbba77e284e8e4142105ba81a1, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 3758985155927489233, guid: 1ca7a9004fcdd4c46947de91b6b82f50, type: 3}
+    - target: {fileID: 3228787978934976571, guid: 64d895bbba77e284e8e4142105ba81a1, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228787978934976571, guid: 64d895bbba77e284e8e4142105ba81a1, type: 3}
+      propertyPath: agroRange
+      value: 10.49
+      objectReference: {fileID: 0}
     - target: {fileID: 3228787978934976572, guid: 64d895bbba77e284e8e4142105ba81a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2507782
@@ -48,7 +60,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3228787978934976572, guid: 64d895bbba77e284e8e4142105ba81a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 78.302986
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3228787978934976572, guid: 64d895bbba77e284e8e4142105ba81a1, type: 3}
       propertyPath: m_LocalRotation.x

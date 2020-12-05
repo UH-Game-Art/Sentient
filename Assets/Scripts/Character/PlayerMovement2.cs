@@ -71,6 +71,4 @@ public class PlayerMovement2 : MonoBehaviour
         r2.AddForce(new Vector2(Knockdir.x * Knockpow, Knockdir.y * Knockpow));
     }
 
-
-
 }

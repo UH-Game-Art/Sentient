@@ -20,7 +20,7 @@ public class Turret : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (player = GameObject.FindGameObjectWithTag("Player").transform)
+        if (player = GameObject.FindGameObjectWithTag("MechOnly").transform)
         {
             firePoint = this.gameObject.transform.GetChild(0).transform;
             playerFound = true;
