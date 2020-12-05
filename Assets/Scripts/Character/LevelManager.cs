@@ -6,11 +6,11 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject currentCheckpoint;
 
-    private PlayerMovement Player;
+    private PlayerMovement2 Player;
     // Start is called before the first frame update
     void Start()
     {
-      Player = FindObjectOfType<PlayerMovement>();  
+      Player = FindObjectOfType<PlayerMovement2>();  
     }
 
     // Update is called once per frame
