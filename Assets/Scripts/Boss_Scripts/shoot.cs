@@ -25,8 +25,14 @@ public class shoot : MonoBehaviour
         if(hitInfo.gameObject.tag == "Player")
         {
             pb.damage(1);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        if(hitInfo.gameObject.tag == "Ground")
+        {
+            Destroy(gameObject);
+        }
+        
+
     }
 
 }
