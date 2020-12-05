@@ -49,6 +49,20 @@ public class CharacterController2D : MonoBehaviour
         inventory = new Inventory();
     }
 
+
+    void Update()
+    {
+        if (landed == true)
+        {
+            animator.SetBool("IsJumping", false);
+        }
+        else
+        {
+            animator.SetBool("IsJumping", true);
+        }
+    }
+
+
     private void FixedUpdate()
     {
         Flip();
@@ -64,27 +78,20 @@ public class CharacterController2D : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
-                animator.SetBool("IsJumping", false);
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
         }
 
-        if (landed == true)
-        {
-            animator.SetBool("IsJumping", false);
-        }
-        else
-        {
-            animator.SetBool("IsJumping", true);
-        }
+        
 
     }
 
 
     void OnTriggerEnter2D(Collider2D theCollision)
     {
-        if (theCollision.gameObject.tag == "Ground only")
+        Debug.Log("On Platform");
+        if (theCollision.gameObject.tag == "Ground")
         {
             landed = true;
         }
@@ -180,13 +187,18 @@ public class CharacterController2D : MonoBehaviour
     public void OnTriggerStay2D(Collider2D other)
     {
 
-             if(other.gameObject.tag == "Platform")
-            {
-                Debug.Log("On Platform");
-                transform.parent = other.transform;
+        if(other.gameObject.tag == "Platform")
+        {
+            Debug.Log("On Platform");
+            transform.parent = other.transform;
  
-            }
-     }
+        }
+        if (other.gameObject.tag == "Ground")
+        {
+            Debug.Log("On Platform");
+            landed = true;
+        }
+    }
  
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -196,9 +208,11 @@ public class CharacterController2D : MonoBehaviour
             transform.parent = null;
 
          }
-        if (other.gameObject.tag == "Ground only")
+        Debug.Log("On Platform");
+        if (other.gameObject.tag == "Ground")
         {
-            landed = true;
+            Debug.Log("On Platform");
+            landed = false;
         }
     }
 
