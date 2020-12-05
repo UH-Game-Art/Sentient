@@ -103,6 +103,7 @@ public class Mecha : MonoBehaviour
                     trans.gameObject.layer = LayerMask.NameToLayer("MechaDead");
                 }
                 animator.SetBool("Dead", true);
+                AudioManager.instance.PlaySound(AudioManager.instance.ai_death, 0.5f);
                 dead = true;
             }
         }
