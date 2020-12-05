@@ -16,6 +16,7 @@ public class Turret : MonoBehaviour
     private Transform player;
     private bool playerWithinRange = false;
     private bool playerFound = false;
+    private bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,7 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerFound && withinRange())
+        if (playerFound && withinRange() && !isDead)
         {
             HandleAiming();
             if (!inCoolDown)
