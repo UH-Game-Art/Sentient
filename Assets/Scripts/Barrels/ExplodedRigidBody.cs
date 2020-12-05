@@ -21,7 +21,7 @@ public class ExplodedRigidBody : MonoBehaviour
         rb2d.AddForce(forceDirection);
         rb2d.AddTorque(torque);
 
-        Invoke("DestroySelf", UnityEngine.Random.Range(2f, 4f));
+        Invoke("DestroySelf", UnityEngine.Random.Range(1f, 2f));
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
