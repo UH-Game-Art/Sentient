@@ -35,7 +35,7 @@ public class PlayerMovement2 : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
 
-            //AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
+            AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
             jump = true;
             animator.SetTrigger("takeOff");
             animator.SetBool("IsJumping", true);

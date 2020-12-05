@@ -18,7 +18,7 @@ public class Camerabunker : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-       AudioManager.instance.PlaySound(AudioManager.instance.theme2, 0.5f, true);
+     //  AudioManager.instance.PlaySound(AudioManager.instance.theme2, 0.5f, true);
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
