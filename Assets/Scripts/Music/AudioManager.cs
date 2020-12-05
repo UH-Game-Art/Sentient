@@ -52,8 +52,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip theme;
     private AudioSource themesource;
 
-    public AudioClip theme2;
-    private AudioSource themesource2;
+    public AudioClip boss_battle;
+    private AudioSource boss_battlesource;
 
     public AudioClip credit;
     private AudioSource creditsource;
@@ -84,9 +84,9 @@ public class AudioManager : MonoBehaviour
 
         }
 
-        if (clip == this.theme2)
+        if (clip == this.boss_battle)
         {
-            Play(clip, ref themesource2, volume, isLoopback);
+            Play(clip, ref boss_battlesource, volume, isLoopback);
 
         }
 
@@ -200,9 +200,9 @@ public class AudioManager : MonoBehaviour
             themesource?.Stop();  // if not null stop
             return;
         }
-        if (clip == this.theme2)
+        if (clip == this.boss_battle)
         {
-            themesource2?.Stop();  // if not null stop
+            boss_battlesource?.Stop();  // if not null stop
             return;
         }
 

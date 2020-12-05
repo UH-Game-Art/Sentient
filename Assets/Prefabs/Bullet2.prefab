@@ -95,7 +95,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0019148327, y: -0.0019147564}
@@ -123,9 +123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f5ad3a96e081b4fa8898a33f564bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 27.05
+  speed: 10
   damage: 5
   rb: {fileID: 1835969744315456184}
+  Bullet_Time: 5
 --- !u!50 &1835969744315456184
 Rigidbody2D:
   serializedVersion: 4
