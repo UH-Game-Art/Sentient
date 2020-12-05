@@ -4,13 +4,13 @@ using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
     [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
-    [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
+    //[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
     [SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
     [SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
     [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
-    [SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
+    //[SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
     private bool landed = false;
     const float k_GroundedRadius = 1.5f; // Radius of the overlap circle to determine if grounded
     private bool m_Grounded;            // Whether or not the player is grounded.
@@ -51,6 +51,7 @@ public class CharacterController2D : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Flip();
         bool wasGrounded = m_Grounded;
         m_Grounded = false;
         if (landed)
@@ -78,21 +79,21 @@ public class CharacterController2D : MonoBehaviour
     public void Move(float move, bool crouch, bool jump)
     {
         // If crouching, check to see if the character can stand up
-        if (!crouch)
+      /*  if (!crouch)
         {
             // If the character has a ceiling preventing them from standing up, keep them crouching
             if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
             {
                 crouch = true;
             }
-        }
+        } */
 
         //only control the player if grounded or airControl is turned on
         if (m_Grounded || m_AirControl)
         {
 
             // If crouching
-            if (crouch)
+          /*  if (crouch)
             {
                 if (!m_wasCrouching)
                 {
@@ -118,7 +119,7 @@ public class CharacterController2D : MonoBehaviour
                     m_wasCrouching = false;
                     OnCrouchEvent.Invoke(false);
                 }
-            }
+            } */
 
             // Move the character by finding the target velocity
             Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
@@ -126,17 +127,7 @@ public class CharacterController2D : MonoBehaviour
             m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
             // If the input is moving the player right and the player is facing left...
-            if (move > 0 && !m_FacingRight)
-            {
-                // ... flip the player.
-                Flip();
-            }
-            // Otherwise if the input is moving the player left and the player is facing right...
-            else if (move < 0 && m_FacingRight)
-            {
-                // ... flip the player.
-                Flip();
-            }
+            
         }
         // If the player should jump...
         if (m_Grounded && jump)
@@ -151,9 +142,20 @@ public class CharacterController2D : MonoBehaviour
     private void Flip()
     {
         // Switch the way the player is labelled as facing.
-        m_FacingRight = !m_FacingRight;
+        Vector3 mPosition = Input.mousePosition;
+        mPosition = Camera.main.ScreenToWorldPoint(mPosition);
+        if(mPosition.x > transform.position.x && m_FacingRight == false)
+        {
+            m_FacingRight = true;
+            transform.Rotate(0, 180, 0);
 
-        transform.Rotate(0f, 180f, 0f);
+        }
+        if (mPosition.x < transform.position.x && m_FacingRight == true)
+        {
+            m_FacingRight = false;
+            transform.Rotate(0, 180, 0);
+        }
+
     }
 
     //Lets Player move with platform

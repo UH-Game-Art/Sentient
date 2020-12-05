@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip menu;
     private AudioSource menusource;
+
     public AudioClip menu_background;
     private AudioSource menu_background_source;
 
@@ -38,7 +39,13 @@ public class AudioManager : MonoBehaviour
     public AudioClip ready;
     private AudioSource readysource;
 
+    public AudioClip ai_death;
+    private AudioSource ai_deathsource;
 
+
+
+
+    // theme
     public AudioClip Bunker_theme;
     private AudioSource Bunker_themesource;
 
@@ -97,6 +104,12 @@ public class AudioManager : MonoBehaviour
         if (clip == this.player_bullet)
         {
             Play(clip, ref player_bullet_source, volume);
+            return;
+        }
+
+        if (clip == this.ai_death)
+        {
+            Play(clip, ref ai_deathsource, volume);
             return;
         }
 
