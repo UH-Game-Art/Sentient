@@ -22,10 +22,10 @@ public class Bullet : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
-            
+            collision.SendMessageUpwards("Damage", damage);
             Destroy(gameObject,0.1f); // destroy bullet if hit mob 
         }
-        if (collision.gameObject.tag == "Boss")
+        if (collision.gameObject.tag == "Boss)
         {
             bh.BossDamage(5);
             Destroy(gameObject, 0.1f); // destroy bullet if hit mob 
