@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 6197316354944259632}
   - component: {fileID: 7442452109172732145}
   - component: {fileID: 4226929888353242163}
-  - component: {fileID: -4155447760020753796}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: las3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,16 +137,3 @@ MonoBehaviour:
   speed: 12
   rb: {fileID: 6197316354944259632}
   pb: {fileID: 0}
---- !u!114 &-4155447760020753796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5266797437748148556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6abaa32409fb1084ea7e884b47b233c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explodeEffect: {fileID: 6879649811810794558, guid: a0a9f57c4dee1bd468dee34429c3104f, type: 3}

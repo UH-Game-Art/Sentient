@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 6750931937658129408}
   - component: {fileID: 528318671078378768}
   - component: {fileID: -3562913673664079003}
-  - component: {fileID: -8005797020292330597}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: miss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,16 +169,3 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 6750931937658129408}
   pb: {fileID: 0}
---- !u!114 &-8005797020292330597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5144473115625114578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6abaa32409fb1084ea7e884b47b233c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explodeEffect: {fileID: 496363170186009058, guid: 3d84cca67dea637468d4a5ea740425cc, type: 3}
