@@ -100,7 +100,7 @@ ScriptedImporter:
       y: 4
       width: 3840
       height: 2160
-    spriteID: cefea0123340cad49a079e049ae4b57d
+    spriteID: 186db10849e5b20439b2054c04c2d2fd
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -121,8 +121,8 @@ ScriptedImporter:
       x: 3852
       y: 4
       width: 3840
-      height: 1332
-    spriteID: 5632a64c00d41ca448603a87ee7ca035
+      height: 1179
+    spriteID: 797dffced5fbb93468f855f8709a3e9c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -132,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3852, y: -313}
+    uvTransform: {x: 3852, y: -466}
   - name: 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -144,7 +144,7 @@ ScriptedImporter:
       y: 7774
       width: 3840
       height: 287
-    spriteID: 936d72c41e14eee4dbe0cd1e8439b0d5
+    spriteID: 8a236b30576b9fb48b19032ddecee36e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -166,7 +166,7 @@ ScriptedImporter:
       y: 6250
       width: 3840
       height: 1516
-    spriteID: a5dc7583cf6b8e6448e74573cf01d074
+    spriteID: 1f5455765c3bc9d4583d50f86e8db4aa
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -188,7 +188,7 @@ ScriptedImporter:
       y: 4340
       width: 3840
       height: 1902
-    spriteID: 7bf188fa6f42fa84f90a315b86f307bd
+    spriteID: 374b217b22f732e41a833df480506406
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -207,10 +207,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 3852
-      y: 1344
+      y: 1191
       width: 3181
       height: 1384
-    spriteID: 9b868caa713ba8c4bb9f4ef34c12e1f5
+    spriteID: 50fa1300a21007447a43e7dfb879e820
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -220,7 +220,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3474, y: 1344}
+    uvTransform: {x: 3474, y: 1191}
   - name: Background
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 2172
       width: 3840
       height: 2160
-    spriteID: 13acf8ab45b871549b2f0c728dcb0566
+    spriteID: 53a79e2ba4193eb4eb3202707ff7e8de
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -277,50 +277,50 @@ ScriptedImporter:
     spriteName: 1
     isGroup: 0
     parentIndex: -1
-    spriteID: cefea0123340cad49a079e049ae4b57d
-    layerID: 9
+    spriteID: 186db10849e5b20439b2054c04c2d2fd
+    layerID: 0
     mosaicPosition: {x: 4, y: 4}
   - name: Layer 2
     spriteName: Layer 2
     isGroup: 0
     parentIndex: -1
-    spriteID: 5632a64c00d41ca448603a87ee7ca035
-    layerID: 8
+    spriteID: 797dffced5fbb93468f855f8709a3e9c
+    layerID: -7500619
     mosaicPosition: {x: 3852, y: 4}
   - name: 2
     spriteName: 2
     isGroup: 0
     parentIndex: -1
-    spriteID: 936d72c41e14eee4dbe0cd1e8439b0d5
-    layerID: 6
+    spriteID: 8a236b30576b9fb48b19032ddecee36e
+    layerID: 372029328
     mosaicPosition: {x: 4, y: 7774}
   - name: 3
     spriteName: 3
     isGroup: 0
     parentIndex: -1
-    spriteID: a5dc7583cf6b8e6448e74573cf01d074
-    layerID: 5
+    spriteID: 1f5455765c3bc9d4583d50f86e8db4aa
+    layerID: 372029327
     mosaicPosition: {x: 4, y: 6250}
   - name: 7
     spriteName: 7
     isGroup: 0
     parentIndex: -1
-    spriteID: 7bf188fa6f42fa84f90a315b86f307bd
-    layerID: 4
+    spriteID: 374b217b22f732e41a833df480506406
+    layerID: 372029323
     mosaicPosition: {x: 4, y: 4340}
   - name: 8
     spriteName: 8
     isGroup: 0
     parentIndex: -1
-    spriteID: 9b868caa713ba8c4bb9f4ef34c12e1f5
-    layerID: 3
-    mosaicPosition: {x: 3852, y: 1344}
+    spriteID: 50fa1300a21007447a43e7dfb879e820
+    layerID: 372029334
+    mosaicPosition: {x: 3852, y: 1191}
   - name: Background
     spriteName: Background
     isGroup: 0
     parentIndex: -1
-    spriteID: 13acf8ab45b871549b2f0c728dcb0566
-    layerID: 2
+    spriteID: 53a79e2ba4193eb4eb3202707ff7e8de
+    layerID: 332801758
     mosaicPosition: {x: 4, y: 2172}
   characterData:
     bones: []
