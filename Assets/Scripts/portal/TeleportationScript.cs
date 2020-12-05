@@ -32,7 +32,7 @@ public class TeleportationScript : MonoBehaviour
 
 	IEnumerator Teleport()
 	{
-		yield return new WaitForSeconds(0.01f);
+		yield return new WaitForSeconds(0f);
 		Player.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
 		yield return new WaitForSeconds(0f);
 		Destroy(Portal);
