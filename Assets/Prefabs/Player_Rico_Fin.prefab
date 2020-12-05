@@ -1725,8 +1725,8 @@ MonoBehaviour:
   - {fileID: 3266248870871780862}
   - {fileID: 5063658814795989279}
   m_Bounds:
-    m_Center: {x: -0.004619837, y: -0.0062400103, z: 0}
-    m_Extent: {x: 1.3442502, y: 1.78026, z: 0}
+    m_Center: {x: -0.004680872, y: -0.0062407255, z: 0}
+    m_Extent: {x: 1.3442502, y: 1.7802602, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &3405797175188861195
@@ -1830,7 +1830,7 @@ MonoBehaviour:
   - {fileID: 8719270765739780375}
   - {fileID: 6393875717810324462}
   m_Bounds:
-    m_Center: {x: -1.3721054, y: 0.0046743155, z: 0}
+    m_Center: {x: -1.3721664, y: 0.0046743155, z: 0}
     m_Extent: {x: 0.6878381, y: 1.8706762, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -2068,8 +2068,8 @@ MonoBehaviour:
   - {fileID: 7532101831111821102}
   - {fileID: 3290311447904669501}
   m_Bounds:
-    m_Center: {x: -0.003297925, y: -0.0011763573, z: 0}
-    m_Extent: {x: 0.87485087, y: 2.3588257, z: 0}
+    m_Center: {x: -0.003297925, y: -0.0011761189, z: 0}
+    m_Extent: {x: 0.87485087, y: 2.358826, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &4287132620318963173
@@ -2081,7 +2081,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3277501749575082893}
-  - component: {fileID: 8691052961662093540}
   m_Layer: 8
   m_Name: bone_9
   m_TagString: Untagged
@@ -2109,21 +2108,6 @@ Transform:
   m_Father: {fileID: 9163596494756820508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -88.071}
---- !u!114 &8691052961662093540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4287132620318963173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e1ee336346a0b8429d0255dd2c8d9a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pistol: {fileID: 5635398509511418280}
-  gun: {fileID: 1290662046839544268}
-  Weapon: 0
 --- !u!1 &4467979440618959953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,8 +2352,8 @@ MonoBehaviour:
   - {fileID: 9163596494756820508}
   - {fileID: 7983975078917007795}
   m_Bounds:
-    m_Center: {x: 0.005919814, y: -0.027295828, z: 0}
-    m_Extent: {x: 0.64895296, y: 2.1109028, z: 0}
+    m_Center: {x: 0.005919814, y: -0.027296305, z: 0}
+    m_Extent: {x: 0.64895296, y: 2.1109023, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &5797000194388270274
@@ -2676,8 +2660,8 @@ MonoBehaviour:
   - {fileID: 2800711250230740897}
   - {fileID: 551948053363421967}
   m_Bounds:
-    m_Center: {x: 0.00003552437, y: -0.0028714538, z: 0}
-    m_Extent: {x: 0.7350291, y: 0.7370051, z: 0}
+    m_Center: {x: -0.000025510788, y: -0.002872169, z: 0}
+    m_Extent: {x: 0.7350291, y: 0.7370049, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &6958135929906268202
@@ -2847,7 +2831,7 @@ MonoBehaviour:
   - {fileID: 4024281462269977005}
   - {fileID: 4971752429131551514}
   m_Bounds:
-    m_Center: {x: 0.060510278, y: -0.34541798, z: 0}
+    m_Center: {x: 0.060449243, y: -0.34541893, z: 0}
     m_Extent: {x: 0.76799834, y: 1.0035336, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -3056,6 +3040,7 @@ GameObject:
   - component: {fileID: 7423365889445639170}
   - component: {fileID: 2102822137}
   - component: {fileID: 1998377869}
+  - component: {fileID: 2848442801408154771}
   m_Layer: 8
   m_Name: RicoBones
   m_TagString: Player
@@ -3230,6 +3215,21 @@ CapsuleCollider2D:
   m_Offset: {x: -1.0129801, y: 8.251323}
   m_Size: {x: 6.0908, y: 10.065471}
   m_Direction: 0
+--- !u!114 &2848442801408154771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456475491814294416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1ee336346a0b8429d0255dd2c8d9a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistol: {fileID: 5635398509511418280}
+  gun: {fileID: 1290662046839544268}
+  Weapon: 0
 --- !u!1 &9053826550954205245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,7 +3329,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 5063658814795989279}
   m_Bounds:
-    m_Center: {x: 0.0024937987, y: 0.0016258955, z: 0}
+    m_Center: {x: 0.0024937987, y: 0.0016249418, z: 0}
     m_Extent: {x: 0.658505, y: 0.7232952, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
