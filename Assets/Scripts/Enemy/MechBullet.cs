@@ -6,20 +6,21 @@ public class MechBullet : MonoBehaviour
 {
 
     public float speed;
-    public int damage;
+    public int damage = 1;
     private Rigidbody2D rb;
     public PlayerMovement2 player;
     public float Bullet_Time = 0.5f;
     private bool playerFound = false;
     public PlayerHealth pb;
 
+
     // Start is called before the first frame update
     void Start()
     {
+        pb = FindObjectOfType<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
         Destroy(gameObject, Bullet_Time);
-        pb = FindObjectOfType<PlayerHealth>();
         if (player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement2>())
         {
             playerFound = true;
@@ -30,11 +31,7 @@ public class MechBullet : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (playerFound)
-            {
-                player.Knockback(100f, player.transform.position);
-                pb.damage(damage);
-            }
+            pb.damage(damage);
             Destroy(gameObject, 0.01f); // destroy bullet if hit mob 
         }
     }
