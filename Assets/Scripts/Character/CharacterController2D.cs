@@ -90,7 +90,7 @@ public class CharacterController2D : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D theCollision)
     {
-        Debug.Log("On Platform");
+        //Debug.Log("On Platform");
         if (theCollision.gameObject.tag == "Ground")
         {
             landed = true;
@@ -189,13 +189,13 @@ public class CharacterController2D : MonoBehaviour
 
         if(other.gameObject.tag == "Platform")
         {
-            Debug.Log("On Platform");
+            //Debug.Log("On Platform");
             transform.parent = other.transform;
  
         }
         if (other.gameObject.tag == "Ground")
         {
-            Debug.Log("On Platform");
+            //Debug.Log("On Platform");
             landed = true;
         }
     }
@@ -208,10 +208,10 @@ public class CharacterController2D : MonoBehaviour
             transform.parent = null;
 
          }
-        Debug.Log("On Platform");
+        //Debug.Log("On Platform");
         if (other.gameObject.tag == "Ground")
         {
-            Debug.Log("On Platform");
+            //Debug.Log("On Platform");
             landed = false;
         }
     }
