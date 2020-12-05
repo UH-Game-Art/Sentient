@@ -19,6 +19,8 @@ public class CharacterController2D : MonoBehaviour
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Vector3 m_Velocity = Vector3.zero;
     public Animator animator;
+    public LayerMask Collission_Mask;
+    public Collider2D GroundCheckCol;
 
     // Added by dont_call
     private Inventory inventory;
@@ -54,8 +56,12 @@ public class CharacterController2D : MonoBehaviour
         Flip();
         bool wasGrounded = m_Grounded;
         m_Grounded = false;
+<<<<<<< HEAD
+=======
         
+>>>>>>> parent of 1e002c19... Update to old rico
 
+        
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
         Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -64,12 +70,35 @@ public class CharacterController2D : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
+<<<<<<< HEAD
+=======
                 animator.SetBool("IsJumping", false);
+>>>>>>> parent of 1e002c19... Update to old rico
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
         }
 
+<<<<<<< HEAD
+
+    }
+
+    void Update()
+    {
+        if(landed == true)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {
+            animator.SetBool("IsJumping", true);
+        }
+    }
+
+
+   
+
+=======
         if (landed == true)
         {
             animator.SetBool("IsJumping", false);
@@ -90,6 +119,7 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
+>>>>>>> parent of 1e002c19... Update to old rico
     
 
 
@@ -186,7 +216,15 @@ public class CharacterController2D : MonoBehaviour
                 transform.parent = other.transform;
  
             }
-     }
+
+        if (other.gameObject.tag == "Ground only")
+        {
+            landed = true;
+
+        }
+
+
+    }
  
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -198,8 +236,15 @@ public class CharacterController2D : MonoBehaviour
          }
         if (other.gameObject.tag == "Ground only")
         {
+<<<<<<< HEAD
+            landed = false;
+
+        }
+
+=======
             landed = true;
         }
+>>>>>>> parent of 1e002c19... Update to old rico
     }
 
 }
