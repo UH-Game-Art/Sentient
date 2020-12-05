@@ -38,6 +38,8 @@ public class PlayerMovement2 : MonoBehaviour
             //AudioManager.instance.PlaySound(AudioManager.instance.jump, 1);
             jump = true;
             animator.SetTrigger("takeOff");
+            animator.SetBool("IsJumping", true);
+
         }
 
         if (Input.GetButtonDown("Crouch"))
