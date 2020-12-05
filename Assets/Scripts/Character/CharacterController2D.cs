@@ -56,6 +56,10 @@ public class CharacterController2D : MonoBehaviour
         Flip();
         bool wasGrounded = m_Grounded;
         m_Grounded = false;
+<<<<<<< HEAD
+=======
+        
+>>>>>>> parent of 1e002c19... Update to old rico
 
         
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -66,17 +70,25 @@ public class CharacterController2D : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
+<<<<<<< HEAD
+=======
+                animator.SetBool("IsJumping", false);
+>>>>>>> parent of 1e002c19... Update to old rico
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
         }
 
+<<<<<<< HEAD
 
     }
 
     void Update()
     {
         if(landed == true)
+=======
+        if (landed == true)
+>>>>>>> parent of 1e002c19... Update to old rico
         {
             animator.SetBool("IsJumping", false);
         }
@@ -84,7 +96,22 @@ public class CharacterController2D : MonoBehaviour
         {
             animator.SetBool("IsJumping", true);
         }
+<<<<<<< HEAD
+=======
+
     }
+
+
+    void OnTriggerEnter2D(Collider2D theCollision)
+    {
+        if (theCollision.gameObject.tag == "Ground only")
+        {
+            landed = true;
+        }
+>>>>>>> parent of 1e002c19... Update to old rico
+    }
+
+    
 
 
    
@@ -215,12 +242,19 @@ public class CharacterController2D : MonoBehaviour
             transform.parent = null;
 
          }
+<<<<<<< HEAD
         if (other.gameObject.tag == "Ground")
         {
             landed = false;
 
         }
 
+=======
+        if (other.gameObject.tag == "Ground only")
+        {
+            landed = true;
+        }
+>>>>>>> parent of 1e002c19... Update to old rico
     }
 
 }
