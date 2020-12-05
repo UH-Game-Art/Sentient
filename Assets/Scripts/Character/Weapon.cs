@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint; //point of fire from gun
     public int damage = 10; //damage enemy takes 
     public GameObject bulletPrefab;
-    public float fireRate = 0.5f;
+    public float fireRate = 0.3f;
     private float nextFire = 0.0f;
 
 
