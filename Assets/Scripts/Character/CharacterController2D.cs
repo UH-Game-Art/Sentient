@@ -56,18 +56,6 @@ public class CharacterController2D : MonoBehaviour
         Flip();
         bool wasGrounded = m_Grounded;
         m_Grounded = false;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        
->>>>>>> parent of 1e002c19... Update to old rico
-=======
-        
->>>>>>> parent of 1e002c19... Update to old rico
-=======
-        
->>>>>>> parent of 1e002c19... Update to old rico
 
         
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -78,33 +66,17 @@ public class CharacterController2D : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 1e002c19... Update to old rico
-=======
->>>>>>> parent of 1e002c19... Update to old rico
-                animator.SetBool("IsJumping", false);
->>>>>>> parent of 1e002c19... Update to old rico
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     }
 
     void Update()
     {
         if(landed == true)
-=======
-        if (landed == true)
->>>>>>> parent of 1e002c19... Update to old rico
         {
             animator.SetBool("IsJumping", false);
         }
@@ -112,53 +84,11 @@ public class CharacterController2D : MonoBehaviour
         {
             animator.SetBool("IsJumping", true);
         }
-<<<<<<< HEAD
-=======
-
     }
-
-
-    void OnTriggerEnter2D(Collider2D theCollision)
-    {
-        if (theCollision.gameObject.tag == "Ground only")
-        {
-            landed = true;
-        }
->>>>>>> parent of 1e002c19... Update to old rico
-    }
-
-    
 
 
    
 
-=======
-=======
->>>>>>> parent of 1e002c19... Update to old rico
-        if (landed == true)
-        {
-            animator.SetBool("IsJumping", false);
-        }
-        else
-        {
-            animator.SetBool("IsJumping", true);
-        }
-
-    }
-
-
-    void OnTriggerEnter2D(Collider2D theCollision)
-    {
-        if (theCollision.gameObject.tag == "Ground only")
-        {
-            landed = true;
-        }
-    }
-
-<<<<<<< HEAD
->>>>>>> parent of 1e002c19... Update to old rico
-=======
->>>>>>> parent of 1e002c19... Update to old rico
     
 
 
@@ -256,7 +186,7 @@ public class CharacterController2D : MonoBehaviour
  
             }
 
-        if (other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground only")
         {
             landed = true;
 
@@ -264,11 +194,17 @@ public class CharacterController2D : MonoBehaviour
 
 
     }
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerS2D(Collider2D other)
     {
 
+        if (other.gameObject.tag == "Platform")
+        {
+            Debug.Log("On Platform");
+            transform.parent = other.transform;
 
-        if (other.gameObject.tag == "Ground")
+        }
+
+        if (other.gameObject.tag == "Ground only")
         {
             landed = true;
 
@@ -285,31 +221,12 @@ public class CharacterController2D : MonoBehaviour
             transform.parent = null;
 
          }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground only")
         {
             landed = false;
 
         }
 
-=======
-=======
->>>>>>> parent of 1e002c19... Update to old rico
-=======
->>>>>>> parent of 1e002c19... Update to old rico
-        if (other.gameObject.tag == "Ground only")
-        {
-            landed = true;
-        }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 1e002c19... Update to old rico
-=======
->>>>>>> parent of 1e002c19... Update to old rico
-=======
->>>>>>> parent of 1e002c19... Update to old rico
     }
 
 }
