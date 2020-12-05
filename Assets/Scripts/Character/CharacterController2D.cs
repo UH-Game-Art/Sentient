@@ -54,7 +54,10 @@ public class CharacterController2D : MonoBehaviour
         Flip();
         bool wasGrounded = m_Grounded;
         m_Grounded = false;
-        
+        if (landed)
+        {
+            animator.SetBool("IsJumping", true);
+        }
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -64,33 +67,13 @@ public class CharacterController2D : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
+                landed = true;
                 animator.SetBool("IsJumping", false);
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
         }
-
-        if (landed == true)
-        {
-            animator.SetBool("IsJumping", false);
-        }
-        else
-        {
-            animator.SetBool("IsJumping", true);
-        }
-
     }
-
-
-    void OnTriggerEnter2D(Collider2D theCollision)
-    {
-        if (theCollision.gameObject.tag == "Ground only")
-        {
-            landed = true;
-        }
-    }
-
-    
 
 
     public void Move(float move, bool crouch, bool jump)
@@ -196,10 +179,5 @@ public class CharacterController2D : MonoBehaviour
             transform.parent = null;
 
          }
-        if (other.gameObject.tag == "Ground only")
-        {
-            landed = true;
-        }
-    }
-
+     }
 }
