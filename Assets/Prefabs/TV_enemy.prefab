@@ -250,7 +250,7 @@ MonoBehaviour:
   engageDistance: 18
   range: 0
   timeBtwShots: 0
-  startTimeBtwShots: 1.5
+  startTimeBtwShots: 2
 --- !u!111 &2122697977078666908
 Animation:
   m_ObjectHideFlags: 0
