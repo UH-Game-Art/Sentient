@@ -2364,7 +2364,7 @@ GameObject:
   - component: {fileID: 2555862508581217666}
   m_Layer: 8
   m_Name: left_arm
-  m_TagString: Untagged
+  m_TagString: MechOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

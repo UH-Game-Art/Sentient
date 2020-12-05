@@ -10,13 +10,14 @@ public class Mecha : MonoBehaviour
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private float agroRange = 12f;
     [SerializeField] private float attackRange = 5f;
-    [SerializeField] private int curHealth = 5;
+    [SerializeField] private int curHealth = 10;
 
 
     private float horMovement;
     private bool playerFound = false;
     private bool cannonCanShoot = true;
     private bool facingRight = false;
+    private bool dead = false;
 
     private Animator animator;
     private Transform player;
@@ -46,7 +47,7 @@ public class Mecha : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (playerFound)
+        if (playerFound && !dead)
         {
             //rb.velocity = new Vector2(horMovement * speed, rb.velocity.y);
             animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
@@ -97,9 +98,17 @@ public class Mecha : MonoBehaviour
 
             if (curHealth < 0)
             {
-                Destroy(gameObject, 0.2f);
+                //Destroy(gameObject, 0.2f);
+                gameObject.layer = LayerMask.NameToLayer("MechaDead");
+                foreach (Transform trans in this.GetComponentsInChildren<Transform>(true))
+                {
+                    trans.gameObject.layer = LayerMask.NameToLayer("MechaDead");
+                }
+                animator.SetBool("Dead", true);
+                dead = true;
             }
         }
+
     }
 
     private void switchCanonPositions()
@@ -118,14 +127,12 @@ public class Mecha : MonoBehaviour
 
     public void Damage(int dmg) // taking damage
     {
-
         curHealth -= dmg;
         StartCoroutine(Damaged_timer());
     }
 
     IEnumerator Damaged_timer()
     {
-
         Debug.Log("Your enter Coroutine at" + Time.time);
         yield return new WaitForSeconds(0.8f);
     }
@@ -135,7 +142,7 @@ public class Mecha : MonoBehaviour
         //Instantiate your projectile
         Instantiate(bulletPrefab, canon.position, canon.rotation);
         cannonCanShoot = false;
-        //wait for some time
+        //Wait for some time
         yield return new WaitForSeconds(1f);
         cannonCanShoot = true;
     }
