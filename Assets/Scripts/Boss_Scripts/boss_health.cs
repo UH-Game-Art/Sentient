@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class boss_health : MonoBehaviour
@@ -12,7 +13,7 @@ public class boss_health : MonoBehaviour
     public bool Bvun = false;
     public health_bar healthbar;
     Animator anim;
-    
+
     void Start()
     {
         bossHealth = 250;
@@ -22,11 +23,11 @@ public class boss_health : MonoBehaviour
     }
     public void Update()
     {
-        if(bossCurrentHealth <= 50)
+        if (bossCurrentHealth <= 50)
         {
             anim.SetBool("final_bool", true);
         }
-        if(bArms <= 6)
+        if (bArms <= 6)
         {
             anim.SetBool("final_bool", true);
         }
@@ -43,14 +44,28 @@ public class boss_health : MonoBehaviour
             bossCurrentHealth -= dam;
             healthbar.setHealth(bossCurrentHealth);
         }
-        if(bossCurrentHealth <= 0)
+        if (bossCurrentHealth <= 0)
         {
             Die();
+            StartCoroutine(LoadLevelAfterDelay());
         }
     }
     void Die()
     {
         anim.SetBool("is_dead", true);
 
+
+
+
+
+
+    }
+
+    IEnumerator LoadLevelAfterDelay()
+    {
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene("Credits");
     }
 }
+
+
