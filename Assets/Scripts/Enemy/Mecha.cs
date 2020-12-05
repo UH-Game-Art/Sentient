@@ -8,8 +8,8 @@ public class Mecha : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float speed = 5.0f;
-    [SerializeField] private float agroRange = 40f;
-    [SerializeField] private float attackRange = 20f;
+    [SerializeField] private float agroRange = 12f;
+    [SerializeField] private float attackRange = 5f;
 
 
     private float horMovement;
@@ -26,6 +26,11 @@ public class Mecha : MonoBehaviour
     {
         if (player = GameObject.FindGameObjectWithTag("Player").transform)
         {
+            Debug.Log(player.name);
+        }
+        if (player = GameObject.FindGameObjectWithTag("Player").transform)
+        {
+            Debug.Log("Found Player");
             rb = this.GetComponent<Rigidbody2D>();
             animator = this.GetComponent<Animator>();
             canon = this.gameObject.transform.GetChild(1).transform.GetChild(0).transform;

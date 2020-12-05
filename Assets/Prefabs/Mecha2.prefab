@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3228787977498324395}
   m_Layer: 13
   m_Name: Body
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 3228787977789159763}
   m_Layer: 13
   m_Name: Left Foot
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 3228787977825511581}
   m_Layer: 13
   m_Name: Right Leg
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 3228787977831177310}
   m_Layer: 13
   m_Name: Right Foot
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 3228787978004128177}
   m_Layer: 13
   m_Name: Left Thigh
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 3228787978040926603}
   m_Layer: 13
   m_Name: Left Leg
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 3228787978382213917}
   m_Layer: 13
   m_Name: Arm
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1214,7 +1214,7 @@ GameObject:
   - component: {fileID: 3228787978886484768}
   m_Layer: 13
   m_Name: Right Thigh
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1385,7 +1385,7 @@ Transform:
   m_GameObject: {fileID: 3228787978934976573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10, y: -10, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children:
   - {fileID: 3228787977498324397}
   - {fileID: 3228787978382213919}
@@ -1504,8 +1504,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7073309736186919318, guid: 8d67e1576ca33344fbca7ce6c9f07d65, type: 3}
   speed: 5
-  agroRange: 40
-  attackRange: 20
+  agroRange: 8.3
+  attackRange: 4
 --- !u!1 &3228787978942433151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,7 +1520,7 @@ GameObject:
   - component: {fileID: 3228787978942433147}
   m_Layer: 13
   m_Name: Turrret
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 366980188841836817, guid: d50c805d827225e4eb1871e961e8b9b0, type: 3}
-  shootingRange: 40
+  shootingRange: 9
   aimSpeed: 2.7
   fireRate: 0.2
   nextFire: 0

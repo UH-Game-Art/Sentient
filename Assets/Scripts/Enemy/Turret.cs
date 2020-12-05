@@ -5,7 +5,7 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private float shootingRange = 40f;
+    [SerializeField] private float shootingRange = 12f;
     [SerializeField] private float aimSpeed = 2.7f;
     public float fireRate = 0.2f;
     public float nextFire = 0.0f;
