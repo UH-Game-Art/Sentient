@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 435188460}
   - component: {fileID: 435188463}
   - component: {fileID: 435188464}
+  - component: {fileID: 1432938360}
   m_Layer: 8
   m_Name: Player_Rico_Fin
   m_TagString: Player
@@ -219,6 +220,22 @@ MonoBehaviour:
   currentInterObj: {fileID: 0}
   curInterObjScript: {fileID: 0}
   invent: {fileID: 435188463}
+--- !u!70 &1432938360
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143107102557419165}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.068237305, y: 2.394879}
+  m_Size: {x: 0.8902893, y: 2.9539266}
+  m_Direction: 0
 --- !u!1 &718722078972440629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3123,6 +3140,7 @@ GameObject:
   - component: {fileID: 5529988795181456913}
   - component: {fileID: 7423365889445639170}
   - component: {fileID: 2102822137}
+  - component: {fileID: 1998377869}
   m_Layer: 8
   m_Name: RicoBones
   m_TagString: Player
@@ -3281,6 +3299,22 @@ CapsuleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -1.0989125, y: 8.485012}
   m_Size: {x: 6.262665, y: 9.5980835}
+  m_Direction: 0
+--- !u!70 &1998377869
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456475491814294416}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.0129801, y: 8.251323}
+  m_Size: {x: 6.0908, y: 10.065471}
   m_Direction: 0
 --- !u!1 &9053826550954205245
 GameObject:
@@ -3504,7 +3538,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 551948053363421967}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9161976149475925380
 GameObject:
   m_ObjectHideFlags: 0
